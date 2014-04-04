@@ -36,8 +36,8 @@
                     </ul>
                 {% else %}
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><i class="icon-phone"></i> {{ "Contact" | trans({}, "platform") }}</a></li>
-                        <li><a href="#"><i class="icon-download-alt"></i> {{ "download" | trans({}, "platform") }}</a></li>
+                        <li><a href="{{ path("claro_get_content_by_type", {"type": "contact"}) }}"><i class="icon-phone"></i> {{ "Contact" | trans({}, "platform") }}</a></li>
+                        <li><a href="{{ path("claro_get_content_by_type", {"type": "download"}) }}"><i class="icon-download-alt"></i> {{ "download" | trans({}, "platform") }}</a></li>
                     </ul>
                 {% endif %}
             </div>
