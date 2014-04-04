@@ -1,0 +1,8 @@
+plugin:
+  has_options: false
+
+  themes:
+    - name: "Claroline Net Theme"
+      path: less/theme/theme.html.twig
+
+

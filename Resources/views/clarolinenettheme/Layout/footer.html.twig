@@ -1,0 +1,26 @@
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            {% if config.getParameter('footer') != '' %}
+                <p>
+                    {% if not is_granted('ROLE_USER') %}
+                        <a href="{{ path("claro_desktop_open") }}">{{ "login" | trans({}, "platform") }}</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    {% endif %}
+                    {{ config.getParameter('footer') }}
+                    <span class="pull-right">
+                        Powered by <a href="http://www.claroline.net">Claroline</a>
+                        <span class="locale-select label label-default">{{ app.request.locale | upper }}</span>
+                    </span>
+                </p>
+            {% else %}
+                <p>
+                    {% if not is_granted('ROLE_USER') %}
+                        <a href="{{ path("claro_desktop_open") }}">{{ "login" | trans({}, "platform") }}</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    {% endif %}
+                    Powered by <a href="http://www.claroline.net">Claroline</a>
+                    <span class="pull-right locale-select label label-default">{{ app.request.locale | upper }}</span>
+                </p>
+            {% endif %}
+        </div>
+    </div>
+</div>
