@@ -41,35 +41,6 @@
     {% endimage %}
     <link rel='stylesheet' type='text/css' href='{{ asset('bundles/frontend/jquery/plugin/datepicker/css/datepicker3.css')}}'>
     <link rel='stylesheet' type='text/css' href='{{ asset('bundles/clarolinecore/css/iframe/iframe.css')}}'>
-    <style>
-        .jumbotron.homepage {
-            min-height: 250px;
-            padding: 10px;
-            background: #0071bc url({{ asset("bundles/clarolinenettheme/images/banner.jpg") }}) no-repeat center;
-        }
-        .jumbotron.homepage .container{
-            padding-right: 50px;
-        }
-        .jumbotron.homepage img {
-            width: 100%;
-            max-width: 370px;
-            margin-bottom: 20px;
-        }
-        .social {
-            line-height: 1.2;
-        }
-        .social a, .social a:hover, .social a:link, .social a:active {
-            color: #fff;
-            font-size: 50px;
-            margin-left: 20px;
-            text-decoration: none;
-        }
-        @media (max-width: 520px) {
-            .social a, .social a:hover, .social a:link, .social a:active {
-                font-size: 35px;
-            }
-        }
-    </style>
 {% endblock %}
 
 {% block javascripts_header %}
@@ -128,7 +99,7 @@
                 {% render controller('ClarolineCoreBundle:Layout:renderWarningImpersonation') %}
             {% endif %}
         {% endblock %}
-        {% if app.request.get('_route') == 'claro_index' %}
+        {% if app.request.get('_route') == 'claro_index' or "/type/home" | activeLink == " active" %}
             <div class="jumbotron homepage">
                 <div class="container">
                     <img src="{{ asset("bundles/clarolinenettheme/images/logo.png") }}">

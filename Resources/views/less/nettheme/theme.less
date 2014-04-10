@@ -8,6 +8,15 @@ body {
 
 .navbar.navbar-default.navbar-fixed-top, .impersonalitation .navbar.navbar-default.navbar-fixed-top {
     .box-shadow(0 2px 3px rgba(0,0,0,.25));
+
+    .btn.btn-default {
+        background: #999;
+        border-color: #999;
+        color: #fff;
+    }
+    .navbar-brand {
+        color: #666;
+    }
 }
 
 #left-bar {
@@ -30,3 +39,45 @@ body {
 .panel .panel, .panel .breadcrumb {
     .box-shadow(none);
 }
+
+@media(min-width: @screen-md) {
+    .nav.navbar-nav li a {
+        border-right:1px solid #eee !important;
+    }
+}
+
+.jumbotron.homepage {
+    min-height: 250px;
+    padding: 10px;
+    background: #0071bc url("../../bundles/clarolinenettheme/images/banner.jpg") no-repeat center;
+
+    .container{
+        padding-right: 50px;
+    }
+    img {
+        width: 100%;
+        max-width: 370px;
+        margin-bottom: 20px;
+    }
+}
+
+.social {
+    line-height: 1.2;
+
+    a, a:hover, a:link, a:active {
+        color: #fff;
+        font-size: 50px;
+        margin-left: 20px;
+        text-decoration: none;
+        i {
+            text-shadow: 3px 3px 0 rgba(0,0,0,.2);
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .social a, .social a:hover, .social a:link, .social a:active {
+        font-size: 35px;
+    }
+}
+
