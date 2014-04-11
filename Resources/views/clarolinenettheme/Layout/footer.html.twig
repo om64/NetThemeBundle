@@ -9,6 +9,9 @@
                     {{ config.getParameter('footer') }}
                     <span class="pull-right">
                         Powered by <a href="http://www.claroline.net">Claroline</a>
+                        {% if is_granted('ROLE_USER') %}
+                            <span class="locale-select label label-default">{{ app.request.locale | upper }}</span>
+                        {% endif %}
                     </span>
                 </p>
             {% else %}
@@ -17,6 +20,9 @@
                         <a href="{{ path("claro_desktop_open") }}"><i class="icon-user"></i> {{ "login" | trans({}, "platform") }}</a> &nbsp;&nbsp;&nbsp;&nbsp;
                     {% endif %}
                     Powered by <a href="http://www.claroline.net">Claroline</a>
+                    {% if is_granted('ROLE_USER') %}
+                        <span class="pull-right locale-select label label-default">{{ app.request.locale | upper }}</span>
+                    {% endif %}
                 </p>
             {% endif %}
         </div>

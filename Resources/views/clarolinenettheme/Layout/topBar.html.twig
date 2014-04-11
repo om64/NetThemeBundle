@@ -39,27 +39,27 @@
                         <button class="pull-right locale-select btn btn-default">{{ app.request.locale | upper }}</button>
                     </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="{{ "/type/home" | activeLink }}{{ "/" | activeLink }}">
+                        <li{% if "claro_index" | activeRoute or "claro_get_content_by_type" | activeRoute({'type': 'home'}) %} class="active"{% endif %}>
                             <a href="{{ path("claro_get_content_by_type", {"type": "home"}) }}">
                                 {{ "Home" | trans({}, "nettheme") }}
                             </a>
                         </li>
-                        <li class="{{ "/type/claroline" | activeLink }}">
+                        <li{% if "claro_get_content_by_type" | activeRoute({'type': 'claroline'}) %} class="active"{% endif %}>
                             <a href="{{ path("claro_get_content_by_type", {"type": "claroline"}) }}">
                                 {{ "About Us" | trans({}, "nettheme") }}
                             </a>
                         </li>
-                        <li class="{{ "/type/consortium" | activeLink }}">
+                        <li{% if "claro_get_content_by_type" | activeRoute({'type': 'consortium'}) %} class="active"{% endif %}>
                             <a href="{{ path("claro_get_content_by_type", {"type": "consortium"}) }}">
                                 {{ "Consortium" | trans({}, "nettheme") }}
                             </a>
                         </li>
-                        <li class="{{ "/type/contact" | activeLink }}">
+                        <li{% if "claro_get_content_by_type" | activeRoute({'type': 'contact'}) %} class="active"{% endif %}>
                             <a href="{{ path("claro_get_content_by_type", {"type": "contact"}) }}">
                                 {{ "Contact" | trans({}, "nettheme") }}
                             </a>
                         </li>
-                        <li class="{{ "/type/download" | activeLink }}">
+                        <li{% if "claro_get_content_by_type" | activeRoute({'type': 'download'}) %} class="active"{% endif %}>
                             <a href="{{ path("claro_get_content_by_type", {"type": "download"}) }}">
                                 {{ "Download" | trans({}, "nettheme") }}
                             </a>
