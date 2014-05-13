@@ -64,6 +64,11 @@
                                 {{ "Download" | trans({}, "nettheme") }}
                             </a>
                         </li>
+                        <li{% if "claro_get_content_by_type" | activeRoute({'type': 'press'}) %} class="active"{% endif %}>
+                            <a href="{{ path("claro_get_content_by_type", {"type": "press"}) }}">
+                                {{ "Press" | trans({}, "nettheme") }}
+                            </a>
+                        </li>
                     </ul>
                 {% endif %}
             </div>
