@@ -113,7 +113,6 @@
     <script type="text/javascript" src='{{ asset('bundles/clarolinecore/js/iframe/iframe.js') }}'></script>
     <script type="text/javascript" src="{{ asset('vendor/twbs/bootstrap/js/bootstrap.js') }}"></script>
     <script type="text/javascript" src="{{ asset('vendor/jms/twig-js/twig.js') }}"></script>
-    {% endjavascripts %}
     {% javascripts debug=false filter='twig_js, jsmin' vars=["locale"]
         "@ClarolineCoreBundle/Resources/views/Resource/breadcrumbs.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/Resource/actions.html.twigjs"
