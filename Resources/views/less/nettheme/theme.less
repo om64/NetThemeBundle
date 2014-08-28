@@ -53,11 +53,28 @@ body {
 
     .container{
         padding-right: 50px;
+        position: relative;
     }
     img {
         width: 100%;
         max-width: 370px;
         margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 680px) {
+    .donation .btn {
+        background-color: #EC8D00;
+        border-color: #EC8D00;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 3px 3px 0 rgba(0,0,0,.2);
+    }
+}
+
+@media (max-width: 680px) {
+    .donation .btn {
+        display: none;
     }
 }
 

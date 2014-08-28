@@ -77,10 +77,13 @@
             <div class="jumbotron homepage">
                 <div class="container">
                     <img src="{{ asset("bundles/clarolinenettheme/images/logo.png") }}">
+                    <div class="pull-right donation">
+                        <a href="{{ path('claro_get_content_by_type', {type: 'Membership'}) }}" class="btn btn-default">{{ 'MAKE A DONATION' | trans({}, 'nettheme') }}</a>
+                    </div>
                     <div class="social text-right">
                         <a target="_blank" href="http://www.facebook.com/consortiumclaroline" role="button"><i class="fa fa-facebook-square"></i><span class="hide"> Facebook</span></a>
                         <a target="_blank" href="http://www.twitter.com/LMSClaroline" role="button"><i class="fa fa-twitter-square"></i><span class="hide"> Twitter</span></a>
-                        <a target="_blank" href="http://www.linkedin.com/groups?gid=23022&amp;trk=myg_ugrp_ovr" role="button"><i class="fa fa-linkedin-sign"></i><span class="hide"> LinkedIn</span></a>
+                        <a target="_blank" href="http://www.linkedin.com/groups?gid=23022&amp;trk=myg_ugrp_ovr" role="button"><i class="fa fa-linkedin-square"></i><span class="hide"> LinkedIn</span></a>
                         <a target="_blank" href="https://plus.google.com/u/0/112736720926447938003/posts" role="button"><i class="fa fa-google-plus-square"></i><span class="hide"> Google+</span></a>
                         <a target="_blank" href="https://github.com/claroline/Claroline" role="button"><i class="fa fa-github-square"></i><span class="hide"> GitHub</span></a>
                     </div>
@@ -112,7 +115,6 @@
     <script type="text/javascript" src='{{ asset('bundles/clarolinecore/js/iframe/iframe.js') }}'></script>
     <script type="text/javascript" src="{{ asset('vendor/twbs/bootstrap/js/bootstrap.js') }}"></script>
     <script type="text/javascript" src="{{ asset('vendor/jms/twig-js/twig.js') }}"></script>
-
     {% javascripts debug=false filter='twig_js, jsmin' vars=["locale"]
         "@ClarolineCoreBundle/Resources/views/Resource/breadcrumbs.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/Resource/actions.html.twigjs"
@@ -122,7 +124,6 @@
         "@ClarolineCoreBundle/Resources/views/Resource/roles.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/Modal/modal.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/Modal/validationFooter.html.twigjs"
-        "@ClarolineCoreBundle/Resources/views/Modal/errorFooter.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/confirmAddRole.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/removeGroupConfirm.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/removeUserConfirm.html.twigjs"
@@ -134,15 +135,7 @@
         "@ClarolineCoreBundle/Resources/views/Tool/workspace/roles/roleGroupLabel.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/removeWorkspacesConfirm.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/noRoleSelected.html.twigjs"
-        "@ClarolineCoreBundle/Resources/views/Administration/Facet/facetTab.html.twigjs"
-        "@ClarolineCoreBundle/Resources/views/Administration/Facet/facetTabInnerHtml.html.twigjs"
-        "@ClarolineCoreBundle/Resources/views/Administration/Facet/facetPane.html.twigjs"
-        "@ClarolineCoreBundle/Resources/views/Administration/Facet/fieldElement.html.twigjs"
-        "@ClarolineCoreBundle/Resources/views/Administration/Facet/fieldElementInnerHtml.html.twigjs"
-        "@ClarolineCoreBundle/Resources/views/Administration/Roles/renderRoleRow.html.twig"
-        "@ClarolineCoreBundle/Resources/views/Agenda/eventContent.html.twig"
-        "@ClarolineCoreBundle/Resources/views/Agenda/task.html.twig"
-    %}<script type="text/javascript" src="{{ asset_url }}"></script>
+        %}<script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
     <script type="text/javascript" src="{{ asset('vendor/jquery/ui/jqueryui.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
