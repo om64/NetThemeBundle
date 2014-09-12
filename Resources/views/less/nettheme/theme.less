@@ -54,47 +54,62 @@ body {
     .container{
         padding-right: 50px;
         position: relative;
+
+        .row > div > div {
+            text-align: right;
+        }
     }
     img {
         width: 100%;
         max-width: 370px;
-        margin-bottom: 20px;
     }
-}
 
-@media (min-width: 680px) {
-    .donation .btn {
-        background-color: #EC8D00;
-        border-color: #EC8D00;
-        color: #fff;
+    .btn {
+        width: 160px;
         font-weight: bold;
+        text-align: left;
         box-shadow: 3px 3px 0 rgba(0,0,0,.2);
-    }
-}
-
-@media (max-width: 680px) {
-    .donation .btn {
-        display: none;
-    }
-}
-
-.social {
-    line-height: 1.2;
-
-    a, a:hover, a:link, a:active {
-        color: #fff;
-        font-size: 50px;
-        margin-left: 20px;
-        text-decoration: none;
-        i {
-            text-shadow: 3px 3px 0 rgba(0,0,0,.2);
+        &.donation {
+            background-color: #EC8D00;
+            border-color: #EC8D00;
+            color: #fff;
         }
     }
-}
 
-@media (max-width: 520px) {
-    .social a, .social a:hover, .social a:link, .social a:active {
-        font-size: 35px;
+    .social {
+        line-height: 1.2;
+        text-align: right;
+        a, a:hover, a:link, a:active {
+            color: #fff;
+            font-size: 50px;
+            margin-left: 20px;
+            text-decoration: none;
+            i {
+                text-shadow: 3px 3px 0 rgba(0,0,0,.2);
+            }
+        }
+    }
+
+    @media (max-width: @screen-sm) {
+        .container .row > div > div {
+            text-align: left;
+            .btn {
+                //width: 100%;
+            }
+        }
+        .social {
+            text-align: left;
+
+            a, a:hover, a:link, a:active {
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+
+    @media (max-width: 520px) {
+        .social a, .social a:hover, .social a:link, .social a:active {
+            font-size: 35px;
+        }
     }
 }
 

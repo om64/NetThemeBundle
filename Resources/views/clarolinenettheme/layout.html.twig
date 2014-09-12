@@ -76,11 +76,31 @@
         {% if "claro_index" | activeRoute or "claro_get_content_by_type" | activeRoute({'type': 'home'}) %}
             <div class="jumbotron homepage">
                 <div class="container">
-                    <img src="{{ asset("bundles/clarolinenettheme/images/logo.png") }}">
-                    <div class="pull-right donation">
-                        <a href="{{ path('claro_get_content_by_type', {type: 'Membership'}) }}" class="btn btn-default">{{ 'MAKE A DONATION' | trans({}, 'nettheme') }}</a>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="margin-bottom-md" src="{{ asset("bundles/clarolinenettheme/images/logo.png") }}">
+                        </div>
+                        <div class="col-sm-6 margin-bottom-md">
+                            <div>
+                                <a href="{{ path('claro_get_content_by_type', {type: 'FAITES_UN_DON'}) }}" class="donation btn btn-default">
+                                    <i class="fa fa-dollar fa-fw"></i> {{ 'MAKE A DONATION' | trans({}, 'nettheme') }}
+                                </a>
+                            </div>
+                            {% if not is_granted('ROLE_USER') %}
+                                <div>
+                                    <a href="{{ path('claro_security_login') }}" class="btn btn-default">
+                                        <i class="fa fa-user fa-fw"></i> {{ 'login' | trans({}, 'platform') }}
+                                    </a>
+                                </div>
+                            {% endif %}
+                            <div>
+                                <a href="http://demo.claroline.net/" target="_blank" class="btn btn-default">
+                                    <i class="fa fa-play-circle fa-fw"></i> {{ 'Demo' | trans({}, 'nettheme') }}
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="social text-right">
+                    <div class="social">
                         <a target="_blank" href="http://www.facebook.com/consortiumclaroline" role="button"><i class="fa fa-facebook-square"></i><span class="hide"> Facebook</span></a>
                         <a target="_blank" href="http://www.twitter.com/LMSClaroline" role="button"><i class="fa fa-twitter-square"></i><span class="hide"> Twitter</span></a>
                         <a target="_blank" href="http://www.linkedin.com/groups?gid=23022&amp;trk=myg_ugrp_ovr" role="button"><i class="fa fa-linkedin-square"></i><span class="hide"> LinkedIn</span></a>
@@ -124,6 +144,7 @@
         "@ClarolineCoreBundle/Resources/views/Resource/roles.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/Modal/modal.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/Modal/validationFooter.html.twigjs"
+        "@ClarolineCoreBundle/Resources/views/Modal/errorFooter.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/confirmAddRole.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/removeGroupConfirm.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/removeUserConfirm.html.twigjs"
@@ -135,6 +156,16 @@
         "@ClarolineCoreBundle/Resources/views/Tool/workspace/roles/roleGroupLabel.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/removeWorkspacesConfirm.html.twigjs"
         "@ClarolineCoreBundle/Resources/views/ConfirmationMessage/noRoleSelected.html.twigjs"
+        "@ClarolineCoreBundle/Resources/views/Administration/Facet/facetTab.html.twigjs"
+        "@ClarolineCoreBundle/Resources/views/Administration/Facet/facetTabInnerHtml.html.twigjs"
+        "@ClarolineCoreBundle/Resources/views/Administration/Facet/facetPane.html.twigjs"
+        "@ClarolineCoreBundle/Resources/views/Administration/Facet/fieldElement.html.twigjs"
+        "@ClarolineCoreBundle/Resources/views/Administration/Facet/fieldElementInnerHtml.html.twigjs"
+        "@ClarolineCoreBundle/Resources/views/Administration/Roles/renderRoleRow.html.twig"
+        "@ClarolineCoreBundle/Resources/views/Agenda/eventContent.html.twig"
+        "@ClarolineCoreBundle/Resources/views/Agenda/task.html.twig"
+        "@ClarolineCoreBundle/Resources/views/Administration/Competence/competenceItem.html.twig"
+        "@ClarolineCoreBundle/Resources/views/Administration/Competence/competenceNodeItem.html.twig"
         %}<script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
     <script type="text/javascript" src="{{ asset('vendor/jquery/ui/jqueryui.js') }}"></script>
@@ -144,6 +175,7 @@
     <script type="text/javascript" src="{{ url('bazinga_exposetranslation_js', { 'domain_name': 'platform' }) }}"></script>
     <script type="text/javascript" src="{{ url('bazinga_exposetranslation_js', { 'domain_name': 'resource' }) }}"></script>
     <script type="text/javascript" src="{{ url('bazinga_exposetranslation_js', { 'domain_name': 'badge' }) }}"></script>
+    <script type="text/javascript" src="{{ url('bazinga_exposetranslation_js', { 'domain_name': 'competence' }) }}"></script>
     <script type="text/javascript" src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/frontend/jquery/plugin/datepicker/js/bootstrap-datepicker.js') }}"></script>
     {% if 'en' != app.request.locale %}
