@@ -82,19 +82,19 @@
                         </div>
                         <div class="col-sm-6 margin-bottom-md">
                             <div>
-                                <a href="{{ path('claro_get_content_by_type', {type: 'FAITES_UN_DON'}) }}" class="donation btn btn-default">
+                                <a href="{{ path('claro_get_content_by_type', {type: 'FAITES_UN_DON'}) }}" class="donation btn btn-default btn-sm">
                                     <i class="fa fa-dollar fa-fw"></i> {{ 'MAKE A DONATION' | trans({}, 'nettheme') }}
                                 </a>
                             </div>
                             {% if not is_granted('ROLE_USER') %}
                                 <div>
-                                    <a href="{{ path('claro_security_login') }}" class="btn btn-default">
+                                    <a href="{{ path('claro_security_login') }}" class="btn btn-default btn-sm">
                                         <i class="fa fa-user fa-fw"></i> {{ 'login' | trans({}, 'platform') }}
                                     </a>
                                 </div>
                             {% endif %}
                             <div>
-                                <a href="http://demo.claroline.net/" target="_blank" class="btn btn-default">
+                                <a href="http://demo.claroline.net/" target="_blank" class="btn btn-default btn-sm">
                                     <i class="fa fa-play-circle fa-fw"></i> {{ 'Demo' | trans({}, 'nettheme') }}
                                 </a>
                             </div>
