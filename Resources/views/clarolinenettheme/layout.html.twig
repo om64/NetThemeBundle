@@ -191,6 +191,13 @@
         "@ClarolineCoreBundle/Resources/views/Administration/Competence/competenceNodeItem.html.twig"
         %}<script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
+        {% javascripts debug=false filter='jsmin' output='vendor/jquery/ui/jqueryui.js'
+        'bundles/frontend/jquery/jquery-ui-1.9.2/components/jquery.ui.core.min.js'
+        'bundles/frontend/jquery/jquery-ui-1.9.2/components/jquery.ui.widget.min.js'
+        'bundles/frontend/jquery/jquery-ui-1.9.2/components/jquery.ui.mouse.min.js'
+        'bundles/frontend/jquery/jquery-ui-1.9.2/components/jquery.ui.sortable.min.js'
+        %}<script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
     <script type="text/javascript" src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bundles/bazingajstranslation/js/translator.min.js') }}"></script>
     <script type="text/javascript" src="{{ url('bazinga_jstranslation_js', { 'domain': 'home' }) }}"></script>
