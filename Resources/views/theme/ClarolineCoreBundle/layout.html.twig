@@ -67,13 +67,11 @@
                 </div>
             </div>
         </div>
-        {% if not is_path_mode and not has_role('ROLE_USURPATE_WORKSPACE_ROLE') %}
-            {% if workspace is defined %}
-                {% render controller('ClarolineCoreBundle:Layout:topBar', {'workspaceId': workspace.getId()}) %}
-            {% else %}
-                {% render controller('ClarolineCoreBundle:Layout:topBar') %}
-            {% endif %}
-        {% endif %}
+	    {% if workspace is defined %}
+		{% render controller('ClarolineCoreBundle:Layout:topBar', {'workspaceId': workspace.getId()}) %}
+	    {% else %}
+		{% render controller('ClarolineCoreBundle:Layout:topBar') %}
+	    {% endif %}
 
        {% block impersonation %}
             {% if has_role('ROLE_USURPATE_WORKSPACE_ROLE') or is_impersonated() %}
@@ -126,9 +124,7 @@
         <div id="push"></div>
     </div>
    {% block footer %}
-        {% if not is_path_mode %}
-            {% render controller('ClarolineCoreBundle:Layout:footer') %}
-        {% endif %}
+    	{% render controller('ClarolineCoreBundle:Layout:footer') %}
     {% endblock%}
 {% endblock %}
 
