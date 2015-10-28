@@ -14,10 +14,6 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;
                         {% endif %}
                     {% endif %}
-                    {% if not is_granted('ROLE_USER') and footerWorkspaces %}
-                        <a href="{{ path("claro_workspace_list") }}"><i class="fa fa-book"></i> {{ "workspaces" | trans({}, "platform") }}</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                    {% endif %}
-
                     {% if is_granted('ROLE_USER') or (not is_granted('ROLE_USER') and not headerLocale) %}
                         <span class="pull-right locale-select label label-default">{{ app.request.locale | upper }}</span>
                     {% endif %}
