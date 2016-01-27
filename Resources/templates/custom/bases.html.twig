@@ -1,0 +1,601 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+    <div id="conteneur" class="container-fluid">
+        <div id="section-id-page" style="padding:15px">
+            <div class="container">
+                <h1 class="nom-de-page" style="padding-top:25px; color:whitesmoke; text-align: center">Documentation</h1>
+                <p class="page-location" style="padding-top:15px; font-weight: bold"><a href="learners_tutorials"> Le manuel des utilisateurs | </a> <a href="teachers_tutorials"> Le manuel des gestionnaires | <a href="admin_tutorials">  Le manuel des administrateurs</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <h2 style="text-align: center">Les bases de Claroline Connect</h2>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#intro">INTRODUCTION</a>
+                </h4>
+            </div>
+            <div id="intro" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    La documentation vous est présentée sous la forme de panneaux ouvrants correspondant chacun à un
+                    sujet particulier. Cliquez sur les titres des panneaux pour ouvrir et fermer les chapitres.</br>
+                    Cette partie-ci reprend toutes les notions communes aux utilisateurs, aux gestionnaires et aux administrateurs.
+                </div>
+            </div>
+        </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. L'INTERFACE DE CLAROLINE CONNECT</a>
+              </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                          <h4 style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1522.jpeg') }}" alt="Se repérer" width="164" height="164"></h4>
+                          <h6 style="text-align: center"><em>Image courtesy of Stuart Miles at FreeDigitalPhotos.net</em></h6>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                          <h4 style="text-align: center"><b>Se repérer sur Claroline Connect: l'interface de Claroline Connect</b></h4>
+                          <p>La plateforme Claroline Connect met à la disposition de l'utilisateur:</br>
+                          <ul>
+                              <li>un <b>bureau </b>(personnalisable)</li>
+                              <li>un <b>espace personnel (</b>dont l'utilisateur est le gestionnaire)</li>
+                              <li>des <b>espaces d'activités </b>auxquels l'utilisateur peut s'inscrire et/ou créer s'il a les droits de création).</li>
+                          </ul>
+                          Chacun de ces espaces est composé à la fois:</br>
+                          <ul>
+                              <li>d'une <b>page d'accueil</b></li>
+                              <li>d'un gestionnaire des <b>ressources</b></li>
+                          </ul></br>
+                          Lorsque vous êtes connecté, vous accédez à votre bureau. Vous pouvez le personnaliser son bureau et y organiser votre travail.</br>
+                          Vous pouvez y revenir à tout moment en cliquant sur l'icône de la maison <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1753.png') }}" alt="accueil.png" title="Bouton accueil">
+                          dans la barre de menu supérieure.</br>
+                          Le bureau vous donne accès à différents espaces d'activités (depuis le menu supérieur). Chaque espace d'activités est lié à un répertoire de
+                          ressources.</br>
+                          On peut schématiser simplement l'interface de la façon suivante:</br>
+                          <img style="max-width: 100%; display: block; margin-left: auto; margin-right: auto" src="{{ asset('uploads/custom/images/1755.png') }}" alt="schéma claro 3.PNG" width="497" height="400">
+                          <h6 style="text-align: center"><em>Figure 1: Structure de Claroline Connect.</em></h6></p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">1.1. Qu'est-ce qu'un espace d'activités ?</a>
+              </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <h5>La plateforme Claroline Connect propose la <b>notion d'espaces d'activités</b>, plus souple et adaptée aux contextes actuels.</h5>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                          <p style="text-align: center;"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1408.png') }}" alt="EA.PNG" width="364" height="271"></p>
+                          <h6 style="text-align: center;"><em>Figure 2: Schéma d'un espace d'activités</em></h6>
+                      </div>
+                      <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                          <p>Il faut comprendre l'espace d'activités comme une <b>valise </b>contenant :</br>
+                          <ul>
+                              <li>des ressources (dossiers, fichiers, wikis, blogs, forums, etc.)</li>
+                              <li>des outils pour inscrire des utilisateurs et leur donner accès aux ressources, créer des équipes, réaliser des suivis, créer des
+                                  référentiels de compétences, mettre en place des parcours, etc.</li>
+                          </ul></br>
+                          Dans cet <b>espace d'activités</b>, un ensemble d'<b>acteurs</b> (étudiants, formateurs, collaborateurs) peut réaliser différents types
+                          d'<b>activités </b> (exercices, projets, évaluations, recherches, co-working, discussions, débats, collaborations, partages, etc.) autour
+                          des objectifs définis.</br>
+                          Claroline Connect vous propose deux types d'espaces d'activités:</br>
+                          <ul>
+                              <li>Votre <b>espace personnel</b> dont vous êtes le gestionnaire</li>
+                              <li>Des <b>espaces d'activités</b> (publics) auxquels vous pouvez vous inscrire</li>
+                          </ul></p>
+                      </div>
+                  </div>
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p>Un espace d'activités se compose de 2 éléments:</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <p><span style="color: #3366ff"><b>La page d'accueil.</b></span></br>
+                              Elle donne des informations sur le contenu et la structure de l'espace d'activités.</p>
+                          <p><img style="max-width: 100%; text-align: center" src="{{ asset('uploads/custom/images/1384.png') }}" alt="page accueil.png"></p>
+                          <h6><em>Figure 3: Exemple de page d'accueil d'un espace d'activités.</em></h6>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <p><span style="color: #3366ff"><b>Le gestionnaire de ressources d'un espace d'activités. </b></span></br>
+                              C'est la zone de dépôt ou de création des ressources (fichiers, forums, exercices...) de l'espace d'activités, qui peut être renseignée sur la page d'accueil de cet espace.</p>
+                          <p><img style="max-width: 100%; text-align: center" src="{{ asset('uploads/custom/images/1385.png') }}" alt="ressources.png" width="537" height="264"></p>
+                          <h6><em>Figure 4: Exemple de gestionnaire des ressources d'un espace d'activités.</em></h6>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">1.2. Les barres d'outils</a>
+              </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <p>Les pages d'accueil des espaces d'activité de la plateforme Claroline Connect sont composées de <b>deux barres d'outils</b>:</br>
+                            - la barre d'outils du <b>bandeau supérieur</b></br>
+                            - la barre d'outils du <b>menu de gauche</b></br>
+                            <p><img style="max-width: 100%; text-align:center" src="{{ asset('uploads/custom/images/1388.png') }}" alt="barre d'outils.png" title="Barre d'outils" width="521" height="294"></p>
+                            <h6 style="text-align:center"><em>Figure 5 : Les barre d'outils de Claroline Connect.</em></h6>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <p>La <b>barre d'outils du bandeau supérieur</b> permet l'accès aux principaux outils, ressources et espaces d'activités de la plateforme.</br>
+                            Elle est <b>identique </b>, quelle que soit la page sur laquelle vous naviguez.</br>
+                            <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1762.png') }}" alt="8-bandeau supérieur.png" width="912" height="541" /></p>
+                            <h6 style="text-align: center"><em>Figure 6: Barre d'outils - bandeau supérieur</em></h6>
+                            <p>Cette barre peut être <b>modifiée </b>et <b>personnalisée</b> par l'utilisateur. (Voir : outils du bureau.)</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <p>La <b>barre d'outils du menu de gauche</b> permet l'accès aux outils et ressources de <b>l'espace d'activités concerné.</b>
+                            Elle varie selon l'espace d'activités et selon que l'utilisateur soit gestionnaire ou pas de l'espace d'activités.</br>
+                            Le menu de gauche montre les outils dont vous disposez si vous êtes le gestionnaire d'un espace d'activités. Le menu de droite montre un exemple de menu si vous
+                            êtes un simple utilisateur d'un espace d'activités.</br>
+                            <p><img style="max-width: 100%; text-align:center" src="{{ asset('uploads/custom/images/1392.png') }}" alt="9-menu de gauche.png" width="627" height="397"></p>
+                            <h6 style="text-align: center;"><em>Figure 7: Comparaison des menus de gauche des pages d'accueil des espace d'activités.</em></h6>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">1.3. Les rôles/profils</a>
+              </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p>Claroline Connect propose des rôles prédéfinis pour la plateforme et pour les espaces d'activités. Cependant , il est possible de les
+                              personnaliser en modifiant leur nom ou en en créant d'autres.</p>
+                          <h6>Les rôles prédéfinis</h6>
+                          <p>Claroline Connect met à disposition de l'utilisateur huit rôles (profils) prédéfinis, six au niveau de la plateforme et deux au niveau
+                              des espaces d'activités.<span style="color: #ff0000"> (Voir gestion des droits)</span></p>
+                          <p><span style="color: #3366ff"><b>Au niveau de la plateforme:</b></span></br>
+                          <ul>
+                              <li>Rôle <b>Utilisateur:</b> tous les utilisateurs qui sont <b>inscrits </b>à la plateforme</li>
+                              <li>Rôle de <b>Créateur d'espace:</b> l'utilisateur qui peut <b>créer</b> des espaces d'activités sans être l'administrateur de la
+                                  plateforme. Cependant, c'est l'administrateur de la plateforme qui va donner aux utilisateurs les droits de création des espaces d'activités</li>
+                              <li>Rôle <b>Administrateur:</b> qui <b>administre </b>la plateforme</li>
+                              <li>Rôle <b>anonyme: </b>qui <b>n'est pas inscrit </b>à la plateforme (l'internaute). Claroline Connect permet de rendre
+                                  "public" des ressources et/ou des espaces d'activités. L'anonyme a la possibilité d'y accéder à partir du lien publié<span style="color: #ff0000;">
+                                (Voir gestion des droits)</span></li>
+                              <li>Rôle <b>Gestionnaire de compétences</b>: qui peut créer et gérer un référentiel de compétences</li>
+                              <li>Rôle <b>Gestionnaire de l'accueil</b>: qui peut créer et gérer le site web de la plateforme</li>
+                          </ul>
+                          <p><span style="color: #3366ff"><b>Au niveau des espaces d'activités</b></span></br>
+                          <ul>
+                              <li>Le <b>collaborateur</b> est un utilisateur <b>au sein d'un espace d'activités. </b>Ce terme est en cohérence avec la philosophie de
+                                  Claroline Connect qui met en avant le rôle actif de l'utilisateur comme gestionnaire de son propre apprentissage. Tous les utilisateurs
+                                  qui sont inscrits à un espace d'activités ont le rôle de "collaborateur".</li>
+                              <li>Le <b>gestionnaire</b> gère un espace d'activités. Vous êtes d'office le gestionnaire de votre espace personnel.</li>
+                          </ul>
+                          <h6>Les rôles personnalisés</h6>
+                              <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1758.png') }}" alt="asterisque.PNG" width="72" height="61">
+                                <span style="background-color: #ffffff;"><b>Il est possible de modifier les intitulés des rôles prédéfinis pour les adapter aux différents
+                                        contextes et institutions.</b></span><span style="color: #ff0000"> (voir gestion des droits)</span></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">2. VOTRE COMPTE</a>
+              </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features" >
+                      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p style="text-align:center"><iframe style="width:50%; min-height:300px" src="https://www.youtube.com/embed/K3--GD-ugOc?wmode=opaque" frameborder="0" allowfullscreen></iframe></p>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                          <p>Dès votre première connexion, <b>personnalisez votre mot de passe</b> en veillant aux règles habituelles de
+                              sécurité (mot de passe suffisamment long avec des caractères alphanumériques).</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">2.1. Inscrivez-vous à une plateforme</a>
+              </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features" >
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p>Vous accédez à votre plateforme en saisissant son adresse dans votre navigateur.</p>
+                          <p style="text-align: center"><img src="{{ asset('uploads/custom/images/1514.png') }}" alt="Site Claroline"></p>
+                          <h6 style="margin-left: 20px; text-align: center"><em>Figure 1: Exemples de sites web de quelques institutions qui utilisent la plateforme Claroline Connect </em></h6>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+                          <p>L'accès est sécurisé. C'est l'administrateur de la plateforme qui inscrit les utilisateurs.</br>
+                              Vous recevez un courriel de confirmation d'inscription contenant votre identifiant et votre mot de passe.</br>
+                              Si l'administrateur le permet, vous pouvez vous inscrire en utilisant le menu <b>Connexion</b>, puis <b>Inscription</b> en haut à droite de la page,
+                              et en suivant les instructions du formulaire.</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                          <img src="{{ asset('uploads/custom/images/2701.jpg') }}" alt="inscription.JPG" width="562" height="262">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">2.2. Connectez-vous à une plateforme</a>
+              </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features" >
+                      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+                          <p>Pour vous connecter à une plateforme, cliquez sur <b>Connexion</b> en haut à droite de la page d'accueil.</p>
+                          <p style="text-align: center"><img src="{{ asset('uploads/custom/images/1516.png') }}" alt="3-se connecter.PNG" width="824" height="462" /></p>
+                          <h6 style="text-align: center;"><em>Figure 2: Dans la plupart des plateformes Claroline Connect, le bouton
+                                  connexion est visible en haut à droite de la page d'accueil.</em></h6>
+                          <h6 style="text-align: center;"><em>Dans certains cas, il est également possible d'accéder aux espaces
+                                  d'activités publics à partir de la même page.</em></h6>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                          <p>Utilisez l'<b>identifiant</b> et le <b>mot de passe</b> fournis par l'administrateur et cliquez sur
+                              <b>"Connexion"</b>.</p>
+                          <p style="text-align: center"><img src="{{ asset('uploads/custom/images/1846.png') }}" alt="connexion.png" width="217" height="393" title="Connexion à votre plateforme"></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">2.3. Vous avez oublié votre mot de passe ?</a>
+              </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p>Il existe une procédure classique d'envoi de mot de passe sur la messagerie personnelle indiquée lors de l'inscription.</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <p>Cliquez sur <b>"Connexion"</b>, puis sur <b>"Mot de passe oublié"</b> sous le champ de saisie de l'identifiant. Indiquez votre courriel et entrez le texte du contrôle Captcha.
+                              Ce dispositif de sécurité permet de s'assurer que ce n'est pas un robot qui tente une opération malveillante.</p>
+                          <p style="text-align: center"><img src="{{ asset('uploads/custom/images/1759.png') }}" alt="captcha 2.PNG" width="365" height="275" /></p>
+                          <p>Vous êtes informés qu'un courriel vous a été envoyé :</br>
+                              <img src="{{ asset('uploads/custom/images/2700.jpg') }}" alt="" width="524" height="111" /></p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                          <p>Remplissez le formulaire avec votre nouveau mot de passe, répétez-le et cliquez sur "Valider".</p>
+                          <p style="text-align: center"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1520.png') }}" alt="nouveau mdp.PNG" width="271" height="208"></p>
+                          <p>Vous recevez une notification de réussite de l'opération.</p>
+                          <p style="text-align: center"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1521.png') }}" alt="mdp modifié.PNG" width="523" height="42"></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">2.4. Modifiez votre mot de passe</a>
+              </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                          <p style="text-align: center">Pour modifier votre mot de passe, cliquez sur "<b>Mon profil</b>"</p>
+                          <p style="text-align: center"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2689.png') }}" alt="mon profil.PNG" width="242" height="296" /></p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                          <p style="text-align: center">Cliquez ensuite sur "<b>Modifier le mot de passe</b>".</p>
+                          <p style="text-align: center"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2690.png') }}" alt="modif-mdp.PNG" width="360" height="253" /></p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                          <p style="text-align: center">Indiquez votre mot de passe actuel, tapez deux fois votre nouveau mot de passe et cliquez sur <b>"Modifier"</b></p>
+                          <p style="text-align: center"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2691.png') }}" alt="mdp.PNG" width="565" height="229" /></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">3. VOTRE PROFIL UTILISATEUR</a>
+              </h4>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-md-9">
+                          <p>L'accès à votre profil se fait via le menu situé en haut à droite de la barre de menu supérieure.</br>
+                              Une fois que vous êtes connecté, le <b>menu déroulant</b> de connexion vous propose l'accès à <b>différents outils</b> ainsi que la possibilité de
+                              <b>modifier votre profil</b> (mot de passe, avatar, etc).</br>
+                              <b>Ce menu déroulant peut être personnalisé par l'utilisateur.</b></p>
+                          <p>Vous trouverez plus d'informations dans <a href="learners_tutorials#bureau_perso">"Personnalisez votre bureau"</a> dans le manuel des utilisateurs.</p>
+                      </div>
+                      <div class="col-md-3">
+                          <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1769.png') }}" alt="profil.PNG" width="241" height="344"></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">3.1. Modifiez votre profil</a>
+              </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-md-6">
+                          <p>Certaines informations du profil de l'utilisateur sont gérées par l'administrateur de la plateforme. C'est le cas, par exemple, pour les onglets
+                              "données privées" et "cours suivis". Vous pouvez <b>effectuer vous-même d'autres modifications</b> à partir du bouton <b>"Actions"</b></br>
+                              <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1770.png') }}" alt="modifier profil.PNG" title="Modifiez votre profil" width="948" height="314"></p>
+                      </div>
+                      <div class="col-md-6">
+                          <p>Modifiez les données de votre profil à partir de l'option <b>"Modifier votre profil"</b>. Un formulaire avec vos données personnelles s'affichera: prénom, nom,
+                              nom d'utilisateur, courriel.</p>
+                          <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1771.png') }}" alt="formulaire.PNG" title="Formulaire de données personnelles" width="751" height="592"></p>
+                      </div>
+                      <div class="col-md-6">
+                          <p>Ajoutez une <b>photo de profil</b> en cliquant sur <b>"Parcourir"</b>. Présentez-vous dans la partie <b>"Description"</b></br>
+                              Vous pouvez également<b> modifier votre mot de passe</b>.</p>
+                          <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1772.png') }}" alt="profil utilisateur.PNG" width="669" height="478" /></p>
+                      </div>
+                      <div class="col-md-6">
+                          <p>Le mode<b> "profil public"</b> vous permettra de vérifier quelles informations personnelles sont visibles par les autres utilisateurs.</br>
+                              Pour faire cela, cliquez sur le bouton <b>"Actions"</b> et <b>"Voir mon profil public"</b>.</p>
+                          <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1773.png') }}" alt="profil public.png" width="967" height="331"></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">3.2. Personnalisez l'url de votre profil public</a>
+              </h4>
+          </div>
+          <div id="collapse12" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p>Vous avez par défaut une URL (Uniform Resource Locator, c'est-à-dire votre adresse web) pour afficher votre profil public.
+                              En cliquant sur <b>"Personnaliser l'URL de votre profil public", </b>vous accédez à votre adresse.</p>
+                          <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1774.png') }}" alt="url_perso.png" title="Personnalisez votre URL" width="863" height="300"></p>
+                      </div>
+                      <div class="col-sm-4">
+                          <p>Dans l'exemple ci dessus, l'URL est la suivante :</p>
+                          <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1775.png') }}" alt="exemple url.PNG" width="529" height="130" /></p>
+                      </div>
+                      <div class="col-sm-4">
+                          <p>Il est donc possible de <b>personnaliser l'URL</b> de votre profil en cliquant sur le champ : <b>/profile/</b></p>
+                          <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1776.png') }}" alt="modifier url.PNG" width="584" height="296"></p>
+                      </div>
+                      <div class="col-sm-4">
+                          <p>Tenez bien compte du message suivant :</p>
+                          <p style="text-align: center"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1777.png') }}" alt="message personnalisation.PNG" width="607" height="61"></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">4. L'EDITEUR WYSIWYG</a>
+              </h4>
+          </div>
+          <div id="collapse13" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p><b>L'éditeur WYSIWYG</b> <sup>[1]</sup> est un élément central de Claroline Connect qui permet de rédiger et de mettre en page des contenus. Il est accessible dans
+                      presque tous les<b> objets de la plateforme en mode édition: </b>widget texte, annonce, page wiki, blog, forum, cours, parcours, exercices, etc.</p>
+                  <p><sup>[1]</sup> (What You See Is What You Get), c'est à dire, "Ce que vous voyez est ce que vous obtenez".</p>
+                  <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1823.png') }}" alt="1823.png"></p>
+                  <h6 style="text-align: center"><em>Figure 1: Exemples de l'éditeur wysiwyg dans les différentes ressources de la plateforme</em></h6>
+                  <p>La modification d'un texte dans les différentes ressources de la plateforme ouvre un éditeur de mise en forme intuitif.</br>
+                      <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1758.png') }}" title="Attention !" alt="asterisque.png" width="72" height="61">
+                      <b>D</b><span style="color: #ff0000;"><b><span style="color: #333333;">ans sa présentation initiale, toutes les fonctionnalités ne sont pas visibles : seule la première ligne d'icônes est proposée:&nbsp;&nbsp;</span>&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /></span></p>
+                  <p><span style="color: #ff0000;"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1824.png') }}" alt="2-barre d'outils reduit.PNG" /> </span></p>
+                  <p style="text-align: center;">&nbsp;</p>
+                  <p>En cliquant sur les boutons de<b> flèches</b> (double-flèche, ou flèche vers le bas), de nouvelles fonctionnalités apparaissent, comme décrit ci-après:</p>
+                  <ul>
+                      <li>Cliquez sur le bouton "<b>Tous les outils</b>" <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1825.png') }}" alt="5- tous les outils.PNG" width="46" height="37" />&nbsp; pour faire apparaitre de nouvelles fonctionnalités.</li>
+                  </ul>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1826.png') }}" alt="3-barre d'outils.PNG" width="886" height="133" /></p>
+                  <ul>
+                      <li>Cliquez sur le bouton "<b>Plein écran</b>" <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1827.png') }}" alt="6-plainecran.PNG" width="49" height="44" /> pour avoir plus de fonctionnalités et pour travailler de manière plus confortable en plein écran.</li>
+                  </ul>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1828.png') }}" alt="1828.png"></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default" style="margin-bottom: 15px">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">4.1. Votre éditeur de texte</a>
+              </h4>
+          </div>
+          <div id="collapse14" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <div class="row features">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p>Les <b>outils de l'éditeur de texte</b> sont classés par blocs.</p>
+                          <div class="panel panel-info">
+                              <table class="table table-striped table-condensed table-responsive table-hover">
+                                  <thead>
+                                  <tr>
+                                      <th style="font-weight: bold; text-align: center">Blocs</th>
+                                      <th style="font-weight: bold; text-align: center">Description</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr><td><img src="{{ asset('uploads/custom/images/1829.png') }}" alt="1829.png" width="196" height="44"</td>
+                                      <td>Mettre le texte </b><b>en forme : </b> mettre en caractères <b>gras</b>, en <b>italique</b>, <b>souligner</b> ou <b>barrer</b>
+                                          un texte.</td></tr>
+                                  <tr><td><img src="{{ asset('uploads/custom/images/1830.png') }}" alt="1830.png" width="190" height="42"></td>
+                                      <td>Permet de<b> formater les paragraphes</b> : <b>alignement à gauche, au centre, à droite ou justifié.</b></td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1831.png') }}" alt="1832.png" width="136" height="58"></td>
+                                      <td>a) La première icône <b>ajouter au texte un élément figurant dans les ressources</b> (par exemple: une image, un fichier pdf, etc). S'il s'agit d'une image, elle
+                                          apparaîtra dans l'article, et il sera possible de la redimensionner.</br>
+                                          b) La seconde icône permet d'<b>uploader un fichier</b> qui apparaîtra pour le lecteur de l'article comme un élément à télécharger.</br>
+                                          c) Si on ajoute un <b>fichier mp3</b>, un lecteur audio apparaît dans l'article :</br>
+                                          <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1847.png') }}" title="Lecteur audio" alt="mp3.png" /></br>
+                                          d) Si on ajoute une vidéo, un lecteur vidéo apparaît dans l'article:</br>
+                                          <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1848.png') }}" title="Lecteur vidéo" alt="mp4.png" width="204" height="115" />
+                                      </td>
+                                  </tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1832.png') }}" alt="1832.png" width="142" height="60"></td>
+                                      <td>a) La première icône permet d'afficher la zone d'édition en <b>plein écran</b> et donne accès à des outils
+                                          supplémentaires (cf. infra : le mode plein écran).</br>
+                                          b) La seconde permet d'<b>afficher une deuxième rangée d'icônes.</b></td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1833.png') }}" alt="1833.png" width="202" height="207"></td>
+                                      <td>Ce menu offre plusieurs possibilités de mise en forme du texte.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1834.png') }}" alt="1834.png" width="264" height="193"></td>
+                                      <td>Hiérarchie de titres.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1835.png') }}" alt="1835.png" width="263" height="204"></td>
+                                      <td>Mettre le texte en forme.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1836.png') }}" alt="1836.png" width="332" height="210"></td>
+                                      <td>Présenter un texte dans des blocs.</td></tr>
+                                  <tr><td><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1837.png') }}" alt="1837.png" width="335" height="199"></td>
+                                      <td>Formater les paragraphes.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1838.png') }}" alt="1838.png" width="116" height="53"></td>
+                                      <td>Ces deux commandes permettent d'<b>annuler </b>ou de <b>rétablir</b> une action.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1839.png') }}" alt="1839.png" width="153" height="48"></td>
+                                      <td>Changer la <b>couleur du texte</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1840.png') }}" alt="1840.png" width="169" height="55"></td>
+                                      <td>Ajouter une <b>liste à puces </b>ou une <b>liste hiérarchisée, </b>avec plusieurs choix de formats</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1841.png') }}" alt="1841.png" width="158" height="68"></td>
+                                      <td>Insérer ou diminuer un retrait.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1842.png') }}" alt="1842.png" width="201" height="44"></td>
+                                      <td>Insérer une <b>image</b> à partir d'une URL<sup>*</sup>, insérer une <b>vidéo</b>* en provenance d'Internet, un
+                                          <b>lien</b> ou un <b>caractère spécial</b>.</br>
+                                          <em><sup>*</sup>Pour insérer une image ou une vidéo personnelle, il faut l'inclure dans les ressources, puis l'ajouter
+                                              avec l'icône de ressources (cf. supra).</em></td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1843.png') }}" alt="1843.png" width="181" height="52"></td>
+                                      <td>Dans l'ordre:<b> imprimer</b> l'article, le <b>prévisualiser</b>, ou <b>afficher son code</b> <b>source</b>.</td></tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <h5>Le mode plein écran</h5>
+                          <p>Certains outils de mise en forme ne sont visibles qu'en mode plein écran. Une barre de menu s'ajoute alors aux icônes.</br>
+                              <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1844.png') }}" alt="1844.png" width="845" height="57" /></p>
+                          <div class="panel panel-info">
+                              <table class="table table-striped table-condensed table-responsive table-hover">
+                                  <thead>
+                                  <tr>
+                                      <th style="font-weight: bold; text-align: center">Blocs</th>
+                                      <th style="font-weight: bold; text-align: center">Description</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr><td><img src="{{ asset('uploads/custom/images/1849.png') }}" alt="1849.png" width="196" height="44"</td>
+                                      <td>Pour créer un nouveau document et/ou l'imprimer.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1851.png') }}" alt="1851.png" width="279" height="368"></td>
+                                      <td>Pour éditer le texte</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1853.png') }}" alt="1853.png" width="327" height="529"></td>
+                                      <td>Le menu <b>insérer</b> permet d'ajouter :</br>
+                                          <ul>
+                                              <li>une <b>vidéo</b></li>
+                                              <li>une<b> image</b></li>
+                                              <li>un<b> lien</b></li>
+                                              <li>des caractères spéciaux</li>
+                                              <li>une <b>ligne horizontale</b> servant de séparation entre des paragraphes</li>
+                                              <li>une <b>ancre</b> vers laquelle pointe un lien hypertexte. Concrètement, supposons qu'un mot en fin d'article soit
+                                                  sélectionné, puis désigné comme une ancre de nom "test". On peut alors ajouter dans l'article un lien vers cette ancre.
+                                                  Pour cela, on sélectionne le texte qui servira de lien, et on procède de la même façon que pour ajouter un lien hypertexte
+                                                  en cliquant sur "Insérer un lien", à la différence qu'on ne complétera pas le champ "Url", mais que
+                                                  l'on sélectionnera l'ancre dans le menu déroulant "Ancres".</li>
+                                              <li>un <b>saut de page</b> permettant d'améliorer la présentation de contenus denses</li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                  <tr><td><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1854.png') }}" alt="1854.png" width="283" height="243"></td>
+                                      <td>Pour afficher les blocs et caractères ou prévisualiser.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1855.png') }}" alt="1855.png" width="285" height="447"></td>
+                                      <td>Le menu <b>format</b> permet d'ajouter un exposant ou un indice à une valeur : pour cela, il suffit de sélectionner le
+                                          caractère, puis de cliquer sur <b>Exposant</b> ou <b>Indice</b> du menu déroulant.</td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1856.png') }}" alt="1856.png" width="259" height="330"></td>
+                                      <td>Le menu <b>Tableau </b>permet d'insérer un tableau dans l'article, et de le mettre en forme.</br>
+                                          Astuce : on peut utiliser un tableau aux bordures invisibles pour améliorer la mise en page (par exemple, pour aligner
+                                          un texte à côté d'une image).
+                                      </td></tr>
+                                  <tr><td><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1856.png') }}" alt="1856.png" width="214" height="103"></td>
+                                      <td>Cet outil permet d'afficher le <b>code source</b> de l'article.</td></tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <p><b>Attention :</b> L'éditeur de Claroline Connect n'est pas un logiciel de traitement de texte. La mise en page est limitée et obéit à certaines
+                              règles liées au HTML.</br>
+                              <b>Astuce :</b> Pour "passer à la ligne" sans générer de nouveau paragraphe (c'est-à-dire sans ajouter d'espace supplémentaire entre les lignes),
+                              vous pouvez utiliser la fonction <code>Maj+Entrée</code>.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/materialize.css') }}"
+          type="text/css"
+    />
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/materialize.min.js') }}"
+    >
+    </script>
+{% endblock %}

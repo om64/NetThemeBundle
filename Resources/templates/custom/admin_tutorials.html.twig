@@ -1,0 +1,458 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<div id="conteneur" class="container-fluid">
+    <div id="section-id-page" style="padding:15px">
+        <div class="container">
+            <h1 class="nom-de-page" style="padding-top:25px; color:whitesmoke; text-align: center">Documentation</h1>
+            <p class="page-location" style="padding-top:15px; font-weight: bold"><a href="bases"> Les bases | </a> <a href="learners_tutorials"> Le manuel des utilisateurs | </a> <a href="teachers_tutorials"> Le manuel des gestionnaires </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 style="text-align: center">Documentation des administrateurs</h2>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#intro">INTRODUCTION</a>
+                </h4>
+            </div>
+            <div id="intro" class="panel-collapse collapse in">
+                <div class="panel-body">La documentation vous est présentée sous la forme de panneaux ouvrants correspondant chacun à un
+                    sujet particulier. Cliquez sur les titres des panneaux pour ouvrir et fermer les chapitres.</br>
+                    La documentation destinée aux administrateurs ne reprend ni la documentation de l'utilisateur ni celle du gestionnaire,
+                    mais uniquement ce qui leur est spécifique, c'est-à-dire le paramétrage de la plateforme et la gestion du site web.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. PARAMETRER LA PLATEFORME</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row features" >
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Lorsqu'on est connecté avec le statut d'administrateur à la plateforme, l'onglet "<b>Administration</b>" apparaît en haut
+                                de page dans la barre de menu supérieure. Il permet d'accéder aux réglages de la plateforme.</br>
+                                <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2326.png') }}" alt="2326.png" width="751" height="284"></p>
+                            <h6>La barre d'outils d'administration</h6>
+                            <p>Lorsque l'espace d'administration est activé, la barre d'outils à gauche de la page est également disponible.</br>
+                                <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2327.png') }}" alt="2327.png" width="792" height="290" /></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>La barre latérale d'outils s'enrichit de plusieurs commandes.</p>
+                            <p style="text-align: center"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2695.png') }}" alt="2695.png" width="311" height="601" /></p>
+                        </div>
+                    </div>
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5>Aperçu de ce que vous pouvez réaliser en tant qu'administrateur.</h5>
+                            <div class="panel panel-default">
+                                <table class="table table-striped table-condensed table-responsive table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th style="font-weight: bold">Outils du menu</th>
+                                        <th style="font-weight: bold">Ce que les outils permettent</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><b>Paramètres de la plateforme</b></p></td>
+                                        <td>Accéder aux paramètres du panneau d'administration.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Gestion des utilisateurs</b></td>
+                                        <td>Ajouter des utilisateurs, gérer des groupes et des profils.</br>
+                                            Les utilisateurs peuvent être ajoutés par lots avec un fichier <em>csv</em>, ou individuellement.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Gestion des espaces d'activités</b></td>
+                                        <td>Créer, supprimer, modifier, rendre visible un espace d'activités, autoriser ou non l'inscription publique.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Inscription à des espaces d'activités</b></td>
+                                        <td>Inscrire des utilisateurs ou des groupes à des espaces d'activités. Il convient au préalable cocher l'espace d'activités
+                                            concerné pour rendre actifs les boutons "Inscrire des utilisateurs" ou "Inscrire des groupes".</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Paquets de la plateforme</b></td>
+                                        <td>Permet d'afficher les paquets du noyaux et des <em>plugins</em> installés. "<b>Actualiser"</b> permet de rechercher si
+                                            des versions plus récentes des paquets existent. Le numéro de la version du paquet est affiché en bleu près de son nom.
+                                            Si une version plus récente existe, elle est mentionnée dans un encadré en couleur rouge <b>"Mise à jour disponible"</b>.
+                                            Il conviendra alors de mettre à jour la plateforme.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Onglets de la page d'accueil</b></td>
+                                        <td>Permet de configurer la structure par défaut du bureau d'accueil de chaque membre (onglets, <em>widgets</em>).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Outils du bureau</b></td>
+                                        <td>Permet de renommer chaque élément de la barre d'outils pour personnaliser la plateforme selon ses besoins. Les termes à
+                                            personnaliser sont : <em>Accueil - Paramètres - Ressources - Agenda - Suivi - Tableau de bord - Utilisateurs - Badges -
+                                                Mes badges - Mes activités - Ma banque de questions - Parcours.</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Suivi de la plateforme</b></td>
+                                        <td>Indique le nombre d'actions par jour et la liste des actions (horodatées) effectuées par les utilisateurs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Statistiques de la plateforme</b></td>
+                                        <td>Il s'agit d'un outil statistique plus complet qui présente des <b>vues d'ensemble</b>:</br>
+                                            <ul>
+                                                <li>Un diagramme mesurant les activités des 30 derniers jours</li>
+                                                <li>Un diagramme circulaire présentant la répartition des membres par profils</li>
+                                                <li>Les contenus les plus consultés</li>
+                                            </ul>
+                                            L'onglet <b>"Audience"</b> propose un diagramme des visites des utilisateurs ;</br>
+                                            L'onglet <b>"Contenu de la plateforme" </b>présente un diagramme circulaire indiquant la répartition des ressources par type;</br>
+                                            Enfin, un onglet <b>"Top des activités"</b> permet de connaître les activités et ressources les plus consultées, mais aussi
+                                            les membres les plus actifs sur la plateforme.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Gestion des rôles</b></td>
+                                        <td>Permet de configurer:</br>
+                                            <ul>
+                                                <li>la <b>liste des rôles</b> : permet de créer un nouveau rôle et de définir un nombre limite d'utilisateurs par rôle.</li>
+                                                <li>la <b>gestion des outils</b> : Un tableau propose pour le profil "Utilisateur" et "Créateur d'espace" une liste d'outils
+                                                    à cocher.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Configuration des notifications</b></td>
+                                        <td>Permet de paramétrer les notifications par page et l'historique.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Gestion des badges</b></td>
+                                        <td>Créer des badges pour motiver les utilisateurs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Référentiel de compétences</b></td>
+                                        <td>Il s'agit de créer un référentiel de compétences.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Objectifs d'apprentissage</b></td>
+                                        <td>Permet de définir les objectifs d'apprentissage de chaque utilisateur. L'objectif d'apprentissage est un ensemble de
+                                            compétences.
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">1.1. Paramètres</a>
+                </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <p>En tant qu'administrateur, vous avez accès aux paramètres de votre plateforme.</p>
+                            <p><img src="{{ asset('uploads/custom/images/parametres.png') }}" alt="parametres.png" title="Paramètres de la plateforme"></p>
+                            <p>Voici un aperçu de ce que vous pouvez gérer.</p>
+                            <div class="panel panel-default">
+                                <table class="table table-striped table-condensed table-responsive table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th style="font-weight: bold">Outils du menu</th>
+                                        <th style="font-weight: bold">Ce que les outils permettent</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><b>Général</b></td>
+                                        <td>Définir les paramètres principaux de la plateforme : nom, description de la plateforme, courriel du support, rôle par défaut, langue par
+                                            défaut, durée d'activation des comptes et de la plateforme, l'auto-inscription des utilisateurs, activer ou désactiver les notifications
+                                            et le bouton d'aide (qui redirige vers ce manuel d'utilisation).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Apparence</b></td>
+                                        <td>Modifier le thème de la plateforme (couleurs, logo, pied de page, etc.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Conditions d'utilisation</b></td>
+                                        <td>Ajouter des conditions d'utilisation à valider lors de l'inscription.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Courriel du support</b></td>
+                                        <td>Paramétrer le courriel vers lequel les messages sont envoyés par la plateforme.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Référencement</b></td>
+                                        <td>Ajouter la balise HTML de validation Google qui permet le positionnement et la visibilité du site dans des pages de résultats
+                                            des moteurs de recherche.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Session</b></td>
+                                        <td>Définir le type de stockage et la durée de vie du cookie.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Oauth</b></td>
+                                        <td>Paramétrer les accès aux informations en provenance d'autres plateformes (Facebook par exemple).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Maintenance</b></td>
+                                        <td>Passer la plateforme en <b>mode maintenance</b>. Le passage en mode maintenance rend votre plateforme indisponible le temps d'effectuer
+                                            les travaux nécessaires (mises à jour, sauvegardes, etc). Toute tentative de connexion aboutira à un encadré indiquant que la
+                                            plateforme est momentanément indisponible. Il conviendra donc de prévenir les utilisateurs avant de procéder à une interruption des
+                                            services, de façon à éviter que des parcours ou exercices en cours d'exécution ne soient perdus. L'idéal est de prévoir un créneau
+                                            de maintenance régulier (par exemple hebdomadaire).</br>
+                                            Techniquement, le passage en mode maintenance génère un fichier nommé <em>.update</em> dans le répertoire <em>app/config/ </em>.<br>
+                                            <b>Pour sortir du mode maintenance, il faudra accéder au serveur au moyen d'un client ftp comme Filezilla, et supprimer ledit fichier.</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Gestion de jetons d'authentification</b></td>
+                                        <td>Vous pouvez créer un jeton d'authentification qui pourrait être utilisé, plus tard, par un développeur pour sécuriser
+                                            l'authentification de la plateforme pour une application tierce.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>i18n ou Gestion de langues</b></td>
+                                        <td>Permet de gérer les langues disponibles sur la plateforme.</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">2. ADMINISTRATION DU SITE WEB</a>
+                </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <p>Votre plateforme peut diffuser des informations à la manière d'un site internet classique. Pour éditer du contenu (menus, articles) et les
+                                mettre en page, vous devez être <b>administrateur</b> ou <b>gestionnaire d'accueil</b> et cliquer sur l'icône
+                                de <em>Claroline Connect </em>dans la barre de menu supérieure.</br>
+                                Vous accédez alors à la page d'<b>administration du contenu</b>.</br>
+                                Votre page d'accueil de votre plateforme apparaît <b>en mode édition</b>.</br>
+                                Vous pouvez la modifier et ajouter des articles.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2330.png') }}" alt="2330.png" width="717" height="339">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            La barre des outils à gauche permet :</br>
+                            <ul>
+                                <li style="list-style-type: disc"> de revenir à cette page d'accueil;</li>
+                                <li style="list-style-type: disc">de gérer les menus;</li>
+                                <li style="list-style-type: disc">de créer différentes pages qui peuvent contenir un ou plusieurs articles et/ou menus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">2.1. Créez des articles</a>
+                </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-6">
+                            <p>Pour créer un article, il suffit de mentionner un titre (facultatif), et de créer un contenu, c'est-à-dire de taper ou coller un texte dans
+                                l'emplacement prévu à cet effet, ou bien d'ajouter un lien s'il s'agit d'un contenu existant (contenus hébergés par <em>YouTube</em>,
+                                <em>Vimeo</em>, <em>Flickr</em>, <em>SlideShare</em>, etc).</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2331.png') }}" alt="2331.png"></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <p><b>Paramétrer l'article</b></p>
+                            <p>Pour paramétrer l'affichage de l'article, il suffit de cliquer sur la flèche vers le bas en haut à droite de l'encadré de l'article. Un menu
+                                déroulant offre alors plusieurs options.</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2332.png') }}" alt="2332.png"></p>
+                        </div>
+                    </div>
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-3">
+                            <p>L'outil <b>Taille</b> permet de définir la largeur occupée par l'article sur une page. Le fait de cliquer sur l'encadré avec les deux "6"
+                                permettrait par exemple de mettre deux articles de même largeur côte à côte.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2333.png') }}" alt="2333.png"></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <p>L'outil <b>éditer</b> permet de modifier ou de mettre en forme l'article.</br>
+                                L'outil <b>Accordéon</b> permet d'ajouter un bouton "Lire la suite" de façon à éviter d'avoir un article trop long sur la page. Seul le début de
+                                l'article est alors visible et il faut cliquer sur le bouton pour le dérouler.</br>
+                                L'outil <b>Déplacer</b> permet de choisir l'emplacement de l'article. Il peut apparaître (par défaut) sur la page d'accueil, mais aussi sur une
+                                page précise (cf. infra pour la création de pages). Si une ou plusieurs pages ont été créées, alors le fait de cliquer sur <b>"Déplacer"</b>
+                                propose un menu déroulant qui permet de choisir la page d'affectation de l'article.</br>
+                                L'outil <b>Supprimer</b> permet de supprimer un article.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">2.2. Créez des menus</a>
+                </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Pour <b>créer un menu</b>, cliquez sur l'icône "<b>Menus</b>" de la barre latérale d'outils située à gauche de la page.</p>
+                            <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2334.png') }}" alt="2334.png" width="306" height="202" /></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Entrez ensuite un titre à l'emplacement "<b>Titre du menu</b>", puis cliquez sur "Créer" dans la fenêtre centrale.</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2335.png') }}" alt="2335.png"></p>
+                        </div>
+                    </div>
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Votre nouveau menu est ajouté à la suite des autres.</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2337.png') }}" alt="2337.png"></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Vous pouvez désormais lui ajouter du contenu, c'est-à-dire des liens vers d'autres sites web ou vers les pages que vous allez créer sur votre
+                                plateforme ou qui y sont déjà présentes.</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2336.png') }}" alt="2336.png"></p>
+                            <p>Il vous faut alors:</br>
+                                - taper un <b>titre</b>;</br>
+                                - coller ou taper l'<b>URL</b> de la page concernée (l'adresse du lien);</br>
+                                - cliquer sur le bouton "<b>Créer</b>".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">2.2.1. Positionnez le menu sur la page</a>
+                </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Il est possible placer le menu :</br>
+                    <ul>
+                        <li>en entête</li>
+                        <li>à gauche</li>
+                        <li>à droite</li>
+                        <li>en pied de page</li>
+                    </ul></p>
+                    <p>1) Cliquez sur la flèche à côté du menu et ensuite sélectionnez "<b>zone</b>":</p>
+                    <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2367.png') }}" alt="2367.png" width="779" height="264"></p>
+                    <p>2) Choisissez la zone (par exemple "<b>entête</b>") :</p>
+                    <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2368.png') }}" alt="2368.png"></p>
+                    <p>Le menu apparaîtra en haut de la page:</p>
+                    <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2371.png') }}" alt="2371.png"></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default" style="margin-bottom: 15px">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">2.3. Créez des pages</a>
+                </h4>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row features">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <p>Une page peut contenir plusieurs articles et être ajoutée comme entrée dans un menu.</p>
+                            <p><b>1) Ajoutez une nouvelle page</b></br>
+                                Pour créer une page, cliquez sur l'icône suivante de la barre d'outils:</p>
+                            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2372.png') }}" alt="2372.png" width="309" height="211" /></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+                            <p>Les pages de contenu apparaissent alors:</p>
+                            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2373.png') }}" alt="2373.png"></p>
+                            <p>Dans l'exemple ci-dessus, une page "Claroline Connect" a été créée. Pour ajouter une nouvelle page, tapez un titre dans
+                                le champ indiquant "<b>Nouvelle page de contenu &hellip;</b>", puis cliquez sur <b>Créer</b>.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <p>En cliquant sur le titre de la page (ici, Claroline Connect), vous ouvrez cette page en mode édition et vous pouvez:</br>
+                            <ul>
+                                <li><b>ajouter des articles </b>à la page ou <b>modifier</b> (éditer) les articles existants;</li>
+                                <li>définir leur <b>taille</b> (largeur);</li>
+                                <li>définir la <b>zone</b> (comme les menus : en-tête, pied de page, etc);</li>
+                                <li>ajouter un "Lire la suite" en cliquant sur "<b>Accordéon</b>";</li>
+                                <li><b>déplacer</b> un article vers une autre page;</li>
+                                <li><b>effacer</b> un article.</li>
+                            </ul>
+                            <p><b>2) Comment ajouter une page comme entrée d'un menu ?</b></br>
+                                Si vous ne créez pas de nouvelle page, vous n'aurez qu'une page d'accueil (home) qui affichera les différents articles
+                                et menus contenant des liens externes.</br>
+                                Pour ajouter une page contenant un ou plusieurs articles à l'un des menus, vous devez connaître son adresse (URL).
+                                Vous avez en effet remarqué que l'ajout d'entrée aux menus se faisait par la commande "Ajouter un lien". Mais où trouver
+                                l'adresse d'une page ? Il vous suffit de cliquer sur le nom de la page depuis "Pages de contenu" (cf. image précédente).
+                                La page concernée s'affiche alors. Vous pouvez récupérer l'URL dans la barre d'adresse du navigateur. Mais il n'est pas
+                                utile de tout recopier lorsque vous ajoutez un lien au menu. Vous pouvez vous contenter de coller le texte à partir de
+                                <b><em>"type"</em></b> (voir texte en bleu ci-dessous):</br>
+                                <em>.../claroline-connect/web/app.php/type/<b><span style="color: #003366">Claroline%20Connect</span></b></em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+<div id="scroll-to-top">
+    <span>
+        <i class="fa fa-arrow-up"></i>
+    </span>
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/materialize.css') }}"
+          type="text/css"
+    />
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/materialize.min.js') }}"
+    >
+    </script>
+{% endblock %}
+

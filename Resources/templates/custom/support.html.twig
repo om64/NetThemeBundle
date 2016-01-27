@@ -1,0 +1,101 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<!-- NOM DE LA PAGE-->
+
+<div id="section-id-page">
+    <div class="parallax-style section-id-page">
+        <div class="pattern">
+            <div class="container">
+                <p class="nom-de-page" style="padding-top:30px">
+                    Support
+                </p>
+                <p class="page-location" style="padding-top:20px"><a href="accueil">Accueil </a> Support</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FIN NOM DE LA PAGE -->
+
+<div id="conteneur">
+    <div class="row">
+        <div class="col-md-12">
+            <section id="about">
+                <div class="white-bg about-us-section" style="margin: 10px 0 10px 0">
+                    <div class="sec-head-container">
+                        <div class="sec-head-style">
+                            <h3 class="section-title wow bounceInDown">Support communautaire</h3>
+                            <div class="section-description">Forum de support</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
+            <p><img src="{{ asset('uploads/custom/images/Logo_Claroline.jpg') }}" width="80%"></p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>Si vous avez besoin d'aide, un forum est à votre disposition pour répondre à vos questions. Nous y répondrons de notre mieux dans les meilleurs délais.
+            Cependant, nous ne disposons pas des ressources humaines pour répondre aussi rapidement que nous le souhaiterions. N'hésitez donc pas à partager votre
+            savoir également.</p>
+            <p style="text-align: center"><a href="http://www.claroline.net/forum/11/category" target="blank"><strong>Forum de support</strong></a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <section id="about">
+                <div class="white-bg about-us-section" style="margin: 10px 0 10px 0">
+                    <div class="sec-head-container">
+                        <div class="sec-head-style">
+                            <h3 class="section-title wow bounceInDown">Support professionnel</h3>
+                            <div class="section-description">Via Forma-Libre SA</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-offset-1 col-md-10">
+            <p>La société de services Forma-Libre a été créée le 5 mars 2015 pour offrir des services professionnels sur mesure autour de Claroline Connect.</p>
+            <p>Claroline Connect reste évidemment un logiciel libre téléchargeable gratuitement, mais face aux demandes croissantes de services personnalisés, la nécessité de
+            proposer des services professionnels s'est imposée. La création de Forma-Libre permet de soulager le Consortium Claroline des demandes qui la détournaient de ses
+            missions fondamentales: promouvoir Claroline Connect et coordonner les efforts, notamment en matière de développement, des membres de la communauté.</p>
+            <p>Besoin d'un support professionnel avec des délais de réponse garantis et une accessibilité jusqu'à 24h sur 24, 7 jours sur 7? Forma-Libre peut vous le fournir.</p>
+            Pour plus d'informations, consultez <a href="http://www.claroline.com" target="blank">claroline.com</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="scroll-to-top">
+    <span>
+        <i class="fa fa-arrow-up"></i>
+    </span>
+</div>
+
+    <!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+    <div id="scroll-to-top">
+			<span>
+				<i class="fa fa-arrow-up"></i>
+			</span>
+    </div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+
+{% endblock %}

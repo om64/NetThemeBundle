@@ -1,0 +1,1025 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+<div id="conteneur" class="container-fluid">
+    <div id="section-id-page" style="padding:15px">
+        <div class="container">
+            <h1 class="nom-de-page" style="padding-top:25px; color:whitesmoke; text-align: center">Documentation</h1>
+            <p class="page-location" style="padding-top:15px; font-weight: bold"><a href="bases"> Les bases | </a> <a href="teachers_tutorials"> Le manuel des gestionnaires | <a href="admin_tutorials">  Le manuel des administrateurs</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <h2 style="text-align: center"> Documentation des utilisateurs/apprenants </h2>
+  <div class="panel-group">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#intro">INTRODUCTION</a>
+            </h4>
+        </div>
+        <div id="intro" class="panel-collapse collapse in">
+            <div class="panel-body">La documentation vous est présentée sous la forme de panneaux ouvrants correspondant chacun à un chapitre. Cliquez sur les titres des panneaux pour ouvrir et fermer les chapitres.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. LE BUREAU</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+                            <p>Lorsque vous vous connectez à la plateforme, vous ouvrez automatiquement votre bureau personnel 
+                                (= l'accueil). Vous pouvez, comme chaque
+                                utilisateur, personnaliser votre bureau et y organiser votre travail. Vous pouvez revenir à tout moment 
+                                à ce bureau en cliquant sur l'icône de la maison <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1401.png') }}" alt="1401.png" width="33" height="37"> dans
+                                la<b> barre de menu supérieure.</b></br>
+                                Le bureau vous permet <b>d'agréger les informations de la plateforme</b> à l'aide des onglets et 
+                                widgets<sup>[1] </sup>d'<b>épingler les onglets</b> des pages d'accueil et<b> d'afficher les 
+                                annonces</b> des différents espaces d'activités auxquels vous êtes inscrit. Il vous donne aussi la 
+                                possibilité d'<b>afficher l'agenda</b>, les discussions des <b>forums</b> auxquels vous êtes inscrits, 
+                                le fil de <b>twitter</b>, les<b> rss</b> des blogs, etc.</br>
+                                Il donne <b>accès aux outils</b>, <b>espaces d'activités</b> et à toutes <b>les ressources</b> personnelles ou issues des espaces d'activités
+                                auxquels l'utilisateur est inscrit.</br></br>
+                                <sup>[1]</sup><em> De façon générale, un widget est une petite application que l'on ajoute sur le bureau de son ordinateur et qui affiche
+                                certaines informations (météo, notifications de messages, etc.). Netvibes s'est par exemple rendu célèbre avec une page Internet de démarrage
+                                incluant des widgets à la carte.</em></br>
+                                <em>Pour ce qui nous concerne, les widgets s'ajoutent sur les pages d'accueil des espaces d'activités, et proposent des informations en
+                                relation avec les ressources et activités de la plateforme.</em></p>
+                                <p>On sait que l'on est sur le bureau personnel grâce à <b>l'absence du menu</b> <b>de gauche</b>,
+                                qui caractérise les espaces d'activités.</br>
+                                Il est également possible de personnaliser la couleur du fond du bureau pour le différencier
+                                des espace d'activités <em>(Consultez le point suivant "Personnalisez votre bureau)</em><br/>
+                                <b>Comparez</b> ci-dessous la page d'accueil du <b>bureau</b> et la page d'accueil d'un <b>espace 
+                                    d'activités.</b></br>
+                                <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1779.png') }}" title="Pages d'accueil" alt="1779.png" width="861" height="301" /></p>
+                            <h6><em>Figure 12: Barre d'outils du bureau (bandeau supérieur) et barre d'outils d'un espace d'activités 
+                                    (menu de gauche et bandeau supérieur)</em></h6>
+                            <p>Le bureau personnel est composé:
+                            <ul>
+                                <li>d'une page d'accueil</li>
+                                <li>d'un gestionnaire de ressources</li>
+                            </ul></br>
+                            <h4><span style="color: #003366;"><b>Page d'accueil</b></span></h4></br>
+                            <p>La page d'accueil du bureau peut être configurée par l'administrateur de la plateforme et par l'utilisateur à l'aide d'onglets et de widgets.</br>
+                            <ul>
+                                <li><b>L'administrateur de la plateforme</b> peut <b>prédéfinir</b> des onglets et des widgets<sup>[1]</sup> pour
+                                    le bureau.</li>
+                                <li>L'utilisateur peut ajouter des onglets et des widgets selon ses besoins. (Voir: Gestions des onglets et widgets)</li>
+                            </ul></br>
+                            <sup>[1]</sup> De façon générale, un <em>widget</em> est une petite application que l'on ajoute sur le bureau de
+                                son ordinateur et qui affiche certaines informations (météo, notifications de messages, etc.). <em>Netvibes</em> s'est par exemple rendu
+                                célèbre avec une page Internet de démarrage incluant des <em>widgets</em> à la carte.</br>
+                                Pour ce qui nous concerne, les <em>widgets</em> s'ajoutent sur les pages d'accueil des espaces d'activités, et proposent des informations en
+                                relation avec les ressources et activités de la plateforme.</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1780.png') }}" alt="1780.png" width="818" height="367"></p>
+                            <h6 style="text-align: center;"><em>Figure 13: page d'accueil du bureau. Elle est composée par des onglets et des widgets.</em></h6>
+                            <h4><span style="color: #003366;"><b>Gestionnaire de ressources</b></span></h4>
+                            <p>Le <b>bureau</b>, comme chaque espace d'activités, est attaché à un répertoire de ressources. A partir du bureau, l'utilisateur peut accéder
+                                à tous les répertoires de tous les espaces d'activités auxquels il est lié.</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1781.png') }}" alt="1781.png" width="872" height="298"></p>
+                 </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">1.1. Personnalisez votre bureau</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">                    <p>Vous pouvez personnaliser votre bureau à l'aide de l'outil <b>"Préférences"</b>
+                        <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1782.png') }}" alt="1782.png" title="Outil préférences"></p>
+                    <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/outil_preferences.png') }}"
+                       alt="outil préférences.PNG" width="878" height="279"></br>
+                    <h6 style="text-align: center"><em>Figure 14: L'outil <b>"Préférences"</b> permet de configurer la "barre de menu" supérieure, le "menu utilisateur" et
+                            les paramètres du bureau.</em></h6></p>
+                    <p>Configuration de la barre de menu du bandeau supérieur.</br>
+                        Vous pouvez <b>modifier votre menu supérieur</b> en configurant la barre de menu. Ajoutez ou retirez des icônes du menu du bandeau supérieur en
+                        cochant ou en décochant les cases des outils.</p>
+                    <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1784.png') }}" title="Configurez le menu supérieur" alt="1784.png" width="811" height="366"></br>
+                    <h6 style="text-align: center"><em>Figure 15: Liste des outils de la barre de menu du bureau. Il est possible de les rendre visibles en fonction des
+                            besoins de l'utilisateur.</em></h6>
+                    <p><b>Comparez les deux menus.</b></p>
+                    <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1785.png') }}" title="Comparaison de menus" alt="1785.png" width="783" height="361" /></p>
+                    <p><b>Configuration du menu utilisateur (menu du profil)</b></br>
+                        Vous pouvez <b>modifier votre menu utilisateur</b> (profil utilisateur). Il vous est loisible d'ajouter ou de retirer des outils en les cochant
+                        ou en les décochant de la liste proposée.</br>
+                    <h6 style="text-align: center" <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1786.png') }}" alt="1786.png" width="829" height="351" /></br>
+                    <h6 style="text-align: center"><em>Figure 16: Liste des outils du "menu utilisateur" </em></h6>
+                    <p><b>Comparez les trois exemples ci dessous.</b></p>
+                    <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1787.png') }}" alt="1787.png" width="708" height="420"></br>
+                    <h6 style="text-align: center"><em>Figure 17: Trois exemples du menu utilisateur.</em></h6>
+                    <p><b>Paramètres du bureau: modifiez la couleur de fond de votre bureau.</b></br>
+                        Il est possible de <b>modifier la couleur de votre bureau</b> . Cela vous permettra de l'identifier plus 
+                        rapidement et de le différencier ainsi des espaces d'activités.</p>
+                    <p>Pour faire cela, cliquez sur le champ "<b>couleur de fond du bureau</b>" et choisissez la couleur en positionnant 
+                        la souris sur la couleur souhaitée comme dans l'exemple ci-dessous.</p>
+                    <h6 style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1788.png') }}" alt="1788.png" width="865" height="340" /></br>
+                        <em>Figure 18: Couleur de fond du bureau originale.</em></br>
+                        <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1789.png') }}" alt="1789.png" width="914" height="445"></br>
+                        <em>Figure 19: Modification de la couleur de fond du bureau.</em></h6>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">2. VOS ESPACES D'ACTIVITES</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>Un espace d'activités est systématiquement constitué :
+            <ul>
+                <li><b>de ressources</b> pédagogiques (exercices, cours, sondages, dépôt de fichiers, 
+                    parcours d'activités, évaluations par les pairs,...) et d'outils de communication 
+                    (blogs, forums, notifications, annonces, agenda,...)</li>
+                <li>d'<b>outils</b> <b>de gestion</b> pour paramétrer l'espace, inscrire des utilisateurs, 
+                    créer des ressources et des activités, obtenir des suivis et des statistiques, créer 
+                    des badges, mettre en place des parcours et des référentiels de compétences, etc.</li>
+                <li>de <b>widgets</b></li>
+            </ul>
+            <p>On retrouve tous ces éléments à partir de la barre d'outils.</br>
+            Claroline Connect propose <b>deux types d'espace d'activités:</b></br>
+                <ul>
+                    <li>un <b>espace personnel</b> pour chaque utilisateur dont il est son gestionnaire.</li>
+                    <li>des <b>espaces d'activités (public)</b> auxquels l'utilisateur peut s'inscrire.</li>
+                </ul></br>
+                Chaque espace d'activités se compose de<b> 2 éléments:</b></br></br>
+                <ul>
+                    <li>la page d'accueil qui représente</b> sa page principale et qui renseigne son contenu;
+                    et structure.</li>
+                    <li>le gestionnaire de ressources</b> qui est la zone de dépôt ou de création des 
+                        ressources (fichiers, forums, exercices...) de l'espace d'activités.</li>
+                </ul>
+        </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">2.1. Accédez à des espaces d'activités</a>
+              </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Il est possible d'accéder aux espaces d'activités publics, ou à ceux auxquels l'utilisateur est inscrit,
+                      à partir de <b>l'icône</b> <b>"espaces d'activités" </b>qui se trouve en haut à droite de la page d'accueil
+                      et qui va vous permettre également de créer des espaces d'activités (si vous en avez le droit).</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1790.png') }}" alt="1790.png" width="734" height="310" /></p>
+                  <p>Il est possible d'accéder également aux espaces d'activités à partir <b>de la page d'accueil du bureau. </b>
+                      Pour faire cela, il est nécessaire que l'utilisateur ou l'administrateur de la plateforme ajoutent le widget
+                      "<b>Mes espaces d'activités</b>".<em><b>
+                              ( 4- Voir gestion de la page d'accueil de son espace et/ou de son bureau personnel )</b> </em></p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1791.png') }}" alt="1791.png" width="788" height="227"></br>
+                  <h6><em>Figure 20: Liste des espaces d'activités dans la page d'accueil du bureau. Il est possible de les afficher à partir du widget
+                          "Mes espaces d'activités"</em></h6>
+                  <p>Quand vous êtes dans un espace d'activités, <b>l'icône "Espace d'activités" prend le nom de l'espace en question.</b></br>
+                      <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1792.png') }}" alt="1792.png" width="578" height="169"></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">2.2. Inscrivez-vous à des espaces d'activités</a>
+              </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Pour vous inscrire à un espace d'activités, il y a deux possibilités:</br>
+                  <ul>
+                      <li><b>être inscrit</b> par le gestionnaire de l'espace d'activités à son initiative ou à votre demande. En tant qu'utilisateur, vous revevez
+                          notification d'inscription.</li>
+                      <li>si le gestionnaire de l'espace d'activités le permet, vous pouvez vous <b>inscrire librement</b> en cliquant sur l'icône
+                          "<b>Espaces d'activités </b>" de la barre de propriétés, puis sur l'option "<b>Tous les espaces d'activités publics</b>".</li>
+                  </ul>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1793.png') }}" alt="1793.png" width="839" height="422" /></p>
+                  <p>La <b>liste des espaces publics</b> est alors <b>affichée</b>. Mais cela ne signifie pas pour autant qu'il soit possible de s'inscrire à chacun
+                      de ces espaces.</br>
+                      Les espaces auxquels le membre est <b>déjà inscrit</b> apparaissent en <b>noir</b>, alors que ceux auxquels il n'est <b>pas encore inscrit</b> sont
+                      <b>grisés</b> .</br>
+                      Il faut alors cliquer sur le bouton "<b>M'inscrire à un espace</b>" pour qu'apparaisse le <b>bouton d'inscription</b> de tous les espaces
+                      qui autorisent cette opération.</br>
+                      Cliquez sur l'onglet "<b>M'inscrire à un espace</b>" pour obtenir tous les espaces d'activités disponibles et vous inscrire à un ou plusieurs en
+                      particulier.</br>
+                      Ensuite cliquez sur le bouton <b>+Inscription</b></br>
+                      <b><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1794.png') }}" alt="1794.png" width="816" height="336" /></b></br>
+                      La mention "<b>inscrit</b>" est affichée sur l'espace concerné.</br>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1795.png') }}" alt="1795.png" /></br>
+                      Selon le choix du créateur de l'espace concerné, l'inscription (et l'accès aux ressources et activités) peut être directe, ou bien soumise à son
+                      approbation. Dans ce cas, il faudra attendre que ce dernier valide l'inscription avant de pouvoir accéder aux ressources. La mention "<b>En attente</b>"
+                      est alors affichée sur l'espace concerné :</br>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1796.png') }}" alt="1796.png"></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">2.3. Désinscrivez-vous d'espaces d'activités</a>
+              </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Cette possibilité doit avoir été acceptée par le créateur de l'espace d'activités. Si ce dernier n'a pas autorisé la "<b>désinscription publique</b>"
+                      au moment de la création de l'espace, il ne sera pas possible pour un collaborateur de se désinscrire.</br>
+                      Toujours à partir de <b>l'icône "Espaces d'activités"</b> du bandeau supérieur, cliquez cette fois sur "<b>Mes espaces d'activités</b>" pour vous désinscrire d'un espace.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1797.png') }}" alt="1797.png" width="436" height="241" /></p>
+                  <p>Quanq vous cliquez sur "<b>Me désinscrire d'un espace d'activités</b>", les espaces qui autorisent la désinscription apparaissent.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1798.png') }}" alt="1798.png" width="636" height="242" /></p>
+                  <p><b>Choisissez</b> ensuite l'espace duquel vous souhaitez vous désinscrire.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1800.png') }}" alt="1800.png" width="789" height="124" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">2.4. Gérez vos espaces d'activités</a>
+              </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>La commande "<b>Mes espaces d'activités</b>" du menu supérieur permet de gérer ses espaces.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1797.png') }}" alt="1797.png" width="357" height="197" /></p>
+                  <p>1. Pour classer les espaces vous devez créer une catégorie une fois que vous avez cliqué sur "<b>Classer mes espaces</b>",</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1801.png') }}" alt="1801.png" width="696" height="266" /></p>
+                  <p>2. Cliquez sur "<b>Organiser les catégories</b>",</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1802.png') }}" alt="1802.png" width="840" height="248" /></p>
+                  <p>3. Cliquez ensuite sur <b>créer une catégorie</b>:</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1803.png') }}" alt="1803.png" width="596" height="259" /></p>
+                  <p>4. Nommez-la.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1804.png') }}" alt="1804.png" width="440" height="248" /></p>
+                  <p>5. La catégorie "<b>Aide</b>" a été créé:</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1805.png') }}" alt="1805.png" width="586" height="327" /></p>
+                  <p>6. En cliquant sur le <b>nom de la catégorie</b>, un menu se déroule vous permettant de renommer ou supprimer la catégorie, de créer ou
+                      d'ajouter une sous catégorie.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1806.png') }}" alt="1806.png" width="411" height="324"></p>
+                  <p>7. Il est important tenir compte des <b>instructions</b> suivantes :</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1807.png') }}" alt="1807.png" width="556" height="86"></p>
+                  <p>8. Pour revenir en arrière utilisez le fil<b> d'ariane:;</b></p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1809.png') }}" alt="1809.png"></p>
+                  <p>9. Pour ajouter ensuite un espace d'activités à cette catégorie, il suffit de le <b>sélectionner</b> dans la liste en le cochant :</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1810.png') }}" alt="1810.png"></p>
+                  <p>10. Il reste à cliquer sur "<b>Classer par catégories</b>" pour l'ajouter à une catégorie existante en sélectionnant cette
+                      dernière dans la liste à puces de la fenêtre qui apparaît. (Dans l'exemple qui suit, il n'y a qu'une seule catégorie intitulée Aide).</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1811.png') }}" alt="1811.png" width="1032" height="477"></p>
+                  <p>11. Une <b>étiquette</b> est alors ajoutée à l'espace d'activités dans la colonne "<b>Catégories</b>" :</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1812.png') }}" alt="1812.png" width="800" height="297"></p>
+                  <p>12.Cette catégorie appara&icirc;t ensuite dans "<b>Mes espaces d'activités</b>" :</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1814.png') }}" alt="1814.png" width="618" height="414"></p>
+                  <p>Il suffit alors de <b>cliquer sur le nom de la catégorie</b> pour dérouler son contenu.</p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">2.5. Ajoutez un espace d'activités à vos favoris</a>
+              </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Ajouter un espace à ses <b>favoris</b> : c'est possible en cliquant sur l'étoile jaune qui s'affiche en face du nom de chaque espace :
+                      cette dernière devient alors pleine. C'est le cas du troisième espace d'activités sur l'illustration ci-dessous.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1815.png') }}" alt="1815.png" width="670" height="250" /></p>
+                  <p>Si vous avez ajouté un widget <b>"Mes espaces d'activités</b>" sur votre bureau personnel, désormais, un bouton "<b>
+                          Mes espaces d'activités favoris</b>" vous permet d'accéder directement à <b>vos favoris</b> :</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1817.png') }}" alt="1817.png" width="658" height="290" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">3. VOTRE ESPACE PERSONNEL</a>
+              </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Dès votre première connexion, vous disposez d'au moins un espace d'activités :<b> votre espace personnel </b>(privé et/ou partagé) dont vous êtes le
+                      gestionnaire unique.</br>
+                      Cet espace vous permet de construire votre propre environnement d'apprentissage, d'organiser vos ressources, de les partager, de les publier.
+                      En tant qu'apprenant, vous avez un rôle actif dans votre apprentissage.
+                      Votre espace personnel vous permet de:</br>
+                  <ul>
+                      <li>stocker et de gérer vos propres ressources et de les partager</li>
+                      <li>vous approprier les activités réalisées et les ressources manipulées</li>
+                      <li>interagir et communiquer avec les autres</li>
+                      <li>gérer votre apprentissage</li>
+                      <li>créer des activités et des ressources en fonction de vos objectifs</li>
+                  </ul>
+                  <p>Cet espace se base sur le concept d'environnement personnel d'apprentissage: un <b><em>ensemble d'outils et de
+                              méthodes à disposition de l'apprenant lui permettant de réussir ses objectifs d'apprentissage.
+                              <b><sup>[1]</b></sup></em></b></br>
+                      La structure de la page d'accueil est comparable à celle du bureau personnel avec des onglets contenant des
+                      widgets.</br>
+                      L'espace d'activités est composé:</br>
+                  <ul>
+                      <li>d'une page d'accueil</li>
+                      <li>d'un gestionnaire de ressources</li>
+                  </ul>
+                  <p><sup>[1]</sup> Marc Dennery, "Bâtir son environnement d'apprentissage personnel : la première des formations".
+                      <a href="http://www.blog-formation-entreprise.fr/?p=2177" target="blank">http://www.blog-formation-entreprise.fr/?p=2177</a></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">3.1. La page d'accueil de votre espace personnel</a>
+              </h4>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Vous pouvez personnaliser votre page d'accueil à l'aide des <b>onglets</b> et des <b>widgets</b>.</br>
+                      Vous savez que vous êtes sur votre espace personnel grâce à:</p>
+                  <ul>
+                      <li>l'indication du <b>fil d'Ariane<sup>[1]</sup> </b>(qui indique: Mes espaces d'activités / Espace personnel / Accueil).</li>
+                      <li>La <b>barre de menu située à gauche</b>.</li>
+                  </ul>
+                  <p><sup>[1]</sup> Il s'agit d'une succession de liens qui vous permet de vous situer dans le niveau de profondeur d'une arborescence, et de naviguer
+                      pour revenir à l'un des niveaux affichés.</br>
+                      <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1862.png') }}" alt="1862.png"></br>
+                      <b>a) La barre du menu de gauche.</b></br>
+                      En passant la souris sur la barre de menu de gauche, vous déploiyez une fenêtre avec les références des outils.</p>
+                  <p><b><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1863.png') }}" alt="1863.png"></b></p>
+                  <ul>
+                      <li><b><b>Voir en tant que <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1864.png') }}" alt="1864.png"></b></b>permet d'avoir un
+                          aperçu de l'espace d'activités tel que le voit un collaborateur (étudiant) ou un gestionnaire (enseignant ou le propriétaire de l'espace). Dès
+                          lors que l'on explore son espace d'activités en tant que collaborateur ou gestionnaire, l'en-tête de la page passe en couleur orange et indique
+                          "<em>Vous êtes connecté en tant que &hellip; du workspace &hellip;</em>".</li>
+                  </ul></br>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1865.png') }}" alt="1865.png"></br>
+                      Pour désactiver ce mode, il suffit de cliquer sur la <b>croix </b>en haut à droite du bandeau orange.</p>
+                  <p><ul>
+                      <li><b>Accueil <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1866.png') }}" alt="1866.png"> </b> permet de revenir à la page
+                          d'accueil de son espace personnel (qui est distincte de celle du bureau d'accueil, rappelons-le).</li>
+                  </ul>
+                  <ul>
+                      <li><b>Ressources</b> <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1867.png') }}" alt="1867.png"> ouvre le répertoire de ressources
+                          personnelles uniquement. Pour accéder à toutes les ressources simultanément, on ouvrira le répertoire de ressources du bureau personnel. Dès lors,
+                          on peut <b>ajouter de nouvelles ressources</b> (fichier, répertoire, texte, raccourcis, activité, ressource web, page wiki, annonces, forum,
+                          scorm, sondage, blog, cours, évaluation, exercice, parcours, Sondage, Site web) et les <b>organiser</b> ( ajouter, couper, copier, coller,
+                          supprimer, télécharger, zoomer) (Voir: Organiser ses ressources)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Paramètres <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1868.png') }}" alt="1868.png"> </b> permet de paramétrer son espace
+                          personnel (Voir: 3.2. Paramétrer son espace personnel)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Agenda <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1869.png') }}" alt="1869.png"> </b> permet de gérer l'agenda de l'espace
+                          d'activités concerné. Il se gère comme l'agenda du bureau personnel. (Voir: Gestion de l'agenda)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Suivi <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1870.png') }}" alt="1870.png"> </b> affiche le nombre d'actions par jour et la
+                          liste des actions par date et par utilisateur d'un espace d'activités particulier.( Voir suivi des utilisateurs)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Tableau de bord </b> <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1871.png') }}" alt="1871.png"> <b>;</b>est un autre outil statistique
+                          qui mesure la fréquentation des ressources et activités. (Voir suivi des utilisateurs)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Utilisateurs <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1872.png') }}" alt="1872.png"> </b> permet de gérer efficacement les
+                          utilisateurs d'un espace d'activités. (Voir: Gestion des utilisateur de l'espace personnel)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Badges<img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1873.png') }}" alt="1873.png"> </b> permet d'afficher la liste des badges de
+                          l'espace, et d'ajouter un badge. (Voir: Créer des badges)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Mes badges</b> <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1873.png') }}" alt="1873.png"> permet d'afficher les badges qu'on a
+                          obtenus dans l'espace. (Voir: Gestion de mes badges)</li>
+                  </ul>
+                  <ul>
+                      <li><b>Mes activités</b> <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1874.png') }}" alt="1874.png"> affiche les parcours et
+                          exercices effectués ou à effectuer. (voir: créer et gérer un parcours)</li>
+                      <li><b>Equipe <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1876.png') }}" alt="1876.png"></b> permet de créer des équipes au sein de
+                          l'espace d'activités. (Voir créer et gérer des équipes)</li>
+                  </ul></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">3.2. Paramétrez votre espace personnel</a>
+              </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <div class="row features">
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <p>Cliquez sur l'icône <b>"paramètres"</b> du menu du gauche de votre espace personnel. Il se décompose en
+                                <b>4 éléments</b> :</br>
+                                <ul>
+                                    <li><b>Général</b></li>
+                                    <li><b>Outils</b></li>
+                                    <li><b>Modèles</b></li>
+                                    <li><b>Ressources<br /></b></li>
+                                </ul></p>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-8">
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1877.png') }}" alt="1877.png"></p>
+                        </div>
+                    </div>
+                    <div class="row features">
+                        <div class="col-sm-12">
+                            <h5>a. Paramétrage Général de l'espace personnel</h5>
+                            <p>Il permet de modifier les informations recueillies au moment de la création de l'espace
+                            d'activités (nom, description, modalités d'inscription, etc.) Il est par exemple
+                            possible de transformer un espace privé <b>en espace public</b>, ou de générer un lien
+                            permettant l'inscription publique à l'espace d'activités.</br>
+                            <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1878.png') }}" alt="1878.png"></br>
+                            <ul>
+                            <li><b>Rendre votre espace personnel public - Inscription publique</b></li>
+                            </ul></p>
+                            <p>Il est par exemple possible de transformer un espace privé <b>en espace public</b> ou de
+                                générer un lien permettant l'inscription publique à l'espace d'activités. Pour ce faire, il faut cocher
+                                la case "<b>inscription publique</b>".</br>
+                            Lorsque vous cochez la case "Inscription publique", un <b>lien d'inscription est généré.</b></br>
+                            <b>Inscriptions des anonymes (ceux qui ne sont pas inscrits à la plateforme) </b></br>
+                            Vous donnerez le lien généré aux internautes pour s'inscrire à votre espace ainsi qu'à la plateforme.</br>
+                            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1879.png') }}" alt="1879.png"></p>
+                            <p>Lors de l'inscription publique, l'anonyme accédera directement au formulaire d'inscription à la
+                                plateforme.</p>
+                            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1880.png') }}" alt="1880.png"></p>
+                            <p>Une fois que le formulaire est rempli le nouveau utilisateur accédera directement à votre espace
+                                personnel.</p>
+                            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1881.png') }}" alt="1881.png"></p>
+                            <h5>b. Configurez les droits des outils:</h5>
+                            <p>Il permet de configurer le droits des différents profils (Collaborateur, Anonyme, Utilisateur) sur les
+                                différents outils (Accueil, Ressource, Paramètres, Agenda, Suivi, Tableau de bord, Utilisateurs,
+                                Badges, Mes badges, Mes activités, Parcours). (Voir les profils de Claroline Connect)</p>
+                            <p>Cela permet par exemple de rendre un contenu accessible à tous les anonymes, y compris ceux qui ne sont pas
+                                identifiés ou inscrits.</p>
+                            <p>Comme expliqué dans les références:</p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1882.png') }}" alt="1882.png"></p>
+                            <p><span style="color: #ff0000">Pour plus d'information consultez: gestion des droits.</span></p>
+                            <p><span style="color: #333333">Dans l'exemple ci dessous, seulement <b>l'accueil</b> et les <b>Ressources</b> sont
+                                    visibles par le profil "<b>Collaborateur</b> " et il ne peut rien éditer/modifier. En revanche, les
+                                    profils "Anonyme" et "Utilisateur" n'ont aucune permission. </span></p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1883.png') }}" alt="1883.png"></p>
+                            <ul>
+                            <li><b>Renommez les outils du menu de votre espace personnel.</b></li>
+                            </ul>
+                            <p>Il est possible renommer chaque outil en cliquant sur le crayon bleu: <img style="max-width: 100%;"
+                                src="{{ asset('uploads/custom/images/1884.png') }}" alt="1884.png" width="192" height="44"></p>
+                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1886.png') }}" alt="1886.png" width="608" height="212" /></p>
+                            <h5>c. Créez un modèle d'espace d'activités (Créateur d'espaces d'activités)</h5>
+                            <p>Pour ceux qui ont le droit de créer des espaces d'activités, cet outil permet de créer
+                                un modèle d'espace d'activités comportant des ressources, onglets et <em>widgets</em>
+                                par défaut. <span style="color: #ff0000;">(Voir créer des modèles )</span></p>
+                            <h5>d. Gérez l'accès aux ressources</h5>
+                            <p>Il permet de gérer les droits d'accès aux ressources en fonction des profils, des espaces ou
+                            des utilisateurs. Il est possible de régler finement ces droits par type d'action (ouvrir, copier,
+                            exporter, éditer, supprimer) et par type de ressource (en cliquant sur &ldquo;Options&rdquo;). Rappelons
+                            que l'on peut éditer les droits d'un fichier particulier depuis le répertoire de
+                            ressources (cf. menu déroulant du fichier concerné). (<span style="color: #ff0000;">Pour plus
+                            d'informations, consultez "Gérer les droits".)</span></p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">3.3. Gérez les utilisateurs</a>
+              </h4>
+          </div>
+          <div id="collapse12" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Lorsque vous accédez à l'outil <b>"utilisateurs"</b> dans le menu de gauche de votre espace personnel, vous accédez
+                  à une page comportant quatre onglets de gestion des utilisateurs de votre espace personnel:
+                  <ul>
+                      <li>Utilisateurs</li>
+                      <li>Groupes</li>
+                      <li>Rôles</li>
+                      <li>En attente</li>
+                  </ul></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">3.3.1. Importez des utilisateurs</a>
+              </h4>
+          </div>
+          <div id="collapse13" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>a. Onglet Utilisateurs</h5>
+                  <p>Il permet d'<b>ajouter des utilisateurs</b> (déjà inscrits à la plateforme) dans l'espace d'activités.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1893.png') }}" alt="1893.png"></p>
+                  <p>Il est possible d'inscrire dans un espace d'activités (dont l'espace personnel) des utilisateurs qui sont déjà
+                      inscrits à la plateforme.</p>
+                  <p>Il y a deux options:</p>
+                  <p>1. <b>Inscrire des utilisateurs</b> dans un espace d'activités en cliquant sur le bouton "<b>+ Ajouter des
+                          utilisateurs</b>"</br>
+                      2. <b>Importer des utilisateurs</b> dans les espaces d'activités à partir d'un <b>fichier CSV</b> contenant
+                      le <b>nom d'utilisateur</b> et le <b>rôle</b> qu'on souhaite lui assigner.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1894.png') }}" alt="1894.png"></p>
+                  <ul>
+                      <li><b>+ Ajouter des utilisateurs</b>"</li>
+                  </ul>
+                  <p>Cliquez sur "<b>+Ajouter des utilisateurs</b>" . Vous serez renvoyé vers la <b>liste des utilisateurs</b> qui
+                      peuvent être inscrits dans les espaces d'activités.</p>
+                  <p>Comme le montre l'image ci-après, sélectionnez les utilisateurs en <b>cochant les cases</b> de gauche</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1897.png') }}" alt="1897.png"></p>
+                  <ul>
+                      <li><b>Importer des utilisateurs: Fichier CSV</b></li>
+                  </ul>
+                  <p>Cliquez sur le bouton "importer des utilisateurs" . Sélectionnez ensuite votre fichier csv en suivante <b>les
+                          instructions suivantes</b>:</p>
+                  <p><b><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1899.png') }}" alt="1899.png"><br/></b></p>
+                  <table border="2">
+                      <tbody>
+                      <tr>
+                          <td><span style="background-color: #ffffff;"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1758.png') }}" alt="1758.png" width="72" height="61" /></span></td>
+                          <p style="text-align: center;"><b><em>Les rôles prédéfinis dans la plateforme doivent être écrits <span style="color: #ff0000;">en minuscule et en anglais. (Manager=Gestionnaire; Collaborator=collaborateur) </span></em></b></p>
+                          <p style="text-align: center;"><em>En revanche, si vous avez modifiez le nom du rôle, vous devez écrire la nouvelle
+                                  valeur.</em></p>
+                          <p style="text-align: center;"><em><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1901.png') }}" alt="1901.png" width="538" height="293" /> <br /> </em></p>
+                          <span style="color: #ff0000;"><br/></span></td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  <p>Une fois vous avez uploadé le fichier des utilisateurs et leur rôles, l'information s'affichera dans la liste
+                      des utilisateurs:</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1895.png') }}" alt="1895.png"></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">3.3.2. Ajoutez des groupes</a>
+              </h4>
+          </div>
+          <div id="collapse14" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>b. Onglet "Groupes"</h5>
+                  <p>Il permet de <b>Ajouter un groupe</b> déjà <b>existant</b> dans la plateforme. (Seul l'administrateur de la plateforme qui peut créer des groupes.)</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1903.png') }}" alt="1903.png" width="657" height="286" /></p>
+                  <p>Pour ce faire il faut cocher la case du groupe que l'on souhaite inscrire à votre espace d'activité personnel et cliquer sur le bouton "<b>Ajouter</b>"</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1904.png') }}" alt="1904.png" width="635" height="331" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">3.3.3. Créez ou modifiez un rôle</a>
+              </h4>
+          </div>
+          <div id="collapse15" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>c. L'onglet "Rôle"</h5>
+                  <ul>
+                      <li><span style="color: #333333;"><b>Créer un rôle</b></span></li>
+                  </ul>
+                  <p>Comme expliqué dans la section <a href="/icap_lesson/view/17/1-4-les-roles-profils-de-claroline-connect">Les
+                          profils de Claroline Connect</a>, la plateforme propose des rôles prédéfinis qui peuvent être personnalisés.</br>
+                      L'onglet "<b>Rôle</b>" permet<b> créer un nouveau rôle </b>auquel on attribue des droits spécifiques dans les
+                      paramètres de l'espace d'activité, ou dans les droits des ressources.</br>
+                      Pour ce faire, cliquez sur le bouton "<b>Ajouter un rôle</b>"</p>
+                  <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1905.png') }}" alt="1905.png"></br>
+                  <p>Vous avez également l'option de <b>créer un répertoire</b> dédié aux utilisateurs de ce groupe.</br>
+                      <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1906.png') }}" alt="1906.png"></br>
+                      Ainsi, il a été créé le rôle: <b>Collègues du Master</b></p>
+                  <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1908.png') }}" alt="1908.png"></br>
+                  <ul>
+                      <li><b>Modifier un rôle</b></li>
+                  </ul>
+                  <p>Pour modifier un rôle prédéfini, cliquez sur "Modifier":</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1909.png') }}" alt="1909.png" width="513" height="378" /></p>
+                  <p>Les rôles ont été modifiés.</p>
+                  <p><b>Comparez:</b></p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1910.png') }}" alt="1910.png" width="645" height="229" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">3.3.4. Validez une inscription</a>
+              </h4>
+          </div>
+          <div id="collapse16" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>d. Onglet "En attente": Valider une inscription à votre espace personnel</h5>
+                  <p>Il permet d'afficher la liste des membres qui souhaitent s'inscrire à l'espace (si on a choisi
+                      l'option "<b>Validation de l'inscription</b>" au moment de la création de l'espace d'activités
+                      ou du paramétrage de notre espace d'activité personnel)</br>
+                      (Voir: <a href="/icap_lesson/view/20/3-2-parametrer-son-espace-personnel">3. Paramétrer son
+                          espace personnel</a>)</br>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1911.png') }}" alt="1911.png" width="724" height="248" /></br>
+                      Acceptez ou refusez une inscription : le nouveau membre ne pourra accéder aux ressources qu'à partir du
+                      moment où vous avez accepté son inscription.</p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">3.4. Créez et gérez des équipes</a>
+              </h4>
+          </div>
+          <div id="collapse17" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Pour organiser les utilisateurs de votre espace d'activité personnel de manière général ou autour
+                      d'un projet ou cours, vous pouvez utiliser l'outil équipe. Il vous permet de:
+                  <ul>
+                      <li>créer une équipe à la fois</li>
+                      <li>créer plusieurs équipes en même temps</li>
+                  </ul>
+                  <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1913.png') }}" alt="1913.png" width="788" height="366" /></p>
+                  <p>Il est possible de fixer le nombre maximum d'utilisateurs par équipe et de leur assigner des ressources. Dans l'exemple l'équipe "<b>&Eacute;quipe pédagogique</b>" sera créé.</br>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1915.png') }}" alt="1915.png" width="814" height="336" /></p>
+                  <p>Affichez les paramètres avancés pour paramétrer l'équipe:</p>
+                  <p><img style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" src="/file/resource/media/1914" alt="46 description 2.PNG" width="779" height="486" /></p>
+                  <p>Dans l'exemple ci-après, l'équipe "<b>Equipe pédagogique</b>" a été créé.</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1920.png') }}" alt="1920.png" width="496" height="287" /></p>
+                  <p>Il est également possible de créer plusieurs équipes en une fois en cliquant sur le bouton
+                      "<b>créer des équipes</b>". Dans l'exemple ci-dessous, les équipes "<b>Equipe développeurs, 1,2 et
+                          3</b>" ont été créées.</br>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1921.png') }}" alt="1921.png" width="855" height="294" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">3.4.1. Inscrivez des utilisateurs</a>
+              </h4>
+          </div>
+          <div id="collapse18" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>a. Auto-inscription</h5>
+                  <p>Les collaborateurs d'un espace d'activités peuvent s'inscrire aux équipes de manière autonome.</br>
+                      Dans l'exemple ci-après, les <b>icônes vertes</b> indiquent que le collaborateur peut <b>s'inscrire
+                          de manière autonome</b> à l'équipe.</br>
+                      <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1916.png') }}" alt="1916.png"></p>
+                  En revanche, dans l'exemple suivant, les<b> icônes rouges</b> indiquent que<b> l'inscription</b>
+                  aux équipes doit être <b>faite par le gestionnaire</b> de l'espace d'activités.</br>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1919.png') }}" alt="1919.png"></p>
+                  <h5>b. inscription par le gestionnaire de l'espace d'activités</h5>
+                  <p>Pour inscrire les utilisateurs dans une équipe, il y a 2 options:
+                  <ul>
+                      <li>1. Les inscrire en cliquant sur l'icône suivant:<img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1919.png') }}" alt="1919.png"> dans la page d'affichage des groupes.</li>
+                      <li>2. Les inscrire en cliquant sur le<b> nom de l'équipe. </b><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1922.png') }}" alt="1922.png"></li>
+                  </ul>
+                  <p>En cliquant sur le nom de l'équipe, vous accédez aux informations de l'équipe. Cliquez sur le petit
+                      bonhomme de droite pour inscrire les utilisateurs.</br>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1923.png') }}" alt="1923.png" width="648" height="243" /></br>
+                  <p>Il s'afficheront tous les utilisateurs (avec le rôle collaborateur) de l'espace d'activité. Cliquez
+                      ensuite sur le bouton inscrire.</br>
+                      <img style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" src="{{ asset('uploads/custom/images/1924.png') }}" alt="1924.png" width="575" height="473" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">3.4.2. Désignez un gestionnaire d'équipe</a>
+              </h4>
+          </div>
+          <div id="collapse19" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Pour chaque équipe, il faut sélectionner un gestionnaire/responsable de l'équipe.</br>
+                      Cliquez sur le petit bonhomme à coté de "<b>Gestionnaire de l'équipe</b>" pour sélectionner un
+                      responsable.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1925.png') }}" alt="1925.png"></br>
+                      Ensuite, sélectionnez un utilisateur de la liste:</br>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1926.png') }}" alt="1926.png" width="676" height="562" /></br>
+                      Dans l'exemple, l'utilisatrice <b>"flaviauser</b>" a été choisie comme gestionnaire de l'équipe.</bt>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1927.png') }}" alt="1927.png"></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">3.4.3. Créez les rôles et les répertoires de ressources</a>
+              </h4>
+          </div>
+          <div id="collapse20" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>a) Création d'un répertoire de ressources.</h5>
+                  <p>En suivant les exemples précédents, lors de la création d'une équipe, <b>un répertoire de ressources</b> sera crée par défaut dans le gestionnaire de ressources de l'espace d'activité.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1928.png') }}" alt="1928.png"></p>
+                  <h4><span style="color: #003366;"><b>b) Création des rôles</b></span></h4>
+                  <p>Lors de la création des équipes, les roles <b>Equipes pédagogique</b> et <b>Equipe pédagogique
+                          manager</b> ont été créés pour faciliter la gestion des ressources des équipes.
+                      (Consultez gestion des ressources)</br>
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1929.png') }}" alt="1929.png"></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">3.5. Organisez vos ressources dans votre espace personnel</a>
+              </h4>
+          </div>
+          <div id="collapse21" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>L'espace personnel est attaché au gestionnaire de ressources permettant de créer et gérer les
+                      ressources de cet espace.</br>
+                      Il existe deux manières d'y accéder:</p>
+                  <p>- en cliquant sur l'icône&nbsp;<img style="max-width: 100%;" src="/file/resource/media/1867" alt="6- ressources.png"> de la barre d'outils d'un espace d'activités, vous accédez directement au répertoire de ressources de cet espace,</p>
+                  <p>- en cliquant sur l'icône<img style="max-width: 100%;" src="/file/resource/media/1867" alt="6- ressources.png"> de la barre d'outils du bandeau supérieur, vous accédez à l'espace "Ressources" général de la plateforme (qui contient par défaut les répertoires de tous les espace d'activités créés):</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1945.png') }}" alt="1945.png"></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">3.5.1. Modifiez la barre de propriétés du gestionnaire de ressources</a>
+              </h4>
+          </div>
+          <div id="collapse22" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>La barre de propriétés de l'espace ressources permet de <b>gérer</b> les ressources d'un espace d'activités . On peut
+                      <b>couper</b> - <b>coller</b> - <b>supprimer</b> - <b>télécharger</b> - <b>zoomer - administrer</b>.</br>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1946.png') }}" alt="1946.png"></br>
+                  <div class="row features">
+                      <div class="col-sm-6">
+                          Elle permet aussi d'<b> importer </b>une ou des ressource(s) provenant du répertoire de ressources d'autres espaces
+                          d'activités et d'<b>ajouter </b>de nombreuses ressources:
+                      <ul>
+                          <li>Fichier</li>
+                          <li>Répertoire</li>
+                          <li>Texte</li>
+                          <li>Raccourcis</li>
+                          <li>Activité</li>
+                          <li>Cours</li>
+                          <li>Page Wiki</li>
+                          <li>Annonces</li>
+                          <li>Forum</li>
+                          <li>Scorm 1.2</li>
+                          <li>Scorm (2004)</li>
+                          <li>Sondage</li>
+                          <li>Exercice</li>
+                          <li>Parcours, etC</li>
+                      </ul>
+                      </div>
+                      <div class="col-sm-6">
+                          <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1947.png') }}" alt="1947.png">
+                      </div>
+                      <div class="col-sm-4">
+                          Vous pouvez effectuer la <b>recherche </b>d'une ressource à l'aide du moteur de recherche ou d'<b>ajouter automatiquement
+                              des dates de publications</b> à une ressource (roue crantée).
+                      </div>
+                      <div class="col-sm-8">
+                          <img style="width: 100%" src="{{ asset('uploads/custom/images/1948.png') }}" alt="1948.png" width="733" height="304">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse23">3.5.2. Modifiez les options d'une ressource</a>
+              </h4>
+          </div>
+          <div id="collapse23" class="panel-collapse collapse">
+              <div class="panel-body">
+              </div>
+              <p>Vous pouvez accéder aux options d'une ressource en la sélectionnant et en cliquant sur son nom :</p>
+              <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1949.png') }}" alt="1949.png" width="282" height="600" /></p>
+              <p>Le menu déroulant permet :</p>
+              <ul>
+                  <li>de <b>télécharger</b> la ressource ;</li>
+                  <li>de la <b>supprimer</b>;</li>
+              </ul>
+              <ul>
+                  <li>d'<b>éditer ses droits </b>pour en personnaliser les accès aux utilisateurs</li>
+                  <li>de <b>voir le suivi de l'objet </b>pour afficher la liste d'actions sur l'objet (téléchargement, ouverture, etc)</li>
+                  <li>de la <b>renommer ;</b></li>
+                  <li><b>de la "aimer" </b>(système de J'aime sur les ressources)</li>
+                  <li>de la<b>partager</b> sur les réseaux sociaux (FB, Twitter, G+, et sur le mur interne de la plateforme). Chaque &laquo;&nbsp;Partage&nbsp;&raquo; sur un réseau social publiera automatiquement sur le mur en interne.</li>
+              </ul>
+              <ul>
+                  <li>d'<b>éditer ses propriétés</b>, c'est-à-dire de nommer ou renommer le fichier, choisir une icône de façon à personnaliser son apparence,définir une plage de publication. Attention : les dates devront être formatées de la façon suivante : <b>AAAA-MM-JJ</b></li>
+                  <li>de la <b>mettre à jour</b></li>
+              </ul>
+              <p>Les &laquo; <b>J'aime</b> &raquo; et &laquo; <b>Partages</b> &raquo; apparaissent en <b>Notification</b> <img style="max-width: 100%;" src="/file/resource/media/1950" alt="notifications.png" /></p>
+              <ul>
+                  <li>de <b>laisser un commentaire </b>publique sur les ressources (désactivable par ressource, et globalement par espace/formation)</li>
+                  <li>de <b>laisser une note </b>personnelle sur les ressources (post-it, pense-bête, remarques)</li>
+                  <li>de ajouter la ressource à vos<b> Favoris</b></li>
+              </ul>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse24">4. GEREZ LA PAGE D'ACCUEIL ET/OU LE BUREAU DE VOTRE ESPACE PERSONNEL</a>
+              </h4>
+          </div>
+          <div id="collapse24" class="panel-collapse collapse">
+              <div class="panel-body">
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse25">4.1. Créez ou modifiez un onglet</a>
+              </h4>
+          </div>
+          <div id="collapse25" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>a. Créer un onglet</h5>
+                  <p>A partir de l'icône <b>plus</b> <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1931.png') }}" alt="1931.png"> (onglet) et
+                      <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1932.png') }}" alt="1932.png"> (widgets), l'utilisateur peut
+                      créer des onglets et widgets dans son espace personnel et en ajouter d'autres sur son bureau.</p>
+                  <p>Pour créer un onglet, il suffit de cliquer sur "<b>+ Créer un nouvel onglet"</b></p>
+                  <p><b><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1933.png') }}" alt="1933.png" width="467" height="145" /> </b></p>
+                  <p>Une fenêtre s'ouvre permettant de:</p>
+                  <ul>
+                      <li>nommer l'onglet</li>
+                      <li>le rendre visible ou pas</li>
+                      <li>assigner les droits d'accès en fonctions des rôles</li>
+                  </ul>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1934.png') }}" alt="1934.png"></p>
+                  <p>Il faut faire attention aux instructions suivantes:</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1935.png') }}" alt="1935.png" width="620" height="129" /></p>
+                  <h4><span style="color: #003366;"><b>b) Modifier un onglet </b></span></h4>
+                  <p>Pour <b>modifier un onglet</b>, il suffit de cliquer sur la <b>petite roue crantée</b> <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1940.png') }}" alt="1940.png">.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1936.png') }}" alt="1936.png" width="331" height="151" /></p>
+                  <p>Cela permet de modifier les informations (dont le nom de l'onglet).</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1939.png') }}" alt="1939.png" width="662" height="375" /></p>
+                  <h4><span style="color: #003366;"><b>c) &Eacute;pingler un onglet sur le bureau<br /></b></span></h4>
+                  <p>L'<b>icône</b> <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1937.png') }}" alt="1937.png">
+                      permet d'épingler l'onglet d'un espace d'activités au bureau personnel.</p>
+                  <p>1- Cliquez sur l'épingle,</p>
+                  <p>2- Une fenêtre s'ouvrira&nbsp; vous informant que l'onglet sera disponible dans votre bureau:</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1938.png') }}" alt="1938.png" width="805" height="405" /></p>
+                  <h4><span style="color: #003366;"><b>d)Supprimer un onglet <br /></b></span></h4>
+                  <p><span style="color: #333333;">Pour supprimer un onglet, il suffit de cliquer sur <b>la croix <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1941.png') }}" alt="1941.png"> </b></span></p>
+                  <p><span style="color: #333333;"><b><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1942.png') }}" alt="1942.png"> </b></span></p>
+                  <p><span style="color: #ff0000;"><b>Pour déplacer les onglets vers la gauche ou la droite, il suffit de les glisser et déposer en utilisant la souris.</b></span></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse26">4.2. Créez ou modifiez un widget</a>
+              </h4>
+          </div>
+          <div id="collapse26" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <h5>b. Créer un widget</h5>
+                  <p>En bas de chaque onglet, un lien permet d'ajouter un<b> <em>widget</em>.</b></p>
+                  <p>Lors de la<b> création d'un widget</b>, Connect propose différentes possibilités:</p>
+                  <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1943.png') }}" alt="1943.png" width="573" height="380" /></p>
+                  <table border="2">
+                      <tbody>
+                      <tr>
+                          <td>
+                              <p><b>Aperçu des activités récentes</b></p>
+                          </td>
+                          <td>
+                              <p>Il affiche les <b>activités </b>(graphique du nombre d'actions par jours) ainsi que les <b>dernières actions </b>effectuées
+                                  sur les espaces d'activités.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Texte</b></p>
+                          </td>
+                          <td>
+                              <p>Il s'agit d'un article mis en forme qui contient éventuellement du multimédia et qui propose des fichiers
+                                  à télécharger.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Derniers messages des forums</b></p>
+                          </td>
+                          <td>
+                              <p>Ce <em>widget</em> affiche les derniers messages publiés sur les forums de l'espace d'activités.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Annonces</b></p>
+                          </td>
+                          <td>
+                              <p>Permet d'ajouter les annonces d'un espace.</p>
+                              <p>Remarque : ici, on ne fait qu'ajouter le <em>widget</em> des annonces. <b>Pour rédiger les annonces, il faudra passer par le répertoire des ressources de cet espace d'activités.</b></p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Lecteur de flux rss</b></p>
+                          </td>
+                          <td>
+                              <p>Permet d'afficher les dernières publications d'un site en ajoutant son fil de<b> <em>syndication</em> </b>au widget. Il suffit pour cela de cliquer sur la célèbre icône orange présente sur la plupart des sites <img style="max-width: 100%;" src="/file/resource/media/1944" alt="flux rss.png" width="41" height="41" /> , de copier l'url à laquelle elle renvoie, et de l'ajouter au <em>widget</em>.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Prochains événements</b></p>
+                          </td>
+                          <td>
+                              <p>Ce <em>widget</em> affiche les <b>événement </b>notés sur l'agenda.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Utilisation des badges</b></p>
+                          </td>
+                          <td>
+                              <p>Permet d'afficher les derniers badges attribués dans un espace d'activités, et le classement d'attribution des badges.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Parcours publiés dans cet espace d'activités.</b></p>
+                          </td>
+                          <td>
+                              <p>Comme son nom l'indique, il affiche les parcours publiés dans l'espace d'activités.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p><b>Mes objectifs d'apprentissage</b></p>
+                          </td>
+                          <td>
+                              <p>Comme son nom l'indique, il affiche les objectifs d'apprentissage de l'utilisateur dans un espace d'activités.</p>
+                          </td>
+                      </tr>
+                      </tbody>
+                  </table>
+                  <h4><span style="color: #003366;"><b>b) Modifier un widget</b></span></h4>
+                  <p><b>On ne peut modifier un <em>widget</em> que si l'on est propriétaire de l'espace d'activités concerné.</b> <em>A minima</em>, tout le monde peut gérer comme il l'entend son espace personnel ou son bureau personnel.</p>
+                  <p>Pour le reste, ce sont les gestionnaires de cours (et <em>a fortiori</em> les administrateurs) qui peuvent créer des onglets, ajouter ou modifier des <em>widgets</em>. L'organisation de cette page est importante pour la clarté de l'information.</p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default" style="margin-bottom: 15px">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse27">5. GEREZ LES DROITS</a>
+              </h4>
+          </div>
+          <div id="collapse27" class="panel-collapse collapse">
+              <div class="panel-body">
+                  En cours de rédaction
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+    <div id="scroll-to-top">
+    <span>
+        <i class="fa fa-arrow-up"></i>
+    </span>
+    </div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/materialize.css') }}"
+          type="text/css"
+    />
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/materialize.min.js') }}"
+    >
+    </script>
+{% endblock %}
+

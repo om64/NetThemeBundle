@@ -1,0 +1,151 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<div id="section-id-page" style="margin-top: 30px">
+    <div class="parallax-style section-id-page">
+        <div class="pattern">
+            <div class="container">
+                <p class="nom-de-page" style="padding-top:30px">Téléchargement</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="conteneur" class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 colsdm-offset-1 col-lg-10 col-lg-offset-1">
+            <section id="about">
+                <div class="white-bg about-us-section" style="margin: 10px 10px 10px 10px">
+                    <div class="sec-head-container">
+                        <div class="sec-head-style">
+                            <h3 class="section-title wow bounceInDown">
+                                <span>Téléchargement et planning</span>
+                            </h3>
+                            <div class="section-description"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-md-6 col-lg-6">
+                <h3>Téléchargement et installation</h3>
+                <h4>Claroline Connect Version stable</h4>
+                <p>La version stable de Claroline Connect est là. Cette version a été plus largement testée. Cependant, comme il s'agit
+                    d'une première version stable, il peut rester certains bugs, notamment lors de l'installation dans des environnements
+                    différents de nos environnements de tests (Linux Debian).</p>
+                <p>Un manuel utilisateur ainsi qu'un <a href="http://localhost/claroline/web/app_dev.php/resource/open/claroline_forum/2016" target="blank">forum</a> sont disponibles !</p>
+                <p></p><i class="material-icons" style="color: red">ic_error_outline_black_48dp</i></br>
+                <ul>
+                    <li>À la différence de Claroline 1.x, Claroline Connect requiert une version de PHP supérieure ou égale à 5.5.x.</li>
+                    <li>Le système de gestion des plug-ins est lui encore en version béta et peut poser certains problèmes.</li>
+                    <li>Configuration du php.ini :</li>
+                    <li> variable memory_limit doit être à au moins 512M (pour l'installation et les mise à jour), voire idéalement à 1024M.</li>
+                    <li> max_execution_time doit être à au moins 1200 pour l'installation de la version full. Ensuite, vous pouvez à nouveau le diminuer.</li>
+                </ul></p>
+                <p style="font-style:bold">La procédure d’installation est simple :</p>
+                <ul>
+                    <li>Téléchargez la <a href="http://packages.claroline.net/releases/last-full.zip" target="blank">version de base </a>ou la <a href="http://packages.claroline.net/releases/last-min.zip" target="blank">version minimale</a> sans plug-in de Claroline Connect.</li>
+                    <li>Décompressez l’archive (*) et faites en sorte qu’elle soit accessible depuis le serveur web.</li>
+                    <li>Ouvrez la page [hôte]/[nom du répertoire décompressé]/web/install.php (ex: http://localhost/claroline/web/install.php) et suivez les
+                        instructions de l’installeur (**).</li>
+                </ul>
+                <p>*  WINrar est préférable à WINzip si vous travaillez sous Windows.</p>
+                <p>** L’installation proprement dite peut prendre de 2 à 5 minutes sous Linux, jusqu'à 18 minutes sous Windows.</p>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <h3>Planning de développement</h3>
+                <h4>Une nouvelle branche 6 rassemble les développements futurs</h4>
+                <p>La prochaine version majeure du noyau est prévue pour mai 2016. Au menu:</p>
+                <ul>
+                    <li>Refonte de l'interface du gestionnaire de ressources</li>
+                    <li>Amélioration générale de l'ergonomie</li>
+                    <li>Réorganisation des outils d'administration</li>
+                </ul>
+                <p>Pour les plug-ins, d'autres évolutions sont en cours et s'ajouteront dans les mois à venir:</p>
+                <ul>
+                    <li>Parcours conditionnel</li>
+                    <li>Gestion des réservations</li>
+                    <li>Gestion des présences</li>
+                    <li>Journal de classe</li>
+                    <li>Gestion des tags</li>
+                    <li>Intégration avec Etherpad et Ethercalc</li>
+                    <li>Intégration avec OwnCloud</li>
+                    <li>Chat texte, audio, vidéo</li>
+                    <li>...</li>
+                </ul>
+                <h4>Pour installer la version de développement</4>
+                <h5>(sous Linux uniquement)</h5>
+                <ul>
+                    <li>curl -sS https://raw.githubusercontent.com/claroline/repository-scripts/master/install.sh | sh</li>
+                    <li>Mettre les informations de la db dans app/config/parameters.yml</li>
+                    <li>php app/console claroline:install</li>
+                    <li>php app/console assets:install</li>
+                    <li>php app/console assetic:dump</li>
+                </ul>
+                <p>Pour créer un admin :</p>
+                <p>php app/console claroline:user:create -a</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FIN DE LA VERSION 1 DE CLAROLINE -->
+
+<div id="conteneur" class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
+            <h3 style="text-align: center">La version 1.x de Claroline n'est plus maintenue</h3>
+            <p style="text-align: center"><img src="{{ asset('uploads/custom/images/claro1.png') }}" width="150"></p>
+            <p>Tous nos efforts sont tournés vers le développement de Claroline Connect. Nous n'investissons dès lors plus dans le développement de l’ancienne version de Claroline.
+            La plateforme de support aux utilisateurs campus.claroline.net, ainsi que la messagerie support@claroline.net ont par conséquent été supprimées.</p>
+            <p>Dernières mises à jour:</p>
+            <p><strong>Correctif de la mise à jour Claroline 1.11.10 (2014-02-28)</strong></p>
+            <p>Un correctif d’erreur pour le téléchargement de la version Claroline 1.11.10 corrige un problème dans l’outil de parcours pédagogique.</p>
+            <p>L’ARCHIVE COMPLÈTE est disponible via :</p>
+            <ul>
+                <li><a href="http://sourceforge.net/projects/claroline/files/Claroline/Claroline_1.11.10/claroline-1.11.10-1.zip/download" target="blank">zip</a></li>
+                <li><a href="http://sourceforge.net/projects/claroline/files/Claroline_Unstable/Claroline-1.12.0-alpha2/claroline-1.12.0-alpha2.tar.gz/download" target="blank">tar.gz</a></li>
+            </ul>
+            <p>Pour tous ceux qui téléchargent la version 1.11.10, le correctif est déjà inclus dans la plateforme.</p>
+            <p><strong>Mise à jour Claroline 1.12 (alpha2) est disponible en test (2014-02-18)</strong></p>
+            <p>Les informations concernant ces mises à jour se trouvent sur <a href="http://forum.claroline.net/" target="blank">les forums.</p>
+            <p>La mise à jour de la version alpha de Claroline 1.12 est disponible en <a href="https://sourceforge.net/projects/claroline/files/Claroline_Unstable/Claroline-1.12.0-alpha2/" target="blank">version de test</a>.</p>
+            <p>ATTENTION : Cette release est une version test et n’est pas encore adaptée à la production !</p>
+            <p><a href="http://sourceforge.net/projects/claroline/files/Claroline_Unstable/Claroline-1.12.0-alpha2/claroline-1.12.0-alpha2.zip/download" target="blank">zip archive (Windows and Mac OS X)</a></p>
+            <p><a href="http://sourceforge.net/projects/claroline/files/Claroline_Unstable/Claroline-1.12.0-alpha2/claroline-1.12.0-alpha2.tar.gz/download" target="blank">tar.gz archive (UNIX, Linux)</a></p>
+            <p>Autres versions à télécharger : <a href="http://sourceforge.net/projects/claroline/files/Claroline/" target="blank">Sourceforge</a></p>
+            <p>Modules complémentaires: <a href="http://sourceforge.net/projects/claroline-pack/files/?source=navbar" target="blank">Claroline Packages</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="scroll-to-top">
+        <span>
+            <i class="fa fa-arrow-up"></i>
+        </span>
+</div>
+
+<!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+    />
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+
+{% endblock %}

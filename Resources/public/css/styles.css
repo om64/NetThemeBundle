@@ -1,0 +1,510 @@
+.affix {
+    top:70px;
+}
+
+.align_left{
+    text-align: left;
+}
+
+.align_right{
+    text-align: right;
+}
+
+.form-actions{
+    padding : 20px;
+    text-align: center;
+}
+
+.form-actions input{
+    margin : 5px;
+    color: lightgrey;
+}
+
+.form-actions a{
+    margin : 5px;
+}
+
+.menu_lesson .collapsor {
+    color:#808284;
+}
+
+.menu_lesson .empty{
+    color:#808284;
+}
+
+.section-content > .container-reference {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.toolbar {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-top: 5px;
+    box-shadow: #808284 0px -3px 4px inset;
+}
+
+.reference_list {
+    padding:30px;
+}
+
+.reference_list .reference_box { background-color: transparent;margin-bottom: 10px; width:800px;}
+.reference_list .reference_box:hover { background-color: #efefef;}
+.reference_new {
+    padding:30px;
+}
+
+.reference_new .reference_box { background-color: #F5F6FA;margin-bottom: 10px; width:800px;}
+
+.reference-list-item {
+    margin: 10px 0px;
+}
+.reference-list-item h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.more_info { cursor: pointer; position: relative;}
+.more_info > *:last-child{
+    padding: 4px;
+    z-index: 99999;
+    opacity: 0;
+    position: absolute;
+    left: 100px;
+    top: -13px;
+    display: none;
+}
+.more_info > *:last-child > table {
+    margin: 0px;
+}
+.more_info > *:last-child > table > tbody > tr:first-child > td {
+    border-top: 0px;
+}
+.more_info:hover > *:last-child{
+    opacity: 1;
+    display: block;
+}
+
+ul.customFields {
+    list-style-type: none;
+    margin-left: 0px;
+}
+li.custom_field {}
+li.custom_field div div {
+    float: left;
+    padding-right: 10px
+}
+
+.clear {
+    clear: both;
+}
+
+.lesson_title{
+    margin-top:10px;
+    color: #808284;
+}
+
+.portrate {
+    text-align: center;
+}
+
+.new-reference {
+    margin: 20px 0px;
+}
+
+.reference-footer {
+    margin: 0px;
+    background-color: transparent;
+}
+
+.breadcrumb > li> span.divider {
+    padding: 0px;
+}
+
+.welcome{
+    margin-top:50px;
+    text-align:center;
+    font-size:1.4em;
+    color: #808284;
+}
+
+.welcome div{
+    padding:10px;
+}
+
+.chapter_content_text{
+    margin-top: 40px;
+    padding: 20px;
+    text-align: justify;
+    min-height: 535px;
+    color: #808284;
+}
+
+.chapter_content{
+    padding:20px;
+    color: #808284;
+}
+
+.delete_chapter_title {
+    font-weight:bold;
+    padding:0 0 10px 0;
+    background-color: white;
+    border-radius: 0;
+    color: #808284;
+}
+
+.chapter_title h4 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.delete_chapter_warning{
+    color: red;
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:40px;
+    font-weight: bold;
+}
+
+#editchapterform textarea, #createchapterform textarea {
+    height:300px;
+    width: 100%;
+}
+
+.lesson_tooltip {
+    cursor:pointer;
+}
+
+.overflow {
+    overflow:auto;
+}
+
+.menu_lesson_icons {
+    text-align:right;
+}
+
+.menu_lesson_icons i {
+    padding:3px;
+}
+
+.cursor_move {
+    cursor: move;
+}
+
+.navbar .navbar-nav .icon_link,{
+    padding-top: 13px;
+    padding-bottom:13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+    font-size:12px;
+    border: 1px solid #808284;
+    background-color: #808284;
+    color: #ffffff;
+}
+
+.icon_link {
+    color: #ffffff;
+}
+
+
+.navbar .navbar-nav .icon_link.active {
+    border: 1px solid #808284;
+    background-color: #808284;
+    color: #ffffff;
+}
+
+.navbar .navbar-nav .icon_link span {
+    vertical-align: middle;
+    padding-left:1px;
+    padding-right:1px;
+    background-color: #808284;
+    color: #ffffff;
+}
+
+.chapter_list_header{
+    margin-left: 8px;
+    font-weight: bold;
+    color: #808284;
+    background-color: #ffffff;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.icon_chapter_list_header {
+    display: inline-block;
+    float: right;
+/*    margin-top:5px;*/
+}
+
+.lesson_footer {
+    text-align: center;
+    color: #808284;
+    padding:20px;
+}
+
+.lesson_header{
+    color: #808284;
+    background-color: #ffffff;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.lesson_footer_icon{
+    font-size: 22px;
+}
+
+/*sortable styles*/
+
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ul.jquery-sortable-list {
+    padding-left:10px;
+    margin-bottom:5px;
+    padding-top:5px;
+
+}
+
+.jquery-sortable-list ul{
+    padding-left: 15px;
+}
+
+ul.jquery-sortable-list li {
+    display: block;
+}
+
+ul.jquery-sortable-list li i{
+    padding-right:5px;
+    cursor: pointer;
+}
+
+ul.jquery-sortable-list li .menu-item{
+    padding: 5px 5px 5px 15px;
+    font-size: 0.9em;
+}
+
+ul.jquery-sortable-list li .menu-item .fa-arrows{
+    color: #ffffff;
+    background-color: #808284;
+    margin-right:5px;
+}
+
+ul.jquery-sortable-list li .menu-item:hover{
+    color: #808284;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+ul.jquery-sortable-list li .active_chapter{
+    background-color: #808284;
+    color: #ffffff;
+}
+
+ul.jquery-sortable-list li .active_chapter .hover{
+    background-color: #ffffff;
+    color: #808284;
+}
+
+ul.jquery-sortable-list li .active_chapter a{
+    background-color: #808284;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ul.jquery-sortable-list .active{
+    border: 1px dotted #808284;
+}
+
+ul.jquery-sortable-list li.placeholder {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul.jquery-sortable-list li.placeholder:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    left: -5px;
+    top: -4px;
+    border: 5px solid transparent;
+    border-left-color: red;
+    border-right: none;
+}
+
+.fa-arrows {
+    cursor: pointer;
+}
+
+.draggable-item{
+    border-top: 1px dashed transparent;
+    border-left: 2px solid transparent;
+}
+
+.draggable-list{
+    border-top: 1px dashed #357EBD;
+    border-left: 2px solid #357EBD;
+}
+
+.lesson_tooltip.menu_lesson_button {
+    display: inline-block;
+    color: #ffffff;
+}
+
+/* Boutons chapitre */
+
+.deletechapter.btn.lesson_tooltip {
+    margin-right: 15px;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+    color: #808284;
+    border: 1px solid #808284;
+    padding: 2px 7px;
+}
+
+.duplicatechapter.btn.lesson_tooltip {
+    border: 1px solid #808284;
+    border-radius: 0;
+    color: #808284;
+    padding: 2px 7px;
+}
+
+.movechapter.btn.lesson_tooltip {
+    border: 1px solid #808284;
+    border-radius: 5px 0 0 5px;
+    color: #808284;
+    margin-left: 15px;
+    padding: 2px 7px;
+}
+
+.editchapter.btn.lesson_tooltip,
+.a.editchapter.btn.lesson_tooltip {
+    background-color: white;
+    border-radius: Opx;
+    color: #808284;
+    margin-left: 15px;
+    padding: 2px 7px;
+}
+
+.createchapter.btn.lesson_tooltip,
+.a.createchapter.btn.lesson_tooltip,
+.createchapter.btn.lesson_tooltip:hover,
+.createchapter.btn.lesson_tooltip:focus {
+    background-color: white;
+    border-radius: Opx;
+    color: #808284;
+    padding: 2px 7px;
+}
+
+.nav.navbar-nav.pull-right {
+    margin-top: 7px;
+}
+
+/*Hover*/
+
+.deletechapter.btn.lesson_tooltip:hover,
+.duplicatechapter.btn.lesson_tooltip:hover,
+.movechapter.btn.lesson_tooltip:hover {
+    background-color: #808284;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 2px 7px;
+}
+
+/* Grip */
+
+.menu-item.cursor_move::before{
+    content: "..\A ..\A ..\A ..\A ";
+    display: inline-block;
+    line-height: 5px;
+    margin-left: -11px;
+    margin-top: -5px;
+    position: absolute;
+    width: 5px;
+}
+
+/* btn Chapter */
+
+.chapter_btn, .chapter_btn:hover {
+    margin: 5px 0;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 3px;
+}
+
+/*ajustements btns chapter menu */
+
+a#enable_move.icon_link.btn.btn-default,
+a#enable_move.icon_link.btn.btn-default:hover,
+a#enable_move.icon_link.btn.btn-default:focus,
+a#enable_move.icon_link.btn.btn-primary,
+a#enable_move.icon_link.btn.btn-primary:hover,
+a#enable_move.icon_link.btn.btn-primary:focus {
+    padding:3px;
+    background-color: #808284;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+/* Barre nav */
+
+a.lesson_tooltip.btn-primary,
+a.lesson_tooltip.btn-default {
+    border-radius: 0;
+    background-color: #808284;
+    color: #ffffff;
+    display: inline-block;
+    padding: 3px;
+}
+
+/* bouton retour haut page */
+
+a.btn_up.btn-primary{
+    border-radius: 0;
+    background-color: #808284;
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+    bottom: 80px;
+    left: 50px;
+    position: fixed;
+    z-index:1000;
+}
+
+a.btn_up.btn-primary .lesson_footer_icon {
+    font-size: 30px;
+    background-color: #808284;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1025px) {
+
+    .nav.navbar-nav.pull-right {
+        float: none !important;
+    }
+
+    .deletechapter.btn.lesson_tooltip, .movechapter.btn.lesson_tooltip, .editchapter.btn.lesson_tooltip, .duplicatechapter.btn.lesson_tooltip, .createchapter.btn.lesson_tooltip{
+        margin:0 30px 2px 30px;
+        background-color: white;
+        border-radius: Opx;
+        color: #808284;
+        border: 1px solid;
+    }
+}
