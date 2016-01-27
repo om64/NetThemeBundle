@@ -816,59 +816,7 @@ input[type="radio"].radio-btn.light-green:checked + label:after{
 	border-color: #1fb538;
 }
 
-/*  PARALLAX*/
 
-.parallax-style,
-.no-parallax-style {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-.parallax-style {
-	position: relative;
-	z-index: 1;
-}
-.no-parallax-style {
-	background-attachment: inherit;
-}
-.parallax-overlay {
-	background-color: #E2E2E2;
-}
-#top-section {
-	background: url(../images/background/banner.png) 50% 0 no-repeat fixed;
-	margin: 0;
-	padding: 0;
-}
-#section-id-page {
-	background: url(../images/background/pages-bg.jpg) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 0;
-}
-#video-section {
-	background: url(../images/background/top-section-bg.jpg) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 0;
-}
-#download-section {
-	background: url(../images/background/workplace_darkblue.png) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 0;
-}
-#quote {
-	background: url(../images/background/computer-bg.png) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 0;
-}
-#subscribe {
-	background: url(../images/background/banner.png) 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 0;
-}
-#footer-section {
-	background-color: #808284 50% 0 no-repeat fixed;
-	margin: 0 auto;
-	padding: 0;
-}
 
 /* 2.9 - Dropcaps
 --------------------------------------------- */
