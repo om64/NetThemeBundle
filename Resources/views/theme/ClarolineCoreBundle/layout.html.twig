@@ -51,31 +51,20 @@
                 </h4>
             </div>
         {% endif %}
-        <div class="hidden-xs hidden-sm">
-            <div class="hide">
-                <div id="left-bar" class="sidebar">
-                    {% block leftbar %}{% endblock %}
-                </div>
-            </div>
-            <div class="hide">
-                <div id="right-bar" class="sidebar">
-                    {% block rightbar %}{% endblock %}
-                </div>
-            </div>
-        </div>
-
 
         {% block topbar %}
             {% render controller('ClarolineCoreBundle:Layout:topBar') %}
         {% endblock%}
-
 
         {% block impersonation %}
             {% if has_role('ROLE_USURPATE_WORKSPACE_ROLE') or is_impersonated() %}
                 {% render controller('ClarolineCoreBundle:Layout:renderWarningImpersonation') %}
             {% endif %}
         {% endblock %}
-                    {% block content %}{% endblock %}
+
+        {% block content_container %}
+            {% block content %}{% endblock %}
+        {% endblock %} 
 {% endblock %}
 
 {% block stylesheets %}
