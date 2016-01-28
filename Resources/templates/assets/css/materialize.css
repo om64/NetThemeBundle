@@ -1980,10 +1980,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit; }
-/*
+
 ul {
   list-style-type: none; }
-*/
+
 a {
   color: #039be5;
   text-decoration: none;
@@ -2005,7 +2005,7 @@ a {
 ul {
   padding-left: 40px; }
   ul li {
-    list-style-type: disc; }
+    list-style-type: none; }
 
 .clearfix {
   clear: both; }
