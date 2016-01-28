@@ -1,0 +1,444 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<div id="conteneur" class="container-fluid">
+    <div id="section-id-page" style="padding:15px">
+        <div class="container">
+            <h1 class="nom-de-page" style="padding-top:25px; color:whitesmoke; text-align: center">Documentation</h1>
+            <p class="page-location" style="padding-top:15px; font-weight: bold"><a href="bases"> Les bases | </a> <a href="learners_tutorials"> Le manuel des utilisateurs | </a> <a href="admin_tutorials">  Le manuel des administrateurs</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <h2 style="text-align: center">Documentation des gestionnaires</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#intro">INTRODUCTION</a>
+            </h4>
+        </div>
+        <div id="intro" class="panel-collapse collapse in">
+            <div class="panel-body">La documentation vous est présentée sous la forme de panneaux ouvrants correspondant chacun à un
+            sujet particulier. Cliquez sur les titres des panneaux pour ouvrir et fermer les chapitres.</br>
+            La documentation destinée aux gestionnaires ne reprend pas la documentation de l'utilisateur, mais uniquement ce qui leur
+            est spécifique, c'est-à-dire la gestion des ressources et des droits sur leurs espaces d'activités.
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. LA GESTION DES RESSOURCES</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>Vous souhaitez déposer un fichier sur Claroline Connect, créer des contenus pédagogiques au
+            travers de cours ou de textes web, diffuser des informations ou communiquer avec vos étudiants à travers un
+            blog, des forums,... ? Toutes ses outils sont disponible à travers le gestionnaire de <b>"Ressources"</b></p>
+            <p><b><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2305.png') }}" alt="2305.png"> </b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">1.1. Accédez au gestionnaire de ressources</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            <h4><b>Comment accéder au gestionnaire de ressources</b></h4>
+            <p>Il existe deux manières d'accéder au gestionnaire de ressources</p>
+            <p>- en cliquant sur l'icone <b>"ressources"</b><img src="{{ asset('uploads/custom/images/1636.jpeg') }}" alt="1636.jpeg">de la barre du menu à gauche d'un espace d'activités, vous accédez ainsi directement au <b>répertoire de ressources</b> de cet espace,</p>
+            <p>- en cliquant sur l'icone <b>"ressources"</b><img src="{{ asset('uploads/custom/images/1636.jpeg') }}" alt="1636.jpeg"> de la barre de propriétés de votre bureau (bandeau supérieur) , vous accédez à l'espace<b> "Ressources" général de la plateforme</b> (qui contient par défaut les répertoires de tous les espace d'activités créés).</p>
+            <p style="padding-left: 30px;"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2035.png') }}" alt="2035.png"></p>
+            <p style="padding-left: 30px;"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1620.png') }}" alt="1620.png"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">1.2. La barre de propriétés du gestionnaire de ressources</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>La barre de propriétés du gestionnaire de ressources permet :</p>
+            <ul>
+            <li>de <b>gérer</b> les ressources d'un espace d'activités. En sélectionnant la ou les ressources affichée(s), on peut la/les
+            <b>couper</b> - <b>coller</b> - <b>supprimer</b> - <b>télécharger</b> - <b>zoomer - administrer<a href="#_ftn1" name="_ftnref1"></a>
+            </b></br><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1626.png') }}" alt="1626.png"></li>
+            <li>de <b>créer </b>de nombreuses ressources <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1631.png') }}"
+            alt="1631.png"> ou d'en<b> importer d'autres <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2034.png') }}"
+            alt="2034.png"></b>à partir d'autres espaces d'activités :</li>
+            <li>de <b>créer</b> de nombreuses ressources (<b>Fichier </b>-<b> Répertoire </b>-<b> Texte </b>-<b> Raccourcis</b> -<b>
+            Activité </b>-<b> Ressource Web </b>-<b> Page Wiki </b>-<b> Annonces </b>- <b>Forum </b>-<b> Scorm 1.2 </b>-<b> Scorm (2004) </b>-<b> Sondage </b>-<b> Blog </b>-<b> Cours </b>- <b>évaluation </b>- <b>Exercice </b>-<b> Parcours</b>) ;<br /><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2036.png') }}" alt="2036.png"><br /></li>
+            <li>de <b>rechercher</b> une ressource à l'aide du moteur de recherche ou d<b>e définir automatiquement des dates de
+            publication</b> pour une ressource (roue crantée) :<br /><br /><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1621.png') }}" alt="1621.png"></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">1.3. Gérez les options d'une ressource</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+            <h4><b>Les options d'une ressource</b></h4>
+            <p>Vous pouvez accéder aux <b>options d'une ressource</b> en cliquant sur la <b>petite flèche</b> à droite du nom :</span></p>
+            <p>Le menu d'options peut varier en fonction de la ressource:</span></p>
+            <p><img style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" src="{{ asset('uploads/custom/images/2306.png') }}" alt="2306.png" width="767" height="470" /> </span></p>
+            <p>Le menu <b>"Options"</b> permet :</p>
+            <ul>
+            <li>de <b>télécharger</b> la ressource,</li>
+            <li>de la <b>renommer,<br /></b></li>
+            <li>d'<b>éditer ses propriétés</b>, c'est-à-dire de nommer ou renommer le fichier, choisir une icône de fa&ccedil;on à personnaliser son apparence, définir une plage de publication. Attention : les dates devront être formatées de la fa&ccedil;on suivante : <b>AAAA-MM-JJ</b></li>
+            </ul>
+            <p></br><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2067.jpeg') }}" alt="2067.jpeg"></p>
+            <ul>
+            <li>d'<b>éditer ses droits </b>pour en personnaliser les accès aux utilisateurs</li>
+            </ul>
+            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2068.jpeg') }}" alt="2068.jpeg"></p>
+            <ul>
+            <li>de la <b><b>mettre à jour. </b></b>Pour mettre à jour un fichier sur Claroline Connect, nul besoin de supprimer l'ancienne version et de télécharger la nouvelle.
+            <p>Sélectionnez le fichier à mettre à jour, affichez les options et cliquez sur l'onglet "<b>mettre à jour</b>". La démarche est ensuite la même que pour uploader un fichier sur la plateforme.</p>
+            </li>
+            <li>
+            <p>de la<b> supprimer</b></p>
+            </li>
+            <li>de l'<b>administrer.</b> C'est le cas du <b>Parcours. </b>En cliquant sur <b>administrer,</b> on accède au parcours pour l'éditer/modifier.<b> </b></li>
+            </ul>
+            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2318.png') }}" alt="2318.png" width="769" height="210"></p>
+            <ul>
+            <li>de la <b>configurer. </b>C'est le cas du<b> Blog. </b>Vous pouvez accéder directement à la fonctionnalité de configuration du blog. </li>
+            </ul>
+            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2317.png') }}" alt="2317.png" width="464" height="311" /></p>
+            </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">1.3.1. Aimez, commentez et partagez des ressources</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+            <h5>1. Menu</h5>
+            <p>Le menu <b>options</b> permet également: </p>
+            <ul>
+            <li>de <b>laisser un commentaire </b>public sur les ressources (désactivable par ressource, et globalement par espace/formation)</li>
+            </ul>
+            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2307.png') }}" alt="2307.png" width="548" height="321" /></p>
+            <ul>
+            <li>de <b>laisser une note </b>personnelle sur les ressources (post-it, pense-bête, remarques)</li>
+            </ul>
+            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2309.png') }}" alt="2309.png" width="542" height="348" /></p>
+            <ul>
+            <li>d'ajouter la ressource à ses<b> Favoris</b></li>
+            </ul>
+            <p><b><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2310.png') }}" alt="2310.png" width="541" height="287" /></b></p>
+            <ul>
+            <li>de<b> Partager </b>la ressource sur les <b>réseaux sociaux</b></li>
+            </ul>
+            <p><b><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2311.png') }}" alt="2311.png" width="546" height="325" /></b></p>
+            <h5>2. Affichage</h5>
+            <p>Il y a deux types d'affichage:</p>
+            <p><b>a) Sur le Mur de l'utilisateur :</b></p>
+            <p><b><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2313.png') }}" alt="2313.png"></b></p>
+            <p><b><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2314.png') }}" alt="2314.png"></b></p>
+            <p><b>b) Sur les ressources</b></p>
+            <p><b><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2315.png') }}" alt="2315.png" width="526" height="450" /> </b></p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">1.4. Les différents types de ressources</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>Sur Claroline Connect, vous allez retrouver différents types de ressources:</p>
+            <ul>
+            <li>Des documents que vous pouvez uploader, télécharger, mettre à jour, placer en raccourcis, etc.</li>
+            <li>Des outils de contenus (texte, annonce, activité)</li>
+            <li>Des outils de communication (annonces, forum, blog)</li>
+            <li>Des Wikis</li>
+            <li>Un générateur d'exercices</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">1.4.1. La gestion et le dépôt de documents</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>Sur la plateforme Claroline Connect, vous pouvez <b>déposer</b> ou <b>télécharger</b> différents types de <b>documents</b> 
+                ou de <b>fichiers</b>.</p>
+            <p>Vous pouvez limiter les droits de diffusion de vos documents ou les mettre à disposition de vos étudiants.</br>
+                Le dépôt ou le téléchargement de documents se fait dans le gestionnaire des<b> Ressources</b> qui est accessible à 
+                partir de l'icône <b>"Ressources" <img style="max-width: 100%" src="{{ asset('uploads/custom/images/2034.png') }}" alt="2034.png">
+                </b> qui se trouve en haut à droite de la barre de propriété de votre bureau, ou à partir de la <b>barre d'outils</b> 
+                de votre espace d'activités.</p>
+            <p style="text-align: center"><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2035.png') }}" alt="2035.png"></p>
+            <p style="text-align: center"><iframe src="https://www.youtube.com/embed/RnGGKNB7F8k?wmode=opaque" width="50%" min-height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></p>
+            <p style="text-align: center"><a href="http://www.youtube.com/watch?v=RnGGKNB7F8k" target="_blank">Didacticiel Claroline Connect - Gestions des fichiers</a> </p>
+            <p> </p>
+            <h6>1. Copiez des documents de votre ordinateur à Claroline Connect ("upload")</h6>
+            <p><span style="color: #000000;">Pour transférer un fichier sur Claroline, positionnez vous préalablement : </br>- dans l'e<b>space d'activités</b> souhaité , puis cliquez sur  l'icône "<b>ressources" </b>de la barre de ressources<b>,<br />- </b>dans le gestionnaire des<b> ressources </b>de votre bureau<b><br /></b></span></p>
+            <table style="width: 100%;">
+                <tbody>
+                <tr>
+                    <td style="vertical-align: top"><span style="color: #000000;"><b><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2036.png') }}" alt="2036.png"> </b></span></td>
+                    <td style="width: 30px"></td>
+                    <td style="vertical-align: top">
+                        <p><span style="text-decoration: underline; color: #ff9900"><b>Solution par le menu</b></span><br /><br />Cliquez sur <b>Ajouter</b>-&gt; <b>Fichier</b> pour appeler la fenêtre du sélecteur de ressources et sélectionner un fichier à l'aide de l'onglet <b>"Parcourir"</b>. Cliquez sur <b>Ok. </b>Le fichier, après téléchargement, appara&icirc;tra dans vos ressources.</p>
+                        <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2037.png') }}" alt="2037.png"> <img style="max-width: 100%" src="{{ asset('uploads/custom/images/2038.png') }}" alt="2038.png" width="593" height="227" /></p>
+                        <p><b><span style="text-decoration: underline; color: #ff9900">Solution Drag and Drop</span><br /></b></p>
+                        <p>Toujours dans le gestionnaire des ressources, positionnez-vous à l'endroit ou vous voulez Uploader vos fichiers, <b>sélectionnez un ou plusieurs fichiers</b> et faites un simple <b>glisser/déposer</b> de votre ordinateur à Claroline Connect. </p>
+                        <p><b><span style="text-decoration: underline; color: #ff9900">Solution Zip</span><br /></b>Transférez un fichier Zip ( contenant un ensemble de fichiers) par une des méthodes décrites ci dessus en n' oubliant pas de le décompacter directement en cochant la case "<b>Décompresser le fichier si possible</b>"</p>
+                        <p><span style="color: #ff6600;"><b><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2051.jpeg') }}" alt="2051.jpeg"></b></span></p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <h6>2. Téléchargez un document de Claroline Connect à votre ordinateur</h6>
+            <p>Pour <span style="color: #ff9900"><b>télécharger un document de Claroline sur votre ordinateur</b></span>, cliquez sur les <b style="line-height: 1.5;"><em>"</em><em><b>Options</b>" </em></b>du fichier (flèche à droite du nom de fichier)<span style="line-height: 1.5;">, et sélectionnez </span><b style="line-height: 1.5;"><em>"Télécharger"</em></b><span style="line-height: 1.5;">.</span></p>
+            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2039.png') }}" alt="2039.png"></br></p>
+            <h6>3. Créer un raccourci pour une ressource</h6>
+            <p>Claroline Connect vous permet de créer des raccourcis afin de pointer sur une ressource (quel que soit l'espace d'activités) sans changer son emplacement d'origine (le contraire d'importer). Cela permet d'avoir un fichier original et de le modifier à la source.</p>
+            <p>Pour créer un raccourci, cliquez sur l'onglet <b>"Ajouter"</b> -&gt; <b>"Raccourcis". </b>Une fois créé le raccourci appara&icirc;t dans l'espace des ressources sous la forme d'une<b> icône avec une flèche bleue.<br /></b></p>
+            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2041.png') }}" alt="2041.png"> <img style="max-width: 100%" src="{{ asset('uploads/custom/images/2045.png') }}" alt="2045.png"></p>
+            <h6>4. Importer des ressources</h6>
+            <p><b>Importer</b> une ressource <b>équivaut à créer un doublon</b> : vous allez récupérer une ressource existante d'un espace d'activités et la copier dans un autre espace.</p>
+            <p><span style="color: #ff9900"><b>Attention :</b> si le fichier d'origine est modifié, la copie ne sera pas modifiée.</span></p>
+            <p>Pour importer une ressource, cliquez sur l'icône <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2034.png') }}" alt="2034.png"> et sélectionnez le fichier souhaité gr&acirc;ce au sélecteur de ressources.</p>
+            <p><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/2044.png') }}" alt="2044.png"></p>
+            <p>Une fois la ressource importée, elle appara&icirc;tra dans l'espace Ressources de l'espace d'activités souhaité.</p>
+            <p> </p>
+            <h6>5. Organisez vos ressources en créant des répertoires et des sous-répertoires</h6>
+            <p><span style="color: #ff9900"><b>Sur Claroline Connect, vous pouvez organiser vos ressources à l'aide de répertoires (ou dossiers) et de sous-répertoires.</b></span></p>
+            <p>Pour créer un répertoire, cliquez sur l'onglet "<b>Répertoire"</b> du menu "<b>créer</b>".</p>
+            <table style="height: 631px" width="699">
+                <tbody>
+                <tr>
+                    <td style="width: 160px; vertical-align: top"></td>
+                    <td style="width: 30px;"> </td>
+                    <td style="vertical-align: top;">
+                        <p>Donnez un nom à votre répertoire dans la fenêtre "<b>Répertoire</b>", puis cliquez sur <b>OK</b></p>
+                        <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2047.png') }}" alt="2047.png"></p>
+                        <p>Le répertoire ainsi créé appara&icirc;tra alors dans l'espace ressources de votre espace d'activités.</p>
+                        <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2048.png') }}" alt="2048.png"></p>
+                        <p>Vous pouvez créer autant de répertoires et de sous-répertoires que vous le souhaitez.</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">2. GEREZ LES DROITS</a>
+              </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Claroline Connect permet de paramétrer de manière flexible et précise les interactions des
+                      utilisateurs avec les espaces d'activités et les ressources, à partir de la gestion des droits.</p>
+                  <p><b>Rôles </b></p>
+                  <p>Pour la gestion des rôles, il est nécessaire, dans un premier temps, de préciser les rôles 
+                      des utilisateurs.</p>
+                  <p>Claroline Connect propose des rôles prédéfinis et personnalisés</a>.</p>
+                  <p>Ces réglages permettent, par exemple de travailler conjointement sur les mêmes ressources, de rendre 
+                      public un espace d'activités, de permettre aux utilisateurs de créer des ressources visibles 
+                      par les autres utilisateurs, etc.</p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">2.1. Paramétrez l'accès à un espace d'activités</a>
+              </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Vous pouvez paramétrer l'espace d'activités pour le rendre accessible à certains profils ou pour le rendre public (permettre l'accès à ceux qui ne sont pas inscrits à la plateforme).</p>
+                  <p>Pour faire cela, cliquez sur l'icône "<b>paramètres </b>"du menu à gauche.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2711.png') }}" alt="2711.png" width="778" height="304" /></p>
+                  <p>Quatre options vous sont proposées : Général, Outils, Modèles et Ressources.</p>
+                  <p>Les options qui nous intéressent dans cette section sont : <b>Outils </b>et<b> Ressources.</b></p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2715.png') }}" alt="2715.png" width="854" height="492" /></p>
+                  <p><b>Outils :</b></p>
+                  <p>Il permet de configurer les droits des différents profils (Collaborateur, Anonyme, Utilisateur) sur les différents outils (Accueil, Ressource, Paramètres, Agenda, Suivi, Tableau de bord, Utilisateurs, Badges, Mes badges, Mes activités, Parcours).</p>
+                  <p>Cela permet, par exemple, de rendre un contenu accessible à tous les anonymes, y compris ceux qui ne sont pas identifiés ou inscrits.</p>
+                  <p>Comme expliqué dans les références:</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2714.png') }}" alt="2714.png" width="739" height="73" /></p>
+                  <p>Dans l'exemple ci-dessous, seuls l'<b>Accueil</b> et les <b>Ressources</b> sont visibles par le profil "<b>Collaborateur</b> " et il ne peut rien éditer/modifier. En revanche, les profils "Anonyme" et "Utilisateur" n'ont aucun droit.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2716.png') }}" alt="2716.png" width="919" height="338" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">2.2. Gérez les droits d'accès aux ressources</a>
+              </h4>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Vous pouvez <b>gérer les droits d'accès aux ressources</b> en fonction des profils, des espaces ou des utilisateurs. Il est possible de régler finement ces droits par type d'action (ouvrir, copier, exporter, éditer, supprimer) et par type de ressource (en cliquant sur &ldquo;<b>Options</b>&rdquo;). Rappelons que l'on peut éditer les droits d'un fichier particulier depuis le répertoire des ressources (cf. menu déroulant du fichier concerné).</p>
+                  <p>Le tableau est composé de 4 onglets : Simple, Avancé, Par espace, Par utilisateur</p>
+                  <p><b>Simple </b></p>
+                  <p>Il permet de gérer les droits des ressources de manière générale.</p>
+                  <p>Trois options vous sont proposées:
+                    <ul>
+                      <li><b>à tout le monde</b>: permet l'accès public à la ressource</li>
+                      <li><b>aux membres de cet espace</b>: permet l'accès à ceux qui sont inscrits à l'espace d'activités concerné.</li>
+                      <li><b>aux utilisateurs de la plateforme</b>: permet l'accès à ceux qui sont inscrit à la plateforme.</li>
+                  </ul>
+                  <p>Dans l'exemple ci-dessous, l'espace d'activités est accessible "<b>aux membres de cet espace d'activités</b>",
+                      c'est-à dire à ceux qui sont inscrits à l'espace d'activités concerné.</p>
+                  <p>Si vous souhaitez propager les droits dans les répertoires et sous-répertoires du gestionnaire de ressources, cochez
+                      la case "<b>Appliquer au contenu du répertoire et aux sous-répertoires.</b>"</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2717.png') }}" alt="2717.png" width="1053" height="276" /></p>
+                  <p><b>Avancé</b></p>
+                  <p>Vous permet de régler finement ces droits par type d'action (ouvrir, copier, exporter, éditer, supprimer) selon le
+                      profil.</p>
+                  <p>Dans l'exemple, le collaborateur peut ouvrir et exporter les ressources.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2722.png') }}" alt="2722.png" width="1052" height="329" /></p>
+                  <p> </p>
+                  <p><b>Par espace</b></p>
+                  <p>Il s'agit d'un cas particulier. Il permet de donner accès à des ressources qui se trouvent dans un autre espace
+                      d'activités sans donner accès à l'utilisateur à tout l'espace d'activités.</p>
+                  <p><b>Exemple :</b></p>
+                  <p>Vos utilisateurs sont inscrits dans l'espace d'activités A et vous souhaitez leur donner accès à une ressource (blog,
+                      article, forum, wiki etc.) qui se trouve dans l'espace d'activités B.</p>
+                  <ul>
+                      <li>Allez à l'espace d'activité B (dans l'exemple : MOOC FOFLE) o ù se trouve la ressource dont vous souhaitez donner
+                          l'accès et cliquez sur <b>paramètres</b>. Ensuite cliquez sur <b>ressources</b> et choisissez l'onglet
+                          "<b>Par espace</b>".</li>
+                      <li>Cliquez sur l'espace d'activités A auquel sont inscrits vos utilisateurs (A-Espace d'activités A (EAA) ). La liste
+                          des rôles de l'espace d'activités A se déroulera. <b>Sélectionnez le rôle</b> auquel vous souhaitez rendre
+                          la ressource accessible.</li>
+                  </ul>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2723.png') }}" alt="2723.png" width="1036" height="439" /></p>
+                  <ul>
+                      <li> A la fin de la page vous trouverez le tableau avec le<b> type d'action</b> (ouvrir, copier, exporter, éditer,
+                          supprimer) et le type de ressource (en cliquant sur "Options").</li>
+                  </ul>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2724.png') }}" alt="2724.png" width="1064" height="254" /></p>
+                  <p><b>Par utilisateur</b></p>
+                  <p>Cet onglet sert également pour des cas particuliers. Il permet de donner les droits d'accès par utilisateur (un o plusieurs).</p>
+                  <p>Pour ajouter des utilisateurs il faut cliquer sur "<b>ajouter un utilisateur</b> ".</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2727.png') }}" alt="2727.png" width="1050" height="333" /></p>
+                  <p>Cochez l'utilisateur souhaité et cliquez sur OK.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2726.png') }}" alt="2726.png" width="1054" height="341" /></p>
+                  <p>L'utilisateur a été ajouté à l'onglet afin de lui donner des droits particuliers.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2728.png') }}" alt="2728.png" width="1061" height="335" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">2.3. Gérez les droits d'accès depuis le répertoire
+                      des ressources</a>
+              </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Vous pouvez  donner les droits d'accès depuis le répertoire de ressources.</p>
+                  <ul>
+                      <li>Cliquez sur la petite flèche à droite du nom de la ressource et choisissez &laquo; <b>éditer les droits</b> "</li>
+                  </ul>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2729.png') }}" alt="2729.png" width="432" height="458" /></p>
+                  <ul>
+                      <li>Sélectionnez les droits en fonction <b>des profils,</b></li>
+                  </ul>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2730.png') }}" alt="2730.png" width="709" height="242" /></p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2731.png') }}" alt="2731.png" width="713" height="232" /></p>
+                  <p><b>des espaces,</b></p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2732.png') }}" alt="2732.png" width="712" height="243" /></p>
+                  <p><b>ou des utilisateurs.</b></p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2733.png') }}" alt="2733.png" width="717" height="362" /></p>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default" style="margin-bottom: 15px">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">2.4. Paramétrez les droits de la page d'accueil</a>
+              </h4>
+          </div>
+          <div id="collapse12" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <p>Vous pouvez également paramétrer les onglets de la page d'accueil de votre espace
+                      d'activités. Ainsi, vous pouvez créer plusieurs onglets qui seront destinés à différents profils.</p>
+                  <p>Vous proposerez donc des pages d'accueil différentes en fonction du profil.</p>
+                  <p>Cliquez sur l'icône de la roue crantée pour éditer l'onglet.</p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2735.png') }}" alt="2735.png" width="782" height="383"></p>
+                  <p>Cliquez ensuite sur "<b>paramètres avancés"</b> et <b>choisissez le rôle.</b></p>
+                  <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/2736.png') }}" alt="2736.png" width="809" height="395"></p>
+                  <p><b>Attention:</b> Si aucun rôle n'est coché, l'onglet sera disponible pour tous les utilisateurs. Sinon, il sera uniquement disponible pour les utilisateurs ayant un des rôles sélectionnés.</p>              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+<div id="scroll-to-top">
+    <span>
+        <i class="fa fa-arrow-up"></i>
+    </span>
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/materialize.css') }}"
+          type="text/css"
+    />
+
+
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/materialize.min.js') }}"
+    >
+    </script>
+{% endblock %}

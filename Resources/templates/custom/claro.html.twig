@@ -1,0 +1,172 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<div id="conteneur" class="container-fluid">
+    <div id="section-id-page" style="padding:15px">
+        <div class="container">
+            <h1 class="nom-de-page" style="padding-top:25px; color:whitesmoke; text-align: center">Documentation</h1>
+            <p class="page-location" style="padding-top:15px; font-weight: bold"><a href="bases"> Les bases | </a> <a href="learners_tutorials"> Le manuel des utilisateurs | </a> <a href="teachers_tutorials"> Le manuel des gestionnaires | <a href="admin_tutorials">  Le manuel des administrateurs</p>
+        </div>
+    </div>
+</div>
+
+<!-- LA COMUNAUTE -->
+
+    <div class="container" style="background-color: lightblue; padding: 30px 0 30px 0">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <h5 style="color:whitesmoke; text-align: center">Notre philosophie</h5>
+                        <iframe style="width:100%; min-height:400px; text-align: center" src="https://www.youtube.com/embed/9cSR3CfjIb0?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 style="color:whitesmoke; text-align: center">Un noyau révolutionnaire</h5>
+                        <iframe style="width:100%; min-height:400px; text-align: center" src="https://www.youtube.com/embed/h2r14YQdHGA?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 style="color:whitesmoke; text-align: center">Claroline & Spiral Connect</h5>
+                        <iframe style="width:100%; min-height:400px; text-align: center" src="https://www.youtube.com/embed/4mlWeQed0_I?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="color: #808284; background-color: #ffffff">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10" style="padding: 20px">
+            <p>Claroline Connect est fondée sur <strong>trois piliers</strong> :</br>
+            - <strong>les acteurs</strong> et les différents groupes qu'ils constituent,</br>
+            - <strong>les espaces d'activités</strong> incluant des ressources au sens large comme des documents multimédias, forums, wikis, visioconférences, travaux,
+                cartes conceptuelles, exercices, etc.</br>
+            - <strong>les activités</strong> se déclinant en parcours libres, séquentiels ou conditionnels, mais aussi à propos de situations-problèmes,
+                de projets, etc.</p>
+        </div>
+    </div>
+</div>
+
+<!-- HISTOIRE DE CLAROLINE -->
+
+<div class="container" style="padding 20px">
+    <div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-offset-1 col-lg-5">
+            <h2>Histoire de Claroline Connect</h2>
+                <p style="text-align: justify; color: #808284"><strong>Claroline Connect est née de l'évolution de la plateforme
+                        Claroline et de la rencontre avec Spiral Connect.</strong></p>
+                <p style="text-align: justify; color: #808284">Notre logiciel est distribué sous la licence GPL (General Public License)
+                    qui fixe les conditions légales de distribution des logiciels libres. "Les termes de la GPL 
+                    autorisent toute personne à recevoir une copie d'un travail sous GPL. Chaque personne qui adhère 
+                    aux termes et aux conditions de la GPL a la permission de modifier le travail, de l'étudier et de 
+                    redistribuer le travail ou un travail dérivé." (Source : Article Licence publique générale GNU de 
+                    Wikipédia en français)</p>
+
+<!-- NOTRE CHOIX TECHNIQUE -->
+
+            <h2>Notre choix technique</h2>
+                <ul>
+                    <li><h4>Coté développeurs :</h4></li>
+                </ul>
+                <div><p style="color: #808284">La plateforme Claroline Connect est développée par plusieurs équipes:</p></div>
+                <ol>
+                    <li style="color: #808284">dans des universités: Lyon1, Grenoble3, Louvain-la-Neuve, Saint-Etienne, Ecole Centrale de Lyon;</li>
+                    <li style="color: #808284">dans des entreprises : Forma-Libre SA, NExT.com (division d'Orange), ADN (Agence Du Numérique);</li>
+                    <li style="color: #808284">par des particuliers qui peuvent contribuer en leur nom propre.</li>
+                </ol>
+                <ul>
+                    <li><h4>Techniquement côté code</h4></li>
+                </ul>
+                <p style="color: #808284">La plateforme Claroline Connect est développée en PhP à partir du framework Symfony</p>
+                <p class="clearfix" style="text-align: center"><span style="color: #000000;"><img style="max-width: 100%;" src="{{ asset('uploads/custom/images/symfony.svg') }}" alt="symphony-logo.PNG" width="260" height="71" /> </span></p>
+                <p style="text-align: center"><a href="http://symfony.com/">http://symfony.com/</a></p>
+                <p>Claroline Connect étant un <strong>projet Open Source,</strong> son code est accessible à l'adresse suivante:</br>
+                <a href="https://github.com/claroline/" target="_blank">https://github.com/claroline/</a></p>
+                <p>Les interfaces sont en<strong> reponsive design</strong> et s'adaptent aux différents types de terminal 
+                    utilisés: smartphones, tablettes, ordinateurs, etc.</p>
+                <p style="text-align: center"><img src="{{ asset('uploads/custom/images/icons/icon-responsive@2x.png') }}" alt="responsive_design.jpg" width="315" height="177"></p>
+         </div>
+
+<!-- LA PHILOSOPHIE CONNECT -->
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+            <h2>La philosophie Connect</h2>
+                <p style="text-align: justify">La plupart des plateformes pédagogiques actuelles ont été initialement développées il y a une quinzaine d'années suivant un modèle classique de
+                formation : un enseignant qui détient les savoirs et qui les transmet, suivant différentes modalités, à de (futurs) formés dans le but de favoriser l'apprentissage de ces
+                derniers. "Elles sont surtout des "Teaching Management Systems", c'est-à-dire des outils au service de l'enseignant pour créer et gérer des cours plutôt qu'au service de
+                l'apprenant et des processus d'apprentissage. Elles s'inscrivent toujours dans une logique et une architecture 1.0" (...) "Claroline Connect a été créée pour répondre à
+                cette vision et à ce besoin d'ouverture et de transversalité. Dorénavant, l'utilisateur, l'apprenant va avoir son espace personnel semblable à celui du professeur.
+                Le professeur peut créer des forums, l'étudiant pourra créer des forums. Cela réconcilie peut-être aussi les sources du savoir qu'ont été, que sont et que restent les
+                Universités et Hautes écoles, l'enseignement secondaire, avec des vues beaucoup plus appropriatives."</br>
+                Marcel Lebrun (UCL).</p>
+                <p style="text-align: justify;">Claroline Connect est une plateforme centrée sur l'utilisateur et son activité. Elle permet à l'utilisateur (formateur ou apprenant) de
+                créer et d'organiser des espaces d'activités, de proposer des activités, d'ouvrir des forums, des wikis, des blogs, de gérer ses interactions et ses ressources et de gérer les
+                accès en fonction de ses besoins et de ses objectifs d'apprentissage. Claroline Connect propose donc de mieux balancer ce que fait l'enseignant et ce que fait l'apprenant
+                en permettant un contrôle plus distribué dans l'utilisation de la plateforme. Claroline Connect donne la place à l'étudiant pour apprendre et le rend acteur de son propre
+                apprentissage.</p>
+                <p style="text-align: justify">L'utilisateur dispose d'un<strong> bureau personnel</strong> qu'il peut personnaliser, <strong>un espace d'activités personnel</strong> dont il
+                est le gestionnaire. Il peut s'inscrire à des <strong>espaces d'activités</strong> ou même en créer s'il possède les droits de création.</p>
+            <h4>Un projet Open source</h4>
+                <p>Retrouvez le code de Claroline Connect sur <a href="https://github.com/claroline/Claroline" target="_blank">https://github.com/claroline/Claroline </a></p>
+            <h4>Une approche modulaire</h4>
+                <p style="text-align: justify">Connectée, ouverte sur son environnement, Claroline Connect favorise le partage d'expériences en intégrant les avancées
+                technologiques du web:</p>
+                <ol>
+                    <li>des espaces d'activités et des outils génériques pour rencontrer différents contextes d'usages : MOOC, APP, projets, cours hybride,...</li>
+                    <li>une entrée par ressources et/ou activités></li>
+                    <li>une approche modulaire pour satisfaire les besoins de tous les niveaux d'enseignement et de toute organisation ou entreprise</li>
+                    <li>des modèles partageables d'espaces d'activités et de parcours pédagogiques.</li>
+                </ol>
+            <h4>Des outils personnalisables...</h4>
+                <ol>
+                    <li>pour une plus grande personnalisation de la plateforme et des outils, une prise en main rapide et une simplicité d'utilisation.</li>
+                    <li>des interfaces graphiques configurables selon les besoins et auto-adaptables en fonction des périphériques utilisés (responsive design)</li>
+                    <li>des tableaux de bord et des statistiques personnalisables</li>
+                    <li>un "bureau" utilisateur agrégateur de flux d'informations et des pages d'accueil personnalisables (onglets, textes, widgets)</li>
+                </ol>
+            <h4>Des fonctionnalités de web social...</h4>
+                <p>Claroline Connect centralise en un seul endroit les outils du web d'aujourd'hui : profil public, portfolios, wikis, blogs, forums, FluxRss, widgets,
+                partage d'informations, notifications, commentaires, notes, etc. pour:</p>
+                <ol>
+                    <li>créer des communautés d'apprenants et de formateurs;</li>
+                    <li>faciliter les interactions et les partages d'informations;</li>
+                    <li>favoriser l'ouverture à l'apprentissage tout au long de vie.</li>
+                </ol>
+        </div>
+    </div>
+</div>
+
+    <!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+
+    <script type="text/javascript">
+        $('#mailForm').submit(function(event) {
+            event.preventDefault();
+            var form = $(event.target);
+            var route = form.attr('action');
+            var data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: route,
+                data: data,
+                success: function (data) {
+                    $('#contactSuccess').removeClass('hidden');
+                }
+            });
+        });
+    </script>
+{% endblock %}

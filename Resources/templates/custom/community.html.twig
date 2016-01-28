@@ -1,0 +1,179 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<!-- NOM DE LA PAGE-->
+
+<div id="conteneur" class="container-fluid">
+    <div class="row">
+        <div id="section-id-page" style="padding:30px">
+            <div class="parallax-style section-id-page">
+                <div class="pattern">
+                    <div class="container">
+                        <p class="nom-de-page" style="padding-top:30px">La communauté</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- LA COMUNAUTE -->
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-12" style="padding: 0 0 20px 50px">
+            <h2>Un Consortium international</h2>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
+            <p><img src="{{ asset('uploads/custom/images/Logo_Claroline.jpg') }}" width="80%"></br></p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>La création du Consortium Claroline répond à la nécessité de <strong>coordonner et fédérer </strong> les efforts des
+                différents acteurs impliqués dans le projet. Il a également pour mission d'assurer la promotion et le développement de
+                la plateforme, notamment sur les plans technique et pédagogique, et de définir la stratégie d'évolution.</p>
+        </div>
+    </div>
+
+<!-- VIDEO CLAROLINE EN 3 MINUTES -->
+
+    <div id="row">
+		<section id="video-section">
+			<div class="video-section parallax-style">
+				<div class="pattern">
+					<h5 class="video-title">Le Consortium Claroline</h5>
+                        <p style="text-align:center">
+                            <iframe style="width:40%; min-height:400px" src="https://www.youtube.com/embed/DmCIar_Mw10?feature=player_embedded" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+					<h6 class="video-title">Tout savoir en 3 minutes</h6>
+				</div>
+			</div>
+		</section>
+    </div>
+
+<!-- UN PROJET CENTRE UTILISATEUR -->
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-1">
+            <h2>Un projet centré sur l'utilisateur</h2>
+                <p>La version 1 de Claroline a reçu un prix UNESCO en 2007 pour ses espaces de cours en ligne. A cette époque, la plateforme était utilisée par
+                    1.196 organisations recensées dans 93 pays à travers le monde et traduite dans plus de 30 langues.</p>
+                <p>Les raisons de ce succès reposent sur un modèle pédagogique résolument centré sur l'utilisateur et décliné en trois principes fondamentaux:</p>
+                    <ul>
+                        <li>Simplicité: intuitive, Claroline est facile à installer et à utiliser;</li>
+                        <li>Souplesse: modulaire, elle permet une grande liberté de configuration;</li>
+                        <li>Stabilité: fiable, elle est maintenue par une communauté dynamique.</li>
+                    </ul>
+                <p>Dès 2008, la nécessité de faire évoluer la plateforme pour coller à l'évolution des usages numériques s'est fait sentir
+                (Web 2.0, réseaux sociaux, etc.), mais cela impliquait de repartir de zéro et représentait un investissement
+                financier important.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <h2>L'union fait la force</h2>
+            <p>Ce n'est finalement qu'en 2012, suite au rapprochement avec Spiral Connect, une autre plateforme Open Source, développée par
+            l'Université de Lyon 1, qui était confrontée à la même nécessité de repartir de zéro et dont la philosophie était très proche
+            de celle de Claroline, que le projet Claroline Connect est enfin né et que les développements ont pu commencer.</p>
+            <p>En à peine deux ans, <strong>250.000 lignes de code</strong> ont été produites pour un total cumulé de 20 ans de travail.
+            La première version stable (non béta) de Claroline Connect a ainsi pu être lancée en mai 2015 !</p>
+        </div>
+    </div>
+
+<!-- VIDEO CLAROLINE-SPIRAL -->
+
+    <div id="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <section id="video-section">
+                <div class="video-section parallax-style">
+                        <h5 class="video-title">Le mariage entre Claroline et Spiral Connect</h5>
+                            <p style="text-align:center">
+                                <iframe style="width:40%; min-height:400px" src="https://www.youtube.com/embed/4mlWeQed0_I?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                            </p>
+                        <h6 class="video-title">Causerie avec Marcel Lebrun</h6>
+                </div>
+            </section>
+        </div>
+    </div>
+
+<!-- ENFIN UN VERITABLE LMS -->
+
+    <div class="row features">
+        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+            <h2>Enfin un véritable LMS</h2>
+                <p>Arborescents, linéaires et cloisonnés, la plupart des LMS sont en fait des TMS (Teaching Management System), c'est-à-dire
+                des outils au service de l'enseignant ou du formateur qui transmet et non au service de l'apprenant et du processus
+                d'apprentissage. Claroline Connect traduit cette volonté de centrage utilisateur autour de deux concepts permettant toute
+                la transversalité et la personnalisation souhaitée:</br>
+                1. l'espace d'activités</br>
+                2. le bureau personnel</p>
+                <p>Tout part du bureau personnel que chacun peut personnaliser à sa guise via un système de widgets et au départ duquel chaque
+                utilisateur peut créer des espaces d'activités, agréger et produire des ressources... et bientôt, liker, commenter,
+                taguer, etc. Claroline Connect autorise donc une grande liberté d'action à tous les utilisateurs, quel que soit leur
+                statut (enseignant, apprenant, tuteur, etc.), afin de leur permettre d'être actifs et créatifs et de se réapproprier le
+                processus d'apprentissage.</p>
+        </div>
+    </div>
+
+<!-- VIDEO NOUVELLE VERSION DE CLAROLINE -->
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <section id="video-section">
+                <div class="video-section parallax-style">
+                    <div class="pattern">
+                        <h5 class="video-title">Un LMS centré sur l'apprenant</h5>
+                        <p style="text-align:center">
+                        <iframe style="width:40%; min-height:400px" src="https://www.youtube.com/embed/D8caYB7nrRs?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="conteneur" class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <img src="{{ asset('uploads/custom/images/Mariage.png') }}" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="scroll-to-top">
+    <span>
+        <i class="fa fa-arrow-up"></i>
+    </span>
+</div>
+
+<!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+
+    <script type="text/javascript">
+        $('#mailForm').submit(function(event) {
+            event.preventDefault();
+            var form = $(event.target);
+            var route = form.attr('action');
+            var data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: route,
+                data: data,
+                success: function (data) {
+                    $('#contactSuccess').removeClass('hidden');
+                }
+            });
+        });
+    </script>
+{% endblock %}

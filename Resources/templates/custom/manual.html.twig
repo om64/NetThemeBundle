@@ -1,0 +1,303 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<!-- NOM DE LA PAGE-->
+
+<div class="container; hidden-xs hidden-sm">
+    <div class="row">
+        <div id="section-id-page" style="padding:30px">
+            <div class="parallax-style section-id-page">
+                <div class="pattern">
+                    <div class="container">
+                        <p class="nom-de-page" style="padding-top:30px">
+                            Le manuel Connect
+                        </p>
+                        <p class="page-location" style="padding-top:20px">
+                            <a href="home">Accueil</a> Le manuel Connect
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- LES BASES DE CLAROLINE -->
+
+<div class="container">
+    <div class="white-bg about-us-section" style="margin: 10px 10px 10px 10px">
+        <div class="sec-head-container">
+            <div class="sec-head-style">
+                <h2 class="section-title wow bounceInDown">
+                    <span>Les bases de Claroline Connect</span>
+                </h2>
+                <div class="section-description" style="text:pull-right">
+                </div>
+            </div>
+        </div>
+        <div id="organisation" class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <ul><a href="#interface">1- L'INTERFACE DE CLAROLINE CONNECT</a>
+                        <li><a href="#espace">Qu'est-ce qu'un espace d'activités?</a></li>
+                        <li><a href="#toolbars">Les barres d'outils de Claroline Connect</a></li>
+                        <li><a href="#roles">Les rôles (profils) de Claroline Connect</a></li>
+                    </ul>
+                    <ul><a href="#account">2- VOTRE COMPTE</a>
+                        <li><a href="#subscription">S’inscrire à la plateforme.</a></li>
+                        <li><a href="#connexion">Se connecter à la plateforme</a></li>
+                        <li><a href="#forgotten_password">Procédure en cas de mot de passe oublié</a>
+                        <li><a href="#change_password">Modifier le mot de passe</a></li>
+                    </ul>
+                    <ul><a href="#user_profile">3- LE PROFIL DE L'UTILISATEUR</a>
+                        <li><a href="#profile">Modifier son profil</a></li>
+                        <li><a href="#url">Personnaliser l'URL de votre profil public</a></li>
+                    </ul>
+                    <ul><a href="#wysiwyg">4- L'EDITEUR WYSIWYG</a>
+                        <li><a href="#editor">Les outils de l'éditeur de texte</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <div id="interface">
+                        <h3>1- Se repérer sur Claroline Connect: l'interface de Claroline Connect</h3>
+                        <img src="{{ asset('uploads/custom/images/se_reperer_CC.jpg') }}" alt="se reperer CC.jpg">
+                        <p>Image courtesy of Stuart Miles at FreeDigitalPhotos.net</p>
+                        <p>La plateforme Claroline Connect met à la disposition de l'utilisateur:</br>
+                        un bureau (personnalisable);</br>
+                        un espace personnel (dont l'utilisateur est le gestionnaire);</br>
+                        des espaces d'activités (auxquels l'utilisateur peut s'inscrire et/ou qu'il peut créer s'il a les droits de création).</p>
+                        <p>Chacun de ces espaces est composé à la fois:</br>
+                        d'une page d'accueil;</br>
+                        d'un gestionnaire des ressources.</p>
+                        <p>Lorsque l'utilisateur est connecté, il accède à son bureau. Chaque utilisateur peut personnaliser son bureau et y organiser son travail. On peut revenir à
+                        tout moment à ce bureau en cliquant sur l’icône de la maison maison.png dans la barre de menu supérieure.</p>
+                        <p>Le bureau donne accès à différents espaces d’activités (depuis le menu supérieur). Chaque espace d’activités est lié à un répertoire de ressources. On peut
+                        schématiser simplement l’interface de la façon suivante:</p>
+                        <img src="{{ asset('uploads/custom/images/schema_claro_3.png') }}" alt="schéma claro 3.PNG">
+                    </div>
+                    <div id="espace">
+                        <h4>1.1. Qu'est-ce qu'un espace d'activités?</h4>
+                        <p>La plateforme Claroline Connect propose la notion d’espaces d’activités, plus souple et adaptée aux contextes actuels.</p>
+                        <p>Il faut comprendre l’espace d’activités comme une valise contenant :</br>
+                        des ressources (dossiers, fichiers, wikis, blogs, forums, …);</br>
+                        des outils pour inscrire des utilisateurs et leur donner accès aux ressources, créer des équipes, réaliser des suivis, créer des référentiels de compétences,
+                        mettre en place des parcours, etc.</p>
+                        <p>Dans cet espace d'activités, un ensemble d'acteurs (étudiants, formateurs, collaborateurs) peut réaliser différents types d'activités (exercices, projets,
+                        évaluations, recherches, co-working, discussions, débats, collaborations, partages, etc.) autour des objectifs définis.</p>
+                    </div>
+                    <div id="toolbars">
+                        <h4>1.2. Les barres d'outil de Claroline Connect</h4>
+                        <p>Les pages d'accueil des espaces d'activité de la plateforme Claroline Connect sont composées de deux barres d'outils:</br>
+                        Barre d'outils - bandeau supérieur</br>
+                        Barre d'outils - menu à gauche</p>
+                        <img src="{{ asset('uploads/custom/images/toolbar.png') }}" alt="barre d'outils.png">
+                        <p>Figure 5 : Les barre d'outils de Claroline Connect.</p>
+                        a- Barre d'outils - Bandeau supérieur
+                        La barre d'outils du bandeau supérieur permet l'accès aux principaux outils, ressources et espaces d'activité de la plateforme.
+                        Elle reste invariable pendant la navigation des différentes pages de la plateforme.
+                        8-bandeau supérieur.png
+                        Figure 6: Barre d'outils - bandeau supérieur
+                        Cette barre peut être modifiée et personnalisée par l'utilisateur (Voir : outils du bureau.)
+                        b- Barre d'outils - menu à gauche
+                        La barre d'outils du menu de gauche permet l'accès aux outils et ressources de l'espace d'activité concerné. Elle varie donc, selon l'espace d'activité et selon que l'utilisateur soit gestionnaire ou pas de l'espace d'activité.
+                        9-menu de gauche.png
+                        Figure 7: Comparaison des menus de gauche des pages d'accueil des espace d'activités. Le menu de droite montre les outils du gestionnaire d'un espace d'activités. Le menu de gauche montre un exemple de menu de l'utilisateur inscrit à un espace d'activités dont il n'est pas le gestionnaire.
+                    </div>
+                    <div id="roles">
+                        <h4>1.3. Les rôles (profils) de Claroline Connect</h4>
+                        <h5>Claroline Connect propose des r&ocirc;les prédéfinis pour la plateforme et pour les espaces d'activités. Cependant , il est possible les personnaliser en modifiant leur nom ou en créant d'autres.</h5>
+                        <p>a- Les r&ocirc;les prédéfinis</strong></span></h4>
+                        <p>Claroline Connect met &agrave; disposition de l'utilisateur huit r&ocirc;les (profils) prédéfinis, six au niveau de la plateforme et deux au niveau des espaces d'activités.<span style="color: #ff0000;"> (Voir gestion des droits)</span></p>
+                        <p>&nbsp;</p>
+                        <ul style="list-style-type: square;">
+                            <li><span style="color: #3366ff;"><strong>&nbsp;&nbsp;&nbsp; Niveau plateforme:</strong></span></li>
+                        </ul>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le <strong>Utilisateur:</strong> tous les utilisateurs qui sont <strong>inscrits </strong>&agrave; la plateforme.</li>
+                        </ul>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le de <strong>Créateur d'espace:</strong> l'utilisateur qui peut <strong>créer</strong> des espaces d'activité sans &ecirc;tre l'administrateur de la plateforme. Cependant, c'est l'administrateur de la plateforme qui va donner aux utilisateurs les droits de création des espaces d'activité.</li>
+                        </ul>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le <strong>Administrateur:</strong> qui <strong>administre </strong>la plateforme.</li>
+                        </ul>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le <strong>anonyme: </strong>qui <strong>n'est pas inscrit </strong>&agrave; la plateforme (l'internaute). Claroline Connect permet de rendre "public" des ressources et/ou des espaces d'activités. L'anonyme a donc, la possibilité d'y accéder &agrave; partir du lien publié.<span style="color: #ff0000;"> (Voir gestion des droits)</span></li>
+                        </ul>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le <strong>Gestionnaire de compétences</strong>: qui peut créer et gérer un référentiel de compétences.</li>
+                        </ul>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le <strong>Gestionnaire de l'accueil</strong>: qui peut créer et gérer le site web de la plateforme.</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <ul style="list-style-type: square;">
+                            <li><span style="color: #3366ff;">&nbsp;&nbsp;&nbsp;&nbsp; <strong>Niveau espace d'activité</strong></span></li>
+                        </ul>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le <strong>collaborateur</strong>: l'utilisateur <strong>au sein de l'espace d'activité . </strong>Ce terme est en cohérence avec la philosophie de Claroline Connect qui met en avant le r&ocirc;le actif de l'utilisateur comme gestionnaire de son propre apprentissage. Tous les utilisateurs qui sont inscrit &agrave; un espace d'activité ont le r&ocirc;le "collaborateur" .</li>
+                        </ul>
+                        <ul style="list-style-type: disc;">
+                            <li>R&ocirc;le <strong>gestionnaire</strong>: qui <strong>g&egrave;re</strong> un espace d'activité. Vous &ecirc;tes, par exemple, gestionnaire de votre propre espace personnel.</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <h4><span style="color: #003366;"><strong>b- Les r&ocirc;les personnalisés. </strong></span></h4>
+                        <p>&nbsp;</p>
+                        <table border="2">
+                            <tbody>
+                            <tr>
+                                <td><span style="background-color: #ffffff;"><img style="max-width: 100%;" src="/file/resource/media/1758" alt="asterisque.PNG" width="72" height="61" /></span></td>
+                                <td>&nbsp;<span style="background-color: #ffffff;"><strong>Il est possible de modifier les intitulés des r&ocirc;les prédéfinis pour les adapter aux différents contextes et institutions.</strong></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #ff0000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (voir gestion des droits) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <p style="text-align: center;">&nbsp;</p>
+                        <p style="text-align: center;">&nbsp;</p>
+                        <p style="text-align: center;">&nbsp;</p>
+                    </div>
+                    <div id="account">
+                        <h3>2- Votre compte</h3>
+                        <p></p>
+                    <div>
+                    <div id="subscription">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="connexion">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="forgotten_password">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="change_password">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="user_profile">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="profile">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="url">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="wysiwyg">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div id="editor">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PIED DE PAGE -->
+
+
+    <div id="scroll-to-top">
+        <span>
+            <i class="fa fa-arrow-up"></i>
+        </span>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/connect.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/responsive.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/font-awesome.min.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/linecons-font-styleconnect.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/owl.carousel.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/content_slider_style.css') }}"
+          type="text/css"
+    />
+    <link rel="stylesheet"
+          href="{{ asset('uploads/custom/css/animate.css') }}"
+          type="text/css"
+    />
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/templateText.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/plugins.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/functions.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/jquery-parallax.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+        src="{{ asset('uploads/custom/js/modernizr-2.8.0.min.js') }}"
+                >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/jquery-2.1.0.min.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/wow.min.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/jquery.content_slider.min.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/jquery.mousewheel.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/gmap3.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/.js') }}"
+    >
+    </script>
+    <script type="text/javascript"
+            src="{{ asset('uploads/custom/js/.js') }}"
+    >
+
+{% endblock %}

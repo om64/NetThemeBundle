@@ -1,0 +1,104 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<!-- NOM DE LA PAGE-->
+
+<div id="conteneur" class="container-fluid hidden-xs hidden-sm">
+    <div class="row">
+        <div id="section-id-page">
+            <div class="parallax-style section-id-page">
+                <div class="pattern">
+                    <div class="container">
+                        <p class="nom-de-page" style="padding-top:30px">Le coin des développeurs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- REJOIGNEZ LA COMUNAUTE -->
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1" style="padding-top:30px">
+            <h3>Rejoignez la communauté des développeurs</h3>
+            <p></p><p><img src="{{ asset('uploads/custom/images/Logo_Claroline.jpg') }}" width="40%"></br></p>
+            <p><strong>Claroline Connect </strong>est un logiciel <strong>libre et gratuit</strong> permettant de déployer facilement une plateforme dédiée à l'apprentissage et au travail
+            collaboratif en ligne.</p>
+            <p><strong></br>Retrouvez les sources et participez aux développements:</strong></br>
+            <a href="https://github.com/claroline/Claroline">https://github.com/claroline/Claroline</a></p>
+            <p><strong>Retrouvez les informations sur le développement:</strong><br /><a href="https://github.com/claroline/CoreBundle/blob/master/Resources/doc/index.md">https://github.com/claroline/CoreBundle/blob/master/Resources/doc/index.md</a></p>
+            <p><strong>Discussions entre Dev:</strong><br /><a href="https://groups.google.com/forum/?hl=fr#!forum/claro-devs">https://groups.google.com/forum/?hl=fr#!forum/claro-devs</a></p>
+            <p><strong>Exemple de Configuration utilisée sur le serveur de Lyon1</br>
+            (8000 utilisateurs en test au 01 juin 2015 <a href="http://claco.univ-lyon1.fr">http://claco.univ-lyon1.fr</a>)</strong></p>
+            <p>Configuration de ce serveur installée sur :<br /><strong>Frontal web / php / symfony :</strong>
+            </br>Machine Virtuelle ubutu 12.04 / 4 vCPUs / 3 GB RAM<br />nginx / php5-fpm (5.5)
+            </br>stockage SAN 100 GB</p>
+            <p><strong>Serveur mysql :</strong><br />Machine Virtuelle ubutu 12.04 / 4 vCPUs / 3 GB RAM
+            </br>mariaDB 5.5.32</p>
+            <p><strong>Retrouvez les développeurs aux Journées Claroline Connect:</strong>
+            </br>
+            <a href="http://accu2015.univ-st-etienne.fr/" target="_blank">http://accu2015.univ-st-etienne.fr</p>
+            <div><img class="img-responsive" src="http://ujm-wp-network.univ-st-etienne.fr/accu2015/files/2015/02/cropped-BANDEAU-WEB-ACCU3.jpg"
+            alt="Accu 2015 | Un site utilisant Réseau UJM &ndash; Ferme &ndash; Wordpress" width="527" height="151"></a>
+            <div class="clearfix"><p><a href="http://accu2015.univ-st-etienne.fr/" target="_blank">Accu 2015 | Un site utilisant Réseau UJM &ndash; Ferme &ndash; Wordpress</a></p></div>
+            <div class="clearfix"><p>Cette 10ème conférence annuelle des utilisateurs est une occasion unique de rencontrer des utilisateurs et des développeurs, de partager avec eux
+            expériences et réalisations, et de discuter ensemble des futures versions de Claroline Connect.</p></div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1" style="padding-top:30px">
+            <h3>La "road map" des développements</h3>
+            <p><strong>Grands Principes</strong>
+            <br />- Ergonomie (en cours livr&eacute; fin 2015)
+            <br />- LTI (Laurent d&eacute;but janvier 2016)<br />- B3 = int&eacute;gration plugin Big Bleu Button outil libre de classe virtuelle (Lyon fin 2015)
+            <br />- Board (LLN - pour fin 2015)
+            <br />- integration inwicast&nbsp; (fait fin mai 2015 <a href="http://mediacenter.univ-lyon1.fr">http://mediacenter.univ-lyon1.fr</a>&nbsp;+ plugin inwicast &nbsp;&agrave; dispo <a href="https://github.com/ptsavdar/claroline-plugin-bundle/blob/master/InwicastClarolinePluginBundle.php">https://github.com/ptsavdar/claroline-plugin-bundle/blob/master/InwicastClarolinePluginBundle.php</a> )&nbsp;<br />- Outils admin &nbsp;(fusion de compte,... - LLN pour fin 2015)<br />- plugin Lien web (gestionnaire URL) (Lyon fin 2015)<br />- Suivi d'une personne sur plusieurs espaces d'activit&eacute; (pr&eacute;vu LLN - mai 2015)</p>
+            <p>- &Eacute;diteur d'&eacute;quation XML &nbsp;MathML et Latex (Lyon - pour fin 2015)
+            <br />- Outils d'interaction temps r&eacute;el (Tchat, Framapad... - LLN pour fin 2015)
+            <br />- Import de plateforme Spiral et claroline (Lyon - d&eacute;but 2016)<br />- Services de suivi autour de la messagerie (?Lyon sous-trait&eacute; - fin 2015)</p>
+            <p>- Vue d&eacute;tail (listing) au niveau des ressources (fait - mai 2015)<br />- Portail des ressources : permet d'afficher les ressources libre de la plateforme au public sous forme de catalogue avec un moteur de recherche (Lyon - janvier 2016)<br />- Catalogue des espaces de travail filtrage de l'offre par type MOOC, SPOC... (Lyon -juin 2015)<br />- Int&eacute;gration de fonction de type r&eacute;seau social (TL, j'aime, Commentaires) (Lyon - juin 2015)<br />- Gestion des ressources mat&eacute;riel dans l'agenda: r&eacute;servation de salle, mat&eacute;riel, etc. (LLN - Fin 2015)<br />- Gestion de pr&eacute;sence et journal de classe planifier les t&acirc;ches -&gt; Agenda&nbsp;(LLN - Fin 2015)<br />- Interconnexion entre plateformes : je cr&eacute;e un cours &agrave; Lyon je peux le jouer sur une plateforme &agrave; Louvain (sur 2 ans)<br />- Biblioth&egrave;que de th&egrave;me d'ic&ocirc;nes: permettre de changer les ic&ocirc;nes standards des ressources (Lyon)<br />- Fonctionnalit&eacute; type dropbox</p>
+            <p><br /><strong>Fonctionnalit&eacute;s</strong><br />- Lire les FLV &nbsp;?<br />- Voir la taille d'un fichier (LLN - mai 2015)<br />- Inscription par excel &agrave; un espace de travail (Fait LLN - mai 2015)<br />- Choisir la page de d&eacute;part d'un espace d'activit&eacute; (LLN - mai 2015)<br />- Outils de d&eacute;ploiement d'objet par &eacute;tudiant (LLN - d&eacute;cembre 2015)<br />- Int&eacute;gration outils antiplagiat &nbsp;-&gt; Zone de d&eacute;pot ( voir LTI )<br /><br /></p>
+        </div>
+    </div>
+
+    <div id="scroll-to-top">
+		<span>
+			<i class="fa fa-arrow-up"></i>
+		</span>
+    </div>
+
+    <!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+
+    <script type="text/javascript">
+        $('#mailForm').submit(function(event) {
+            event.preventDefault();
+            var form = $(event.target);
+            var route = form.attr('action');
+            var data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: route,
+                data: data,
+                success: function (data) {
+                    $('#contactSuccess').removeClass('hidden');
+                }
+            });
+        });
+    </script>
+{% endblock %}

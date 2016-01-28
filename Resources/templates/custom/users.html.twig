@@ -1,0 +1,105 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+    <!-- NOM DE LA PAGE-->
+
+<div id="conteneur" class="container-fluid">
+    <div class="row hidden-xs hidden-sm">
+        <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+            <div id="section-id-page">
+                <div class="parallax-style section-id-page">
+                    <div class="pattern">
+                        <div class="container">
+                            <p class="nom-de-page" style="padding-top:30px">Le coin des utilisateurs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- LE COIN DES UTILISATEURS -->
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" style="padding:30px 50px 30px 50px">
+            <h3>Créer des MOOCs sur Claroline Connect</h3>
+            <p style="color:#88898b">La plateforme Claroline Connect met à votre disposition de nombreuses ressources et outils pour créer et gérer vos MOOCs :
+            badges, évaluation par les pairs, gestion de grands groupes, etc.</p>
+            <p style="text-align: center">
+            <iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/QFhaSfvSewk"  frameborder="0" allowfullscreen></iframe>
+            </p>
+            <h5><strong>Retours d'expériences sur les MOOCs</strong> :</h5>
+            <p><strong>FOVEA: </strong>comprendre l'anatomie au travers d'objets 3D</p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/8Op1sWdlhfg" frameborder="0" allowfullscreen></iframe>
+            <p><strong>Elearn2: </strong>former les enseignants et les formateurs &agrave; l'enseignement en ligne</p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/ZN3jE9b3dnI" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" style="padding:30px 50px 30px 50px">
+            <h3>Retours d'expériences</h3>
+            <p><strong>Grands Principes</strong>
+            <p><strong>Lycée Vaucanson - Grenoble</p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/lfDVuXNMtcA" frameborder="0" allowfullscreen></iframe></p>
+            <p> </p>
+            <p><strong>Haute Ecole Vinci - Bruxelles</strong></br>Olivier GHEYSEN</br></br></p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/Lt1qHwy7NKc" controls frameborder="0" allowfullscreen></iframe></p>
+            <p> </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" style="padding:30px 50px 30px 50px">
+            <h3>Aller à l'essentiel</h3>
+            <h4 style="color:#88898b">Découvrez Claroline Connect</h4>
+            <h3><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/K3--GD-ugOc?wmode=opaque" frameborder="0" allowfullscreen></iframe></h3>
+            <p> </p>
+            <h4><strong><span style="color:#88898b">Les outils de Claroline Connect</span></strong></h4>
+            <p><strong> </strong></p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/T6TJCVcp-eY" frameborder="0" allowfullscreen></iframe></p>
+            <p><strong> </strong></p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/sexkKEquFwc" frameborder="0" allowfullscreen"></iframe></p>
+            <p><strong> </strong></p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/cNEh2vjVTY4" frameborder="0" allowfullscreen"></iframe></p>
+            <p> </p>
+            <p><iframe style="width:90%; min-height:400px" src="https://www.youtube.com/embed/9IB51Rpzezw" frameborder="0" allowfullscreen></iframe></p>
+        </div>
+    </div>
+
+
+	<div id="scroll-to-top">
+		<span>
+			<i class="fa fa-arrow-up"></i>
+		</span>
+	</div>
+
+<!-- PIED DE PAGE -->
+
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
+
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	 {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	 {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+
+	<script type="text/javascript">
+		$('#mailForm').submit(function(event) {
+			event.preventDefault();
+			var form = $(event.target);
+			var route = form.attr('action');
+			var data = $(this).serialize();
+			$.ajax({
+					type: "POST",
+					url: route,
+					data: data,
+					success: function (data) {
+					$('#contactSuccess').removeClass('hidden');
+				}
+			});
+		});
+	</script>
+{% endblock %}

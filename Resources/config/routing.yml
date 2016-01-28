@@ -1,0 +1,4 @@
+claroline_net_contact:
+    resource: "@ClarolineNetThemeBundle/Controller/ContactController.php"
+    type:     annotation
+    prefix:   /

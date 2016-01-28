@@ -1,0 +1,118 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-books29:before {
+	content: "\e000";
+}
+.flaticon-books30:before {
+	content: "\e001";
+}
+.flaticon-diploma9:before {
+	content: "\e002";
+}
+.flaticon-ebook11:before {
+	content: "\e003";
+}
+.flaticon-ebook12:before {
+	content: "\e004";
+}
+.flaticon-education35:before {
+	content: "\e005";
+}
+.flaticon-education36:before {
+	content: "\e006";
+}
+.flaticon-email40:before {
+	content: "\e007";
+}
+.flaticon-graduate22:before {
+	content: "\e008";
+}
+.flaticon-internet18:before {
+	content: "\e009";
+}
+.flaticon-library11:before {
+	content: "\e00a";
+}
+.flaticon-man258:before {
+	content: "\e00b";
+}
+.flaticon-man284:before {
+	content: "\e00c";
+}
+.flaticon-medal47:before {
+	content: "\e00d";
+}
+.flaticon-movie27:before {
+	content: "\e00e";
+}
+.flaticon-online21:before {
+	content: "\e00f";
+}
+.flaticon-online23:before {
+	content: "\e010";
+}
+.flaticon-online24:before {
+	content: "\e011";
+}
+.flaticon-online25:before {
+	content: "\e012";
+}
+.flaticon-online26:before {
+	content: "\e013";
+}
+.flaticon-online27:before {
+	content: "\e014";
+}
+.flaticon-online28:before {
+	content: "\e015";
+}
+.flaticon-online29:before {
+	content: "\e016";
+}
+.flaticon-owl12:before {
+	content: "\e017";
+}
+.flaticon-porter1:before {
+	content: "\e018";
+}
+.flaticon-reading16:before {
+	content: "\e019";
+}
+.flaticon-school50:before {
+	content: "\e01a";
+}
+.flaticon-semicircles1:before {
+	content: "\e01b";
+}
+.flaticon-student53:before {
+	content: "\e01c";
+}
+.flaticon-student54:before {
+	content: "\e01d";
+}
+.flaticon-student55:before {
+	content: "\e01e";
+}
+.flaticon-student57:before {
+	content: "\e01f";
+}
+.flaticon-student58:before {
+	content: "\e020";
+}
+.flaticon-students17:before {
+	content: "\e021";
+}

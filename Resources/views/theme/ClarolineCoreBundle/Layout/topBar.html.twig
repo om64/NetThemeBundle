@@ -1,57 +1,88 @@
 {% extends "ClarolineCoreBundle:Layout:topBarItems.html.twig" %}
 
 {% block topBar %}
-    <div id="top_bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                {% if config.getParameter('logo') != "" %}
-                    <a class="navbar-brand logo" href="{{ path('claro_index') }}">
-                        <img src="{{ asset("") ~ "uploads/logos/" ~ config.getParameter('logo') }}" height="35"
-                            {% if config.getParameter('name') != "" %}alt="{{ config.getParameter('name') }}"{% endif %}>
-                    </a>
-                {% endif %}
-                {% if config.getParameter('name') != "" and config.getParameter('nameActive') %}
-                    <a class="navbar-brand" href="{{ path('claro_index') }}">
-                        {{ config.getParameter('name') }}
-                    </a>
-                {% endif %}
-            </div>
-            <div class="navbar-collapse collapse">
-                {% if not isLogged and homeMenu is defined and not homeMenu is empty %}
-                    {% if headerLocale %}
-                        <div class="navbar-form navbar-right clearfix">
-                            <button class="pull-right locale-select btn btn-default">{{ app.request.locale | upper }}</button>
-                        </div>
+    <div class="topbar-main-menu-container">
+        <div id="top_bar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                {# mobile menu #}
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    {% if config.getParameter('logo') != "" %}
+                        <a class="navbar-brand logo" href="{{ path('claro_index') }}">
+                            <img src="{{ asset("") ~ "uploads/logos/" ~ config.getParameter('logo') }}" height="35"
+                                 {% if config.getParameter('name') != "" %}alt="{{ config.getParameter('name') }}"{% endif %}>
+                        </a>
                     {% endif %}
+                    {% if config.getParameter('name') != "" and config.getParameter('nameActive') %}
+                        <a class="navbar-brand" href="{{ path('claro_index') }}">
+                            {{ config.getParameter('name') }}
+                        </a>
+                    {% endif %}
+                </div>
+
+                {# items #}
+                <div class="collapse navbar-collapse" role="navigation">
+                    <ul id="headernavigation" class="nav navbar-nav">
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}"> Accueil</a></li>
+<!--                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}#team"> Equipe</a></li>-->
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}#we-do"> Fonctionnalités</a></li>
+<!--                        <li style="list-style-type: none"><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}#tutorials"> Tutoriels</a></li>-->
+                        <li class="dropdown">
+                            <a href="#"
+                                class="dropdown-toggle"
+                                data-toggle="dropdown"
+                                role="button"
+                                aria-expanded="false"
+                                aria-haspopup="true"
+                            >
+                                Aide<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'support'}) }}"> Support</a></li>
+                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}#tutorials"> Tutoriels</a></li>
+                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'community'}) }}"> Communauté</a></li>
+                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'forum'}) }}"> Forum</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Documentation<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'claro'}) }}"> Manuels</a></li>
+                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'users'}) }}"> Le coin des utilisateurs</a></li>
+                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'devs'}) }}"> Le coin des développeurs</a></li>
+                                <li><a href="http://www.claroline.net/forum/11/category" target="_blank"> Forum de support</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}#">Blog</a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}#contact">Contact</a></li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        {% for item in homeMenu %}
-                            {% if item.content.title is defined %}
-                                <li>
-                                    <a{% if item.content.content is defined %} href="{{ item.content.content | homeLink }}"{% endif %}>
-                                        {{ item.content.getTitle() }}
-                                    </a>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'download'}) }}"><i class="fa fa-download"> Télécharger Connect</i></a></li>
+                        {% if isLogged %}
+                            {% if adminTools|length > 0 %}
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cog"> Administration </i> <span class="caret"></span></a>
+                                    {{  block('dropdownAdministration') }}
                                 </li>
                             {% endif %}
-                        {% endfor %}
-                    </ul>
-                {% else %}
-                    <ul class="nav navbar-nav">
-                        {% if isLogged %}{{ block('leftSide') }}{% endif %}
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        {{ block('rightSide') }}
-                        {% if isLogged %}
-                            {{ block('logged') }}
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"> {{ app.user.username }} </i> <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ path('claro_profile_view') }}"><i class="fa fa-user"> Mon profil </i></a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li><a href="{{ path('claro_security_logout') }}"><i class="fa fa-sign-out"> Déconnexion </i></a></li>
+                                </ul>
+                            </li
                         {% else %}
-                            {{ block('login') }}
+                            <li><a href="{{ path('claro_registration_user_registration_form') }}"><i class="fa fa-user-plus"> {{ 'register' |trans({}, 'platform') }} </i></a></li>
+                            <li><a href='{{ path('claro_security_login') }}'><i class="fa fa-sign-in"> Connexion</i></a></li>
                         {% endif %}
                     </ul>
-                {% endif %}
+                </div>
             </div>
         </div>
     </div>

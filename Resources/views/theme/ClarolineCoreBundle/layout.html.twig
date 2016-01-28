@@ -8,10 +8,6 @@
     {% endif %}
 {% endblock %}
 
-{% block stylesheets %}
-    {% include 'ClarolineCoreBundle:Layout:stylesheets.html.twig' %}
-{% endblock %}
-
 {% block javascripts_header %}
     {{ parent() }}
     {% include 'ClarolineCoreBundle:Layout:javascripts_headers.html.twig' %}
@@ -50,12 +46,12 @@
                             data-toggle="popover"
                             data-placement="bottom"
                             data-content="{{ 'maintenance_mode_message'|trans({}, 'platform') }}"
-                            >
+                    >
                     </i>
                 </h4>
             </div>
         {% endif %}
-        <div class="hidden-xs">
+        <div class="hidden-xs hidden-sm">
             <div class="hide">
                 <div id="left-bar" class="sidebar">
                     {% block leftbar %}{% endblock %}
@@ -67,67 +63,27 @@
                 </div>
             </div>
         </div>
-	    {% if workspace is defined %}
-		{% render controller('ClarolineCoreBundle:Layout:topBar', {'workspaceId': workspace.getId()}) %}
-	    {% else %}
-		{% render controller('ClarolineCoreBundle:Layout:topBar') %}
-	    {% endif %}
 
-       {% block impersonation %}
+
+        {% block topbar %}
+            {% render controller('ClarolineCoreBundle:Layout:topBar') %}
+        {% endblock%}
+
+
+        {% block impersonation %}
             {% if has_role('ROLE_USURPATE_WORKSPACE_ROLE') or is_impersonated() %}
                 {% render controller('ClarolineCoreBundle:Layout:renderWarningImpersonation') %}
             {% endif %}
         {% endblock %}
-        {% if "claro_index" | activeRoute or "claro_get_content_by_type" | activeRoute({'type': 'home'}) %}
-            <div class="jumbotron homepage">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <img class="margin-bottom-md" src="{{ asset("bundles/clarolinenettheme/images/logo.new.png") }}">
-                        </div>
-                        <div class="col-sm-6 margin-bottom-md">
-                            <div>
-                                <a href="{{ path('claro_get_content_by_type', {type: 'download'}) }}" class="btn btn-default btn-sm">
-                                    <i class="fa fa-folder-open"></i> {{ 'download' | trans({}, 'platform') }}
-                                </a>
-                            </div>
-                            <div>
-                                <a href="http://www.claroline.com/type/your_workspace" target="_blank" class="btn btn-default btn-sm">
-                                    <i class="fa fa-play-circle fa-fw"></i> {{ 'test' | trans({}, 'nettheme') }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <a target="_blank" href="http://www.facebook.com/consortiumclaroline" role="button"><i class="fa fa-facebook-square"></i><span class="hide"> Facebook</span></a>
-                        <a target="_blank" href="http://www.twitter.com/LMSClaroline" role="button"><i class="fa fa-twitter-square"></i><span class="hide"> Twitter</span></a>
-                        <a target="_blank" href="http://www.linkedin.com/groups?gid=23022&amp;trk=myg_ugrp_ovr" role="button"><i class="fa fa-linkedin-square"></i><span class="hide"> LinkedIn</span></a>
-                        <a target="_blank" href="https://plus.google.com/u/0/112736720926447938003/posts" role="button"><i class="fa fa-google-plus-square"></i><span class="hide"> Google+</span></a>
-                        <a target="_blank" href="https://github.com/claroline/Claroline" role="button"><i class="fa fa-github-square"></i><span class="hide"> GitHub </span></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCBHvKl_J25_lsPveETBfHtQ/playlists" role="button"><i class="fa fa-youtube-square"></i><span class="hide"> Youtube </span></a>
-                    </div>
-                </div>
-            </div>
-        {% endif %}
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    {% block breadcrumb %}{% endblock %}
-                </div>
-            </div>
-            <div class="row content">
-                <div class="col-md-12">
                     {% block content %}{% endblock %}
-                </div>
-            </div>
-        </div>
-        <div id="push"></div>
-    </div>
-   {% block footer %}
-    	{% render controller('ClarolineCoreBundle:Layout:footer') %}
-    {% endblock%}
+{% endblock %}
+
+{% block stylesheets %}
+    {% include 'ClarolineCoreBundle:Layout:stylesheets.html.twig' %}
+    <link rel="stylesheet" href="{{ asset('bundles/clarolinenettheme/css/topbar.css') }}" screen="media" />
 {% endblock %}
 
 {% block javascripts %}
+    {{ parent() }}
     {% include 'ClarolineCoreBundle:Layout:javascripts.html.twig' %}
 {% endblock %}
