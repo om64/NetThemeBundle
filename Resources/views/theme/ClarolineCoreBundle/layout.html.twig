@@ -52,6 +52,19 @@
             </div>
         {% endif %}
 
+        <div class="hidden-xs hidden-sm">
+            <div class="hide">
+                <div id="left-bar" class="sidebar">
+                    {% block leftbar %}{% endblock %}
+                </div>
+            </div>
+            <div class="hide">
+                <div id="right-bar" class="sidebar">
+                    {% block rightbar %}{% endblock %}
+                </div>
+            </div>
+        </div>
+
         {% block topbar %}
             {% render controller('ClarolineCoreBundle:Layout:topBar') %}
         {% endblock%}
