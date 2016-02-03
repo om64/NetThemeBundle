@@ -3,6 +3,5 @@ plugin:
 
   themes:
     - name: "Claroline Net Theme"
-      path: less/theme/theme.html.twig
 
 
