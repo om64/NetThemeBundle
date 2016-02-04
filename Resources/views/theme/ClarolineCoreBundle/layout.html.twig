@@ -9,7 +9,10 @@
 {% endblock %}
 
 {% block stylesheets %}
-    {% include 'ClarolineCoreBundle:Layout:stylesheets.html.twig' %}
+    <link rel="stylesheet" href="{{ asset('bundles/clarolinenettheme/css/bootstrap.css') }}" media="screen" />
+    <link rel='stylesheet' type='text/css' href='{{ asset('bundles/frontend/font-awesome/css/font-awesome.min.css') }}'/>
+    <link rel='stylesheet' type='text/css' href='{{ asset('bundles/frontend/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css')}}'>
+
      <link rel="stylesheet" href="{{ asset('bundles/clarolinenettheme/css/topbar.css') }}" screen="media" />
 {% endblock %}
 
