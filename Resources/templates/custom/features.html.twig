@@ -1,0 +1,185 @@
+{% extends 'ClarolineCoreBundle::layout.html.twig' %}
+
+{% block content %}
+
+<div id="conteneur" class="container-fluid hidden-xs hidden-sm">
+    <div class="row">
+        <div id="section-id-page">
+            <div class="parallax-style section-id-page">
+                <div class="pattern">
+                    <div class="container-fluid">
+                        <h4 class="nom-de-page" style="padding-top:40px">Les fonctionnalités de Claroline Connect</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 col-lg-12">
+        <section id="we-do">
+            <div class="white-bg we-do-section" style="margin: 10px 0 10px 0">
+                <div class="sec-head-container">
+                    <div class="sec-head-style">
+                        <h3 class="section-title wow bounceInDown">Fonctionnalités</h3></br>
+                        <p>Tout ce qui existe déjà sur Connect</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+
+        <h3>Notifications</h3>
+        <p>Un système de notifications paramétrable par l’utilisateur permet de suivre les évènements de la plateforme. Ces évènements peuvent aussi bien concerner
+        les ressources que les forums, wikis, badges ou autres outils disponibles sur la plateforme.</p>
+        <h3>Messagerie</h3>
+        <p>Un système de messagerie interne à la plateforme permet un échange entre les collaborateurs. Les fonctionnalités sont les mêmes que dans une boîte de
+            courriel classique. Pour une plus grande facilité, il est possible de recevoir une notification dans une boîte de courriels externe lors de la réception
+            d’un nouveau message dans la plateforme.</p>
+        <h3>Agenda</h3>
+        <p>Chaque bureau et chaque espace d’activités possède son propre agenda qui outre les fonctions classiques de rendez-vous peut également afficher les
+            réservations, les tâches à effectuer ou encore les dates des formations auxquelles sont inscrits les utilisateurs.</p>
+        <h3>Gestion des réservations</h3>
+        <p>La plateforme inclut également un système de réservations de ressources. Le terme ressource doit être pris ici dans son acceptation la plus large possible.
+            Elle peut donc tout aussi bien être un local, un dvd, un projecteur ou même un formateur. Ces ressources peuvent être regroupées au sein de catégories et
+            peuvent être mis en disponibilité en permanence ou à des moments précis. Le système permet également de savoir si une ressource est encore disponible ou
+            déjà réservée.</p>
+        <h3>Portfolio</h3>
+        <p>Un portfolio permet aux utilisateurs de la plateforme de mettre en valeur leurs compétences, formations et expériences. Au sein de chaque portfolio, un
+            espace est prévu pour pouvoir échanger avec d’autres personnes sur son parcours personnel.</p>
+        <h3>Badges</h3>
+        <p>Comme nous avons voulu la plateforme ludique, nous lui avons adjoint un système de badges. Les formateurs peuvent ainsi déterminer une série d’activités à
+            effectuer sur la plateforme pour obtenir un badge. Cette attribution peut se faire automatiquement ou manuellement. On peut dès lors imaginer des badges
+            de tout type tels que le badge du formé le plus actif ou le badge de la maitrise de telle ou telle compétence. Ces badges apparaissent également dans le
+            portfolio.</p>
+        <h3>Équipes</h3>
+        <p>Les avantages de la pédagogie collaborative ne sont plus à démontrer. C’est pourquoi nous avons prévu dans les espaces d’activités la possibilité de créer
+        des équipes. Ces équipes peuvent alors exploiter toutes les ressources des espaces d’activités pour mutualiser leur travail.</p>
+        <h3>Tableau de bord</h3>
+        <p>Le tableau de bord est un outil qui permet, à partir d’un système de filtres, d’obtenir une “vue” des actions et des activités d’un utilisateur ou
+            d’un ensemble d’utilisateurs. L'analyse se fait sur l'ensemble de la plateforme, un espace d'activités ou un ensemble d’espaces d’activités, durant
+            une période de temps déterminée. Le résultat de la sélection des filtres – qui peut être donné sous forme graphique - est sauvegardé par l’utilisateur
+            et peut être récupéré dans un widget à placer sur le bureau personnel de l’utilisateur ou sur la page d’accueil d’un espace d’activités.</br>
+            Le système de filtres du tableau de bord permet de :
+            <ul>
+                <li>Sélectionner un ou plusieurs espaces d’activités</li>
+                <li>Sélectionner un “ensemble” d’utilisateurs également (rôle, groupe, équipe)</li>
+                <li>Utiliser plusieurs filtres successifs</li>
+                <li>Enregistrer la sélection sous la forme d’une “vue”</li>
+                <li>Obtenir des vues standards préconfigurées mises à la disposition de l’utilisateur</li>
+            </ul>
+
+        <h3>Import / Export</h3>
+        La majorité des éléments de la plateforme peut être exporté et importé. Quand il s'agit de simple liste telle que pour les utilisateurs, les groupes, les inscriptions aux formations, on travaille avec des fichiers au format csv. Quand il s'agit de données plus complexe (en arbre) tels que les catalogues de formation ou les référentiels de compétences, on travaille avec des formats JSON.
+        Outre ces mécanismes, on peut importer des questions au format QTI, des activités d'apprentissage au format SCORM 1.2 et SCORM 2004 ou encore des portfolios au format Leap2a.
+
+        Ces mécanismes se veulent le plus souple possible afin de permettre de répondre à toutes les problématiques rencontrées par nos utilisateurs. Nous ajoutons régulièrement l'import et l'export d'autres éléments au gré des besoins de nos utilisateurs. Cette souplesse permet d'importer sans grande difficulté n'importe quel type de données textuelles tels que d'anciens historiques de formation sans devoir faire de grand développement.
+        Ressources Claroline disponibles
+        Claroline Connect permet de créer de nombreuses ressources au sein des espaces d'activités. Toutes ces ressources ont un mode de gestion identique pour leur fonctionnalité de base (gestion des droits, copier/coller, création de raccourci, import/export). L'ensemble de ces ressources disposent aussi de fonctionnalités de type social tel que le like d'une ressource, la possibilité de laisser des commentaires publics ou des annotations personnelles de mettre des ressources en favoris, etc. Un système permet également de mettre à jour une ressource de type fichier tout en gardant l'ensemble des liens vers cette ressource valables (versioning).
+
+
+        Dossier
+
+        Annonces
+
+        Blog
+
+        Lien URL
+
+        Site web
+
+        Fichiers
+
+        Texte riche (HTML)
+
+        Ressource Web
+
+        Forum
+
+        Wiki
+
+        Sondage
+
+        Chat
+
+        Support de cours
+
+        Activité
+
+        Collecticiel
+
+        Parcours
+
+        Scorm 1.2
+
+        Scorm 2004
+
+        Co-évaluation
+
+        Exercice
+
+        Vous voyez là des ressources de base comme :
+        le dossier pour organiser son espace ou le fichier pour uploader des fichiers de tous types (pdf, word, vidéo, son,…).
+        Des ressources pour permettre la communication telles que les annonces, blog, wiki, forum, texte riche, site web, etc.
+        Des ressources à orientation pédagogique permettant de créer des activités ou des séquences d'apprentissage tel que les scorm, les exercices, les parcours, les co-évaluation, …
+        Le chat permet tant du chat texte et audio que vidéo entre utilisateurs de la plateforme que l'organisation de webinaires ou de salles de classe virtuelles.
+        La ressource sondage permet quant à elle d'avoir un retour sur nos dispositifs d'apprentissages en créant des questionnaires d'évaluations.
+
+        Administration :
+        Gestion des organisations
+        Un système de gestion des organisations permet de rattacher les utilisateurs à leur département, à leur emplacements géographiques, … et de déléguer la gestion de ces utilisateurs à un responsable de département par exemple. Ce système permet également de cloisonner la plateforme en différentes organisations / départements avec chacune une identité graphique propre (voir personnalisation).
+        Gestion des utilisateurs (code administratif)
+        La gestion en est assez complète et permet de créer, éditer et supprimer les utilisateurs de manière individuelle ou par lots à l’aide de fichiers CSV. A ce niveau d’administration, il est également possible de paramétrer les détails des profils utilisateurs qui seront accessibles ainsi que les outils auxquels ils ont accès. Il est enfin possible de créer et d’administrer des groupes d’utilisateurs. L’administrateur peut depuis ce menu, se connecter en tant qu’un utilisateur de son choix pour voir la plateforme comme s’il était connecté avec les identifiants de cet utilisateur.
+        Gestion des traductions
+        L'ensemble des traductions de la plateforme peuvent être modifiés via un outil d'administration dédié à cette effet. Il s'agit du même outil que celui utilisé pour créer de nouvelles traductions utilisé par l'ensemble du projet. Un système de validation des changements est prévu.
+        Gestion des rôles
+        La plateforme est préconfigurée avec une série de rôles utilisateurs. Ces rôles sont entièrement paramétrables et peuvent être créés à volonté.
+
+        Les rôles par défaut au niveau de la plateforme sont :
+        Rôle Utilisateur : tous les utilisateurs qui sont inscrits à la plateforme
+        Rôle de Créateur d’espace : l'utilisateur qui peut créer des espaces d'activités sans être l'administrateur de la plateforme
+        Rôle Administrateur : qui administre la plateforme
+        Rôle anonyme : qui n'est pas inscrit à la plateforme (l'internaute). Claroline Connect permet de rendre "public" des ressources et/ou des espaces d'activités. L'anonyme a la possibilité d'y accéder à partir du lien publié (Voir gestion des droits)
+        Rôle Gestionnaire de compétences : qui peut créer et gérer un référentiel de compétences
+        Rôle Gestionnaire de l’accueil : qui peut créer et gérer le site web de la plateforme
+
+        Et au niveau des espaces d'activités
+        Le collaborateur est un utilisateur au sein d'un espace d'activités. Ce terme est en cohérence avec la philosophie de Claroline Connect qui met en avant le rôle actif de l'utilisateur comme gestionnaire de son propre apprentissage. Tous les utilisateurs qui sont inscrits à un espace d'activités ont le rôle de "collaborateur".
+        Le gestionnaire gère un espace d'activités. Vous êtes d'office le gestionnaire de votre espace personnel.
+
+        Gestion des droits
+        Les droits sont configurables de manière très complète et précise. Ils peuvent se gérer à deux niveaux, celui de la plateforme et celui des espaces d’activités. Pour chaque rôle,
+        vous pouvez donner ou limiter l’accès aux outils et fonctions de votre choix. Concernant les espaces d’activités, vous pouvez régir pour chaque ressource l’accès par groupe, par rôle,
+        par espace et par utilisateur.
+    </div>
+</div>
+
+    <div id="scroll-to-top">
+        <span>
+            <i class="fa fa-arrow-up"></i>
+        </span>
+    </div>
+
+<!-- PIED DE PAGE -->
+
+{% block footer %}
+    {% render controller('ClarolineCoreBundle:Layout:footer') %}
+{% endblock%}
+
+
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+
+{% endblock %}
