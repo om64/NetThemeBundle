@@ -2,11 +2,17 @@
 
 {% block content %}
 <div id="conteneur" class="container-fluid">
-    <div id="section-id-page" style="padding:15px">
-        <div class="container">
-            <h1 class="nom-de-page" style="padding-top:25px; color:whitesmoke; text-align: center">Documentation</h1>
-            <p class="page-location" style="padding-top:15px; font-weight: bold"><a href="bases"> Les bases | </a> <a href="teachers_tutorials"> Le manuel des gestionnaires | <a href="admin_tutorials">  Le manuel des administrateurs</p>
-        </div>
+    <div class="row">
+        <div id="section-id-page" style="padding:30px">
+            <div class="parallax-style section-id-page">
+                <div class="pattern">
+                    <div class="container-fluid">
+                        <h1 class="nom-de-page" style="padding-top:25px; color:whitesmoke; text-align: center">Documentation</h1>
+                        <p class="page-location" style="padding-top:15px; font-weight: bold"><a href="bases"> Les bases | </a> <a href="teachers_tutorials"> Le manuel des gestionnaires | <a href="admin_tutorials">  Le manuel des administrateurs</p>
+                    </div>
+                </div>
+            </div>
+       </div>
     </div>
 </div>
 
@@ -35,56 +41,56 @@
       </div>
       <div id="collapse1" class="panel-collapse collapse">
         <div class="panel-body">
-                            <p>Lorsque vous vous connectez à la plateforme, vous ouvrez automatiquement votre bureau personnel 
-                                (= l'accueil). Vous pouvez, comme chaque
-                                utilisateur, personnaliser votre bureau et y organiser votre travail. Vous pouvez revenir à tout moment 
-                                à ce bureau en cliquant sur l'icône de la maison <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1401.png') }}" alt="1401.png" width="33" height="37"> dans
-                                la<b> barre de menu supérieure.</b></br>
-                                Le bureau vous permet <b>d'agréger les informations de la plateforme</b> à l'aide des onglets et 
-                                widgets<sup>[1] </sup>d'<b>épingler les onglets</b> des pages d'accueil et<b> d'afficher les 
-                                annonces</b> des différents espaces d'activités auxquels vous êtes inscrit. Il vous donne aussi la 
-                                possibilité d'<b>afficher l'agenda</b>, les discussions des <b>forums</b> auxquels vous êtes inscrits, 
-                                le fil de <b>twitter</b>, les<b> rss</b> des blogs, etc.</br>
-                                Il donne <b>accès aux outils</b>, <b>espaces d'activités</b> et à toutes <b>les ressources</b> personnelles ou issues des espaces d'activités
-                                auxquels l'utilisateur est inscrit.</br></br>
-                                <sup>[1]</sup><em> De façon générale, un widget est une petite application que l'on ajoute sur le bureau de son ordinateur et qui affiche
-                                certaines informations (météo, notifications de messages, etc.). Netvibes s'est par exemple rendu célèbre avec une page Internet de démarrage
-                                incluant des widgets à la carte.</em></br>
-                                <em>Pour ce qui nous concerne, les widgets s'ajoutent sur les pages d'accueil des espaces d'activités, et proposent des informations en
-                                relation avec les ressources et activités de la plateforme.</em></p>
-                                <p>On sait que l'on est sur le bureau personnel grâce à <b>l'absence du menu</b> <b>de gauche</b>,
-                                qui caractérise les espaces d'activités.</br>
-                                Il est également possible de personnaliser la couleur du fond du bureau pour le différencier
-                                des espace d'activités <em>(Consultez le point suivant "Personnalisez votre bureau)</em><br/>
-                                <b>Comparez</b> ci-dessous la page d'accueil du <b>bureau</b> et la page d'accueil d'un <b>espace 
-                                    d'activités.</b></br>
-                                <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1779.png') }}" title="Pages d'accueil" alt="1779.png" width="861" height="301" /></p>
-                            <h6><em>Figure 12: Barre d'outils du bureau (bandeau supérieur) et barre d'outils d'un espace d'activités 
-                                    (menu de gauche et bandeau supérieur)</em></h6>
-                            <p>Le bureau personnel est composé:
-                            <ul>
-                                <li>d'une page d'accueil</li>
-                                <li>d'un gestionnaire de ressources</li>
-                            </ul></br>
-                            <h4><span style="color: #003366;"><b>Page d'accueil</b></span></h4></br>
-                            <p>La page d'accueil du bureau peut être configurée par l'administrateur de la plateforme et par l'utilisateur à l'aide d'onglets et de widgets.</br>
-                            <ul>
-                                <li><b>L'administrateur de la plateforme</b> peut <b>prédéfinir</b> des onglets et des widgets<sup>[1]</sup> pour
-                                    le bureau.</li>
-                                <li>L'utilisateur peut ajouter des onglets et des widgets selon ses besoins. (Voir: Gestions des onglets et widgets)</li>
-                            </ul></br>
-                            <sup>[1]</sup> De façon générale, un <em>widget</em> est une petite application que l'on ajoute sur le bureau de
-                                son ordinateur et qui affiche certaines informations (météo, notifications de messages, etc.). <em>Netvibes</em> s'est par exemple rendu
-                                célèbre avec une page Internet de démarrage incluant des <em>widgets</em> à la carte.</br>
-                                Pour ce qui nous concerne, les <em>widgets</em> s'ajoutent sur les pages d'accueil des espaces d'activités, et proposent des informations en
-                                relation avec les ressources et activités de la plateforme.</p>
-                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1780.png') }}" alt="1780.png" width="818" height="367"></p>
-                            <h6 style="text-align: center;"><em>Figure 13: page d'accueil du bureau. Elle est composée par des onglets et des widgets.</em></h6>
-                            <h4><span style="color: #003366;"><b>Gestionnaire de ressources</b></span></h4>
-                            <p>Le <b>bureau</b>, comme chaque espace d'activités, est attaché à un répertoire de ressources. A partir du bureau, l'utilisateur peut accéder
-                                à tous les répertoires de tous les espaces d'activités auxquels il est lié.</p>
-                            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1781.png') }}" alt="1781.png" width="872" height="298"></p>
-                 </div>
+            <p>Lorsque vous vous connectez à la plateforme, vous ouvrez automatiquement votre bureau personnel
+                (= l'accueil). Vous pouvez, comme chaque
+                utilisateur, personnaliser votre bureau et y organiser votre travail. Vous pouvez revenir à tout moment
+                à ce bureau en cliquant sur l'icône de la maison <img style="max-width: 100%;" src="{{ asset('uploads/custom/images/1401.png') }}" alt="1401.png" width="33" height="37"> dans
+                la<b> barre de menu supérieure.</b></br>
+                Le bureau vous permet <b>d'agréger les informations de la plateforme</b> à l'aide des onglets et
+                widgets<sup>[1] </sup>d'<b>épingler les onglets</b> des pages d'accueil et<b> d'afficher les
+                annonces</b> des différents espaces d'activités auxquels vous êtes inscrit. Il vous donne aussi la
+                possibilité d'<b>afficher l'agenda</b>, les discussions des <b>forums</b> auxquels vous êtes inscrits,
+                le fil de <b>twitter</b>, les<b> rss</b> des blogs, etc.</br>
+                Il donne <b>accès aux outils</b>, <b>espaces d'activités</b> et à toutes <b>les ressources</b> personnelles ou issues des espaces d'activités
+                auxquels l'utilisateur est inscrit.</br></br>
+                <sup>[1]</sup><em> De façon générale, un widget est une petite application que l'on ajoute sur le bureau de son ordinateur et qui affiche
+                certaines informations (météo, notifications de messages, etc.). Netvibes s'est par exemple rendu célèbre avec une page Internet de démarrage
+                incluant des widgets à la carte.</em></br>
+                <em>Pour ce qui nous concerne, les widgets s'ajoutent sur les pages d'accueil des espaces d'activités, et proposent des informations en
+                relation avec les ressources et activités de la plateforme.</em></p>
+                <p>On sait que l'on est sur le bureau personnel grâce à <b>l'absence du menu</b> <b>de gauche</b>,
+                qui caractérise les espaces d'activités.</br>
+                Il est également possible de personnaliser la couleur du fond du bureau pour le différencier
+                des espace d'activités <em>(Consultez le point suivant "Personnalisez votre bureau)</em><br/>
+                <b>Comparez</b> ci-dessous la page d'accueil du <b>bureau</b> et la page d'accueil d'un <b>espace
+                    d'activités.</b></br>
+                <img style="max-width: 100%" src="{{ asset('uploads/custom/images/1779.png') }}" title="Pages d'accueil" alt="1779.png" width="861" height="301" /></p>
+            <h6><em>Figure 12: Barre d'outils du bureau (bandeau supérieur) et barre d'outils d'un espace d'activités
+                    (menu de gauche et bandeau supérieur)</em></h6>
+            <p>Le bureau personnel est composé:
+            <ul>
+                <li>d'une page d'accueil</li>
+                <li>d'un gestionnaire de ressources</li>
+            </ul></br>
+            <h4><span style="color: #003366;"><b>Page d'accueil</b></span></h4></br>
+            <p>La page d'accueil du bureau peut être configurée par l'administrateur de la plateforme et par l'utilisateur à l'aide d'onglets et de widgets.</br>
+            <ul>
+                <li><b>L'administrateur de la plateforme</b> peut <b>prédéfinir</b> des onglets et des widgets<sup>[1]</sup> pour
+                    le bureau.</li>
+                <li>L'utilisateur peut ajouter des onglets et des widgets selon ses besoins. (Voir: Gestions des onglets et widgets)</li>
+            </ul></br>
+            <sup>[1]</sup> De façon générale, un <em>widget</em> est une petite application que l'on ajoute sur le bureau de
+                son ordinateur et qui affiche certaines informations (météo, notifications de messages, etc.). <em>Netvibes</em> s'est par exemple rendu
+                célèbre avec une page Internet de démarrage incluant des <em>widgets</em> à la carte.</br>
+                Pour ce qui nous concerne, les <em>widgets</em> s'ajoutent sur les pages d'accueil des espaces d'activités, et proposent des informations en
+                relation avec les ressources et activités de la plateforme.</p>
+            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1780.png') }}" alt="1780.png" width="818" height="367"></p>
+            <h6 style="text-align: center;"><em>Figure 13: page d'accueil du bureau. Elle est composée par des onglets et des widgets.</em></h6>
+            <h4><span style="color: #003366;"><b>Gestionnaire de ressources</b></span></h4>
+            <p>Le <b>bureau</b>, comme chaque espace d'activités, est attaché à un répertoire de ressources. A partir du bureau, l'utilisateur peut accéder
+                à tous les répertoires de tous les espaces d'activités auxquels il est lié.</p>
+            <p><img style="max-width: 100%" src="{{ asset('uploads/custom/images/1781.png') }}" alt="1781.png" width="872" height="298"></p>
+         </div>
       </div>
     </div>
     <div class="panel panel-default">

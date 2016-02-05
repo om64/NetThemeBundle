@@ -5058,7 +5058,7 @@ nav ul a span.badge {
 
 .mdi-toggle-star:before {
   content: "\e8f5"; }
-
+/*
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -5070,12 +5070,12 @@ nav ul a span.badge {
 
 @media only screen and (min-width : 993px) {
   .container {
-    width: 70%; } }
+    width: 90%; } }
 
 .container .row {
   margin-left: -0.75rem;
   margin-right: -0.75rem; }
-
+*/
 .section {
   padding-top: 1rem;
   padding-bottom: 1rem; }
