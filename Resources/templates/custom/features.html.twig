@@ -2,6 +2,48 @@
 
 {% block content %}
 
+<div id="conteneur" class="container">
+
+    <h2>Fonctionnalités</h2>
+
+    <div class="floating-box">
+        <h3>Notifications</h3>
+        <p>Un système de notifications paramétrable par l’utilisateur permet de suivre les évènements de la plateforme. Ces évènements peuvent aussi
+            bien concerner les ressources que les forums, wikis, badges ou autres outils disponibles sur la plateforme.</p>
+    </div>
+    <div class="floating-box">
+        <h3>Messagerie</h3>
+        <p>Un système de messagerie interne à la plateforme permet un échange entre les collaborateurs. Les fonctionnalités sont les mêmes que dans une boîte de
+            courriel classique. Pour une plus grande facilité, il est possible de recevoir une notification dans une boîte de courriels externe lors de la réception
+            d’un nouveau message dans la plateforme.</p>
+    </div>
+    <div class="floating-box">
+        <h3>Agenda</h3>
+        <p>Chaque bureau et chaque espace d’activités possède son propre agenda qui outre les fonctions classiques de rendez-vous peut également afficher les
+            réservations, les tâches à effectuer ou encore les dates des formations auxquelles sont inscrits les utilisateurs.</p>
+    </div>
+    <div class="floating-box">
+        <h3>Gestion des réservations</h3>
+        <p>La plateforme inclut également un système de réservations de ressources. Le terme ressource doit être pris ici dans son acceptation la plus large possible.
+            Elle peut donc tout aussi bien être un local, un dvd, un projecteur ou même un formateur. Ces ressources peuvent être regroupées au sein de catégories et
+            peuvent être mis en disponibilité en permanence ou à des moments précis. Le système permet également de savoir si une ressource est encore disponible ou
+            déjà réservée.</p>
+    </div>
+    <div class="floating-box">
+        <h3>Portfolio</h3>
+        <p>Un portfolio permet aux utilisateurs de la plateforme de mettre en valeur leurs compétences, formations et expériences. Au sein de chaque portfolio, un
+            espace est prévu pour pouvoir échanger avec d’autres personnes sur son parcours personnel.</p>
+    </div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+    <div class="floating-box">Floating box</div>
+
+    <div class="after-box">Another box, after the floating boxes...</div>
+</div>
+
 <div id="conteneur" class="container-fluid hidden-xs hidden-sm">
     <div class="row">
         <div id="section-id-page">
@@ -31,24 +73,7 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
 
-        <h3>Notifications</h3>
-        <p>Un système de notifications paramétrable par l’utilisateur permet de suivre les évènements de la plateforme. Ces évènements peuvent aussi bien concerner
-        les ressources que les forums, wikis, badges ou autres outils disponibles sur la plateforme.</p>
-        <h3>Messagerie</h3>
-        <p>Un système de messagerie interne à la plateforme permet un échange entre les collaborateurs. Les fonctionnalités sont les mêmes que dans une boîte de
-            courriel classique. Pour une plus grande facilité, il est possible de recevoir une notification dans une boîte de courriels externe lors de la réception
-            d’un nouveau message dans la plateforme.</p>
-        <h3>Agenda</h3>
-        <p>Chaque bureau et chaque espace d’activités possède son propre agenda qui outre les fonctions classiques de rendez-vous peut également afficher les
-            réservations, les tâches à effectuer ou encore les dates des formations auxquelles sont inscrits les utilisateurs.</p>
-        <h3>Gestion des réservations</h3>
-        <p>La plateforme inclut également un système de réservations de ressources. Le terme ressource doit être pris ici dans son acceptation la plus large possible.
-            Elle peut donc tout aussi bien être un local, un dvd, un projecteur ou même un formateur. Ces ressources peuvent être regroupées au sein de catégories et
-            peuvent être mis en disponibilité en permanence ou à des moments précis. Le système permet également de savoir si une ressource est encore disponible ou
-            déjà réservée.</p>
-        <h3>Portfolio</h3>
-        <p>Un portfolio permet aux utilisateurs de la plateforme de mettre en valeur leurs compétences, formations et expériences. Au sein de chaque portfolio, un
-            espace est prévu pour pouvoir échanger avec d’autres personnes sur son parcours personnel.</p>
+
         <h3>Badges</h3>
         <p>Comme nous avons voulu la plateforme ludique, nous lui avons adjoint un système de badges. Les formateurs peuvent ainsi déterminer une série d’activités à
             effectuer sur la plateforme pour obtenir un badge. Cette attribution peut se faire automatiquement ou manuellement. On peut dès lors imaginer des badges
@@ -174,6 +199,21 @@
 {% block stylesheets %}
     {{ parent() }}
     {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+
+    <style>
+        .floating-box {
+            display: inline-block;
+            width: 270px;
+            height: 300px;
+            margin: 8px;
+            padding: 5px;
+            border: 1px solid #808284;
+        }
+
+        .after-box {
+            border: 3px solid red;
+        }
+    </style>
 
 {% endblock %}
 
