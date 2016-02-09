@@ -189,6 +189,7 @@ blockquote {
 	position: relative;
 	z-index: 0;
 }
+/*
 .btn,
 .btn-effect:after {
 	-webkit-transition: all .3s ease;
@@ -221,6 +222,7 @@ blockquote {
 .btn-effect.btn-bg:hover:after {
 	background: transparent !important;
 }
+*/
 .btn:focus, 
 .btn:active:focus, 
 .btn.active:focus {
@@ -240,7 +242,7 @@ blockquote {
 	padding: 0 40px;
 }
 .btn-sm {
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 800;
 	line-height: 48px;
 	height: 50px;
@@ -257,16 +259,16 @@ blockquote {
 /* BOUTON PAR DEFAUT */
 
 .btn-default {
-	border:2px solid #1fb5ac;
-	background: transparent;
+	color: #ffffff;
+	background: #1fb5ac;
 }
 .btn-default:hover {
 	color: #ffffff;
 	background: #1fb5ac;
-	border:2px solid #1fb5ac;
 }
 .btn-default.btn-effect:hover{
-	background:transparent;
+	color: #1fb5ac;
+	background:#ffffff;
 }
 .btn-default.btn-bg {
 	color: #ffffff;
