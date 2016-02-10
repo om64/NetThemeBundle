@@ -109,7 +109,7 @@
 .toggle_nav_button {
     display: none;
     color: white;
-    background-color: black;
+    background-color: #1fb5ac;
     border-radius: 0;
 }
 
@@ -121,4 +121,8 @@
 
 #top_bar li:not(:last-child) > a, .top-bar li:not(:last-child) > a {
     border-right: none;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #1fb5ac;
+    color: #ffffff;
 }
