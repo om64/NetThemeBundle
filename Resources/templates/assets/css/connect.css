@@ -2,19 +2,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);
 
-/*
-@font-face {
-	font-family: 'Material Icons';
-	font-style: normal;
-	font-weight: 400;
-	src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE-8
-	src: 	local('Material Icons'),
-			local('MaterialIcons-Regular'),
-		url	{{ asset('uploads/custom/fonts/MaterialsIcons-Regular.woff2')}} format('woff2'),
-			{{ asset('uploads/custom/fonts/MaterialsIcons-Regular.woff')}} format('woff'),
-			{{ asset('uploads/custom/fonts/MaterialsIcons-Regular.ttf')}} format('truetype'),
-}
-*/
 /* STYLES GENERAUX */
 
 html, body {
@@ -187,40 +174,7 @@ blockquote {
 	position: relative;
 	z-index: 0;
 }
-/*
-.btn,
-.btn-effect:after {
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
-}
-.btn-effect.btn-bg:hover:after,
-.btn-effect:after {
-	content: "";
-	position: absolute;
-	top: -10px;
-	left: -10px;
-	right: -10px;
-	bottom: -10px;
-	z-index: -1;
-}
-.btn-effect.btn-bg:after,
-.btn-effect:hover:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-.btn-effect,
-.btn-effect:hover,
-.btn-effect.btn-bg:hover:after {
-	background: transparent !important;
-}
-*/
+
 .btn:focus, 
 .btn:active:focus, 
 .btn.active:focus {
@@ -257,13 +211,8 @@ blockquote {
 /* BOUTON PAR DEFAUT */
 
 .btn-default {
-<<<<<<< HEAD:Resources/templates/assets/css/connect.css
 	color: #ffffff;
 	background: #1fb5ac;
-=======
-	border:2px solid #1fb5ac;
-	background-color: #1fb5ac;
->>>>>>> 1f954d198a4d23417671fdc03304b7951dbf906e:Resources/templates/assets/connect.css
 }
 .btn-default:hover {
 	color: #1fb5ac;
@@ -343,85 +292,6 @@ blockquote {
 	margin-left: 0;
 	margin-right: 0;
 }
-
- /* BARRES DE NAVIGATION 
-
- .progress {
- 	border-radius: 0;
- 	-webkit-box-shadow:none;
- 	box-shadow:none;
- 	background-color: #e0e1e6;
- }
- .progress .progress-bar {
- 	text-align: left;
- 	font-size: 14px;
- 	font-weight: 700;
- 	line-height: 37px;
- 	padding-left:15px;
- 	position: relative;
- }
- .progress.bold {
- 	height: 37px;
- }
- .progress.thin {
- 	height: 10px;
- 	margin-top: 35px;
- 	margin-bottom: 70px;
- 	overflow: visible;
- }
- .progress.thin .progress-text {
- 	color: #262626;
- 	line-height: 1px;
- 	position: absolute;
- 	display: inline-block;
- 	top: -30px;
- 	left: 0;
- }
- .progress.thin .progress-percent {
- 	background-color: #262626;
- 	text-align: center;
- 	font-size: 13px;
- 	font-weight: 400;
- 	line-height: 25px;
- 	display: inline-block;
- 	padding: 0 3px;
- 	border-radius: 4px;
- 	position: absolute;
- 	top: -35px;
- 	right: -15px;
- }
- .progress.thin .progress-percent:after {
- 	content: "";
- 	display: block;
- 	width: 0;
- 	height: 0;
- 	border-width: 7px;
- 	border-style: solid;
- 	border-color: #262626 transparent transparent transparent;
- 	position: absolute;
- 	top: 25px;
- 	right: 8px;
- }
- .progress-bar.default-bar {
- 	background-color: #1fb5ac;
- }
- .progress-bar.light-yellow-bar {
- 	background-color: #e0c124;
- }
- .progress-bar.light-red-bar {
- 	background-color: #e12444;
- }
- .progress-bar.light-green-bar {
- 	background-color: #1fb538;
- }
- .progress-bar.light-pink-bar {
- 	background-color: #9c1fb5;
- }
- .progress-bar.light-blue-bar {
- 	background-color: #24e0e0;
- }
-
-/* FORMULAIRES */
 
 /* CONTROLES DE FORMULAIRES */
 
@@ -648,37 +518,6 @@ input[type="radio"].radio-btn.light-green:checked + label:after{
 	margin: 0 auto;
 	padding: 0;
 }
-
-/* 2.9 - Dropcaps
---------------------------------------------- 
-.dropcap {
-	line-height: 40px;
-	display: inline-block;
-	font-weight: 800;
-	float: left;
-	width: 40px;
-	height: 40px;
-	margin: 8px 10px 0 0;
-}
-.dropcap.default {
-	font-size: 3.4375em;
-	color: #262626;
-}
-.dropcap.box {
-	font-size: 2.45em;
-	color: #fff;
-	background-color: #1fb5ac;
-	text-align: center;
-}
-.dropcap.round {
-	font-size: 2.45em;
-	color: #fff;
-	background-color: #262626;
-	border-radius: 100%;
-	text-align: center;
-}
-/* 2.9 - Dropcaps End
---------------------------------------------- */
 
 /* EFFETS ACCORDEONS
 --------------------------------------------- */
