@@ -273,70 +273,6 @@ blockquote {
 	background: #1fb5ac;
 }
 
-/* 2.3.2 - Light Yellow
-.btn-light-yellow {
-	border:2px solid #e0c124;
-	background: transparent;
-}
-.btn-light-yellow:hover {
-	color: #ffffff;
-	background: #e0c124;
-	border:2px solid #e0c124;
-}
-.btn-light-yellow.btn-bg {
-	color: #ffffff;
-	background-color: #e0c124;
-}
-.btn-light-yellow.btn-effect:hover:after,
-.btn-light-yellow.btn-bg.btn-effect:after {
-	background: #e0c124;
-}
-
-/* 2.3.3 - Light Red
-.btn-light-red {
-	border:2px solid #e12444;
-	background-color: transparent;
-}
-.btn-light-red:hover {
-	color: #ffffff;
-	background: #e12444;
-	border:2px solid #e12444;
-}
-.btn-light-red.btn-bg {
-	color: #ffffff;
-	background: #e12444;
-}
-.btn-light-red.btn-effect:hover:after,
-.btn-light-red.btn-bg.btn-effect:after {
-	background: #e12444;
-}
-
-/* 2.3.4 - Light Green
-.btn-light-green {
-	border:2px solid #1fb538;
-	background: transparent;
-}
-.btn-light-green:hover {
-	color: #ffffff;
-	background: #1fb538;
-	border:2px solid #1fb538;
-}
-.btn-light-green.btn-bg {
-	color: #ffffff;
-	background: #1fb538;
-}
-.btn-light-green.btn-effect:hover:after,
-.btn-light-green.btn-bg.btn-effect:after {
-	background: #1fb538;
-}
-.btn-default.btn-bg:hover,
-.btn-light-yellow.btn-bg:hover,
-.btn-light-red.btn-bg:hover,
-.btn-light-green.btn-bg:hover {
-	color: inherit;
-	background: transparent;
-}
-
 /*  PARALLAX*/
 
 .parallax-style,
@@ -356,7 +292,7 @@ blockquote {
 	background-color: #E2E2E2;
 }
 #top-section {
-	background: url(../images/background/banner.png) 50% 0 no-repeat fixed;
+	background: url(/images/background/banner.png) 50% 0 no-repeat fixed;
 	margin: 0;
 	padding: 0;
 }
@@ -399,7 +335,7 @@ blockquote {
 	margin-right: 0;
 }
 
- /* BARRES DE NAVIGATION */
+ /* BARRES DE NAVIGATION 
 
  .progress {
  	border-radius: 0;
@@ -669,32 +605,32 @@ input[type="radio"].radio-btn.light-green:checked + label:after{
 	background-color: #E2E2E2;
 }
 #top-section {
-	background: url(images/background/banner.png) 50% 0 no-repeat fixed;
+	background: url(../images/background/banner.png) 50% 0 no-repeat fixed;
 	margin: 0;
 	padding: 0;
 }
 #section-id-page {
-	background: url(images/background/pages-bg.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/background/pages-bg.jpg) 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	padding: 0;
 }
 #video-section {
-	background: url(images/background/top-section-bg.jpg) 50% 0 no-repeat fixed;
+	background: url(../images/background/top-section-bg.jpg) 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	padding: 0;
 }
 #download-section {
-	background: url(images/background/workplace_darkblue.png) 50% 0 no-repeat fixed;
+	background: url(../images/background/workplace_darkblue.png) 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	padding: 0;
 }
 #quote {
-	background: url(images/background/computer-bg.png) 50% 0 no-repeat fixed;
+	background: url(../images/background/computer-bg.png) 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	padding: 0;
 }
 #subscribe {
-	background: url(images/background/banner.png) 50% 0 no-repeat fixed;
+	background: url(../images/background/banner.png) 50% 0 no-repeat fixed;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -705,7 +641,7 @@ input[type="radio"].radio-btn.light-green:checked + label:after{
 }
 
 /* 2.9 - Dropcaps
---------------------------------------------- */
+--------------------------------------------- 
 .dropcap {
 	line-height: 40px;
 	display: inline-block;
@@ -1246,7 +1182,7 @@ input[type="radio"].radio-btn.light-green:checked + label:after{
 }
 .service-container {
 	margin: 0;
-	padding: O 50px 0 50px;
+	padding: 0 50px 0 50px;
 }
 .service-container li {
 	list-style: none;
