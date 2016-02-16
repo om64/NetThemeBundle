@@ -2,292 +2,293 @@
 
 {% block content %}
 
-<!-- SOMMET DE LA PAGE -->
+    <!-- SOMMET DE LA PAGE -->
 
-<div id="page-top"></div>
+    <div id="page-top"></div>
 
-<!-- SLIDES DU DESSUS DE PAGE -->
+    <!-- SLIDES DU DESSUS DE PAGE -->
 
-<div class="container-fluid site-text">
-	<div class="row">
-	    <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
-            <section id="top-section">
-                <div class="top-section parallax-style">
-                    <div id="top-carousel" class="carousel slide top-carousel-container" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#top-carousel" data-slide-to="1"></li>
-                            <li data-target="#top-carousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="top-headings">
-                                    <h4 style="color: whitesmoke" class="top-heading-4" wow bounceInDown center animated data-wow-delay=".5s">Votre plateforme pédagogique</h4>
-                                    <h5 style="color: whitesmoke" class="top-heading-5" wow bounceInRight  center animated data-wow-delay=".6s">Créez des cours, des exercices, des parcours d'apprentissage</h5>
-                                    <p><img src="{{ asset('uploads/custom/images/logo.new.png')}}" width="20%"></p>
+    <div class="container-fluid site-text">
+        <div class="row">
+            <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+                <section id="top-section">
+                    <div class="top-section parallax-style">
+                        <div id="top-carousel" class="carousel slide top-carousel-container" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#top-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#top-carousel" data-slide-to="1"></li>
+                                <li data-target="#top-carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="top-headings">
+                                        <h4 style="color: whitesmoke" class="top-heading-4" wow bounceInDown center animated data-wow-delay=".5s">Votre plateforme pédagogique</h4>
+                                        <h5 style="color: whitesmoke" class="top-heading-5" wow bounceInRight  center animated data-wow-delay=".6s">Créez des cours, des exercices, des parcours d'apprentissage</h5>
+                                        <p><img src="{{ asset('uploads/custom/images/logo.new.png')}}" width="20%"></p>
+                                    </div>
+                                    <div class="button-container">
+                                        <a href="#intro"><button type="button" class="btn btn-sm btn-default">Je me lance</button></a>
+                                    </div>
                                 </div>
-                                <div class="button-container">
-                                    <a href="#intro"><button type="button" class="btn btn-sm btn-default btn-effect">Je me lance</button></a>
+                                <div class="item">
+                                    <div class="top-headings">
+                                        <h4 style="color: whitesmoke" class="top-heading-4 wow bounceInDown center animated" data-wow-delay=".5s">Pour un suivi des apprenants</h4>
+                                        <h5 style="color: whitesmoke" class="top-heading-5 wow bounceInDown center animated" data-wow-delay=".6s">Evaluez vos apprenants et stimulez-les avec des badges</h5>
+                                        <p><img src="{{ asset('uploads/custom/images/logo.new.png')}}" width="20%"></p>
+                                    </div>
+                                    <div class="button-container">
+                                        <a href="#intro"><button type="button" class="btn btn-sm btn-default">Je me lance</button></a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="top-headings">
+                                        <h4 style="color: whitesmoke" class="top-heading-4 wow bounceInLeft  center animated" data-wow-delay=".5s">Testez un hébergement gratuit pendant un mois</h4>
+                                        <h5 style="color: whitesmoke" class="top-heading-5 wow bounceInRight  center animated" data-wow-delay=".6s">Cliquez pour créer votre plateforme</h5>
+                                        <p><img src="{{ asset('uploads/custom/images/logo.new.png')}}" width="20%"></p>
+                                    </div>
+                                    <div class="button-container">
+                                        <a href="http://www.claroline.com" target="blank"><button type="button" class="btn btn-sm btn-default">Voir l'offre</button></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="top-headings">
-                                    <h4 style="color: whitesmoke" class="top-heading-4 wow bounceInDown center animated" data-wow-delay=".5s">Pour un suivi des apprenants</h4>
-                                    <h5 style="color: whitesmoke" class="top-heading-5 wow bounceInDown center animated" data-wow-delay=".6s">Evaluez vos apprenants et stimulez-les avec des badges</h5>
-                                    <p><img src="{{ asset('uploads/custom/images/logo.new.png')}}" width="20%"></p>
-                                </div>
-                                <div class="button-container">
-                                    <a href="#intro"><button type="button" class="btn btn-sm btn-default btn-effect">Je me lance</button></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="top-headings">
-                                    <h4 style="color: whitesmoke" class="top-heading-4 wow bounceInLeft  center animated" data-wow-delay=".5s">Testez un hébergement gratuit pendant un mois</h4>
-                                    <h5 style="color: whitesmoke" class="top-heading-5 wow bounceInRight  center animated" data-wow-delay=".6s">Cliquez pour créer votre plateforme</h5>
-                                    <p><img src="{{ asset('uploads/custom/images/logo.new.png')}}" width="20%"></p>
-                                </div>
-                                <div class="button-container">
-                                    <a href="http://www.claroline.com" target="blank"><button type="button" class="btn btn-sm btn-default btn-effect">Voir l'offre</button></a>
-                                </div>
-                            </div>
+                            <a class="slide-nav left" href="#top-carousel" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
+                            <a class="slide-nav right" href="#top-carousel" data-slide="next"><i class="fa fa-arrow-right"></i></a>
                         </div>
-                        <a class="slide-nav left" href="#top-carousel" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
-                        <a class="slide-nav right" href="#top-carousel" data-slide="next"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                    <div class="next-section">
-                        <button id="go-to-next" class="btn"><i class="fa fa-angle-double-down"></i></button>
-                    </div>
-                </div>
-            </section>
-		</div>
-	</div>
-
-<!-- CONSORTIUM CLAROLINE -->
-
-    <div class="row" id="intro">
-         <div class="col-md-12 col-lg-12">
-            <section id="about">
-                <div class="white-bg about-us-section" style="margin: 5px 0 5px 0">
-                    <div class="sec-head-container">
-                        <div class="sec-head-style">
-                            <h3 class="section-title bold-700 wow bounceInDown">Claroline Connect</h3>
-                            <div class="section-description" style="text:bold-700, pull-right">Votre plateforme pédagogique</div>
+                        <div class="next-section">
+                            <button id="go-to-next" class="btn"><i class="fa fa-angle-double-down"></i></button>
                         </div>
                     </div>
-				</div>
-            </section>
-		</div>
-         <div class="col-md-10 colsdm-offset-1 col-lg-10 col-lg-offset-1">
-			<p>Déployez facilement une <strong>plateforme dédiée à l’apprentissage et au travail collaboratif</strong> à l'aide de
-			<strong>Claroline Connect</strong>, un <strong>logiciel libre de dernière génération</strong>.
-			<p>Le <strong>Campus Virtuel en Gestion</strong>, consortium entre HEC Liège (ULg), Solvay Brussels School of Economics and Management (ULB) et
-                 Louvain School of Management (UCL) va prochainement utiliser Claroline Connect pour ses formations à distance.</p>
+                </section>
+            </div>
         </div>
-    </div>
 
-<!-- TELECHARGEMENT -->
+        <!-- CONSORTIUM CLAROLINE -->
 
-    <div class="row" style="margin-top: 20px">
-        <div class="col-md-12 col-lg-12">
-            <section id="download-section">
-                <div class="download-section parallax-style">
-                    <div class="pattern">
-                        <div class="container-fluid">
-                            <h3 class="text-center plx-section-title" style="padding-top:30px">Claroline Connect est disponible en téléchargement</h3>
-                            <p class="text-center download-description" style="padding-top:15px; color:#ffffff">La procédure est assez simple.</p>
-                            <div class="button-container">
-                                <a href="download"><button type="button" class="btn btn-sm btn-default btn-effect"> Télécharger </button></a>
+        <div class="row" id="intro">
+            <div class="col-md-12 col-lg-12">
+                <section id="about">
+                    <div class="white-bg about-us-section" style="margin: 5px 0 5px 0">
+                        <div class="sec-head-container">
+                            <div class="sec-head-style">
+                                <h3 class="section-title bold-700 wow bounceInDown">Claroline Connect</h3>
+                                <div class="section-description" style="text:bold-700, pull-right">Votre plateforme pédagogique</div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
+            <div class="col-md-10 colsdm-offset-1 col-lg-10 col-lg-offset-1">
+                <p>Déployez facilement une <strong>plateforme dédiée à l’apprentissage et au travail collaboratif</strong> à l'aide de
+                    <strong>Claroline Connect</strong>, un <strong>logiciel libre de dernière génération</strong>.
+                <p>Le <a href="http://www.campusvirtuel.be" target="_blank"><strong>Campus Virtuel en Gestion</strong></a>, consortium entre HEC Liège (ULg), Solvay Brussels School of Economics and Management (ULB) et
+                    Louvain School of Management (UCL) va prochainement utiliser Claroline Connect pour ses formations à distance.
+                </p>
+            </div>
         </div>
-    </div>
 
-<!-- FONCTIONNALITES -->
+        <!-- TELECHARGEMENT -->
 
-    <div class="row">
-        <div class="col-md-12 col-lg-12">
-            <section id="we-do">
-				<div class="white-bg we-do-section" style="margin: 10px 0 10px 0">
-					<div class="sec-head-container">
-						<div class="sec-head-style">
-							<h3 class="section-title wow bounceInDown">Fonctionnalités</h3></br>
-							<p>Tout ce qui existe déjà sur Connect</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-			<ul class="service-container">
-				<li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="service-icon">
-						<img src="{{ asset('uploads/custom/images/icons/icon-file@2x.png') }}" alt="Dispositifs pédagogiques">
-					</div>
-					<p class="item-title">
-						Création de dispositifs pédagogiques
-					</p>
-					<p class="item-description" style="text-align: justify">
-						Mettez en place vos propres <strong>dispositifs pédagogiques innovants</strong> adaptés à vos contextes (appui au présentiel, cours à distance, MOOC,…).
-						Les activités et parcours pédagogiques guident les utilisateurs dans leur apprentissage. Des contenus variés (textes, images, vidéos,
-						exercices, wikis, blogs, sondages, etc.) favorisent l’apprentissage. Des outils de suivi permettent d'analyser les activités de vos
-						utilisateurs.
-					</p>
-				</li>
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-12 col-lg-12">
+                <section id="download-section">
+                    <div class="download-section parallax-style">
+                        <div class="pattern">
+                            <div class="container-fluid">
+                                <h3 class="text-center plx-section-title" style="padding-top:30px">Claroline Connect est disponible en téléchargement</h3>
+                                <p class="text-center download-description" style="padding-top:15px; color:#ffffff">La procédure est assez simple.</p>
+                                <div class="button-container">
+                                    <a href="download"><button type="button" class="btn btn-sm btn-default"> Télécharger </button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
 
-				<li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="service-icon">
-						<img src="{{ asset('uploads/custom/images/icons/icon-graph@2x.png') }}" alt="Espace de travail">
-					</div>
-					<p class="item-title">
-						Un espace d'activités personnalisable
-					</p>
-					<p class="item-description" style="text-align: justify">
-						Configurez votre propre bureau avec des informations venant des différents espaces d'activités auxquels vous êtes
-						inscrit.</br>
-						<strong>Organisez efficacement votre travail</strong>.</br>
-						Votre espace de travail personnel vous permet de créer, copier ou partager des ressources dans d’autres espaces
-						d’activités. Vous pouvez également les agréger dans votre propre espace d'activités.
-					</p>
-				</li>
-				<li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="service-icon">
-						<img src="{{ asset('uploads/custom/images/icons/publicity.png') }}" style="width:200px" alt="Stimulation des apprenants">
-					</div>
-					<p class="item-title">
-						Des badges pour stimuler vos apprenants
-					</p>
-					<p class="item-description" style="text-align: justify">
-						Vos apprenants se voient attribuer des <strong>badges</strong> en fonction de leur travail dans les différents
-						espaces d'activités. Le <strong>référentiel de compétences</strong> et le <strong>profil d’apprentissage</strong>
-						permettent à l’apprenant de se situer dans sa formation.</br>
-						Un tout <b>nouveau tableau de bord</b> permettra bientôt aux gestionnaires des espaces d'activités de faire des
-						recherches pointues par filtre pour évaluer l'ensemble de leur dispositif pédagogique et situer les apprenants
-						et les ressources.
-					</p>
-				</li>
+        <!-- FONCTIONNALITES -->
 
-				<li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="service-icon">
-						<img src="{{ asset('uploads/custom/images/icons/icon-comments@2x.png') }}" alt="Communication">
-					</div>
-					<p class="item-title">
-						Des outils de communication efficaces
-					</p>
-					<p class="item-description" style="text-align: justify">
-						La messagerie interne assure une communication entre tous les utilisateurs. Les forums et les annonces au sein des
-						espaces d’activités facilitent la communication. Le fil de notification permet à l’utilisateur de prendre connaissance
-						des modifications intervenues sur la plateforme.</br>
-						Le chat (texte et vidéo) est en cours de développement et devrait être disponible en janvier 2016 dans la version 6
-						de développement.
-					</p>
-				</li>
-				<li class="item col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<div class="service-icon">
-						<img src="{{ asset('uploads/custom/images/icons/icon-ui@2x.png') }}" alt="Paramétrages">
-					</div>
-					<p class="item-title">
-						Paramétrage et administration de la plateforme
-					</p>
-					<p class="item-description" style="text-align: justify">
-						La plateforme dispose de tous les outils nécessaires pour gérer les utilisateurs, les espaces d'activités  et les
-						inscriptions, tant pour les petites que les grandes institutions.</br>
-						De nombreuses options de configuration permettent de répondre à vos besoins tant du point de vue graphique que du
-						point de vue fonctionnel.
-					</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <section id="we-do">
+                    <div class="white-bg we-do-section" style="margin: 10px 0 10px 0">
+                        <div class="sec-head-container">
+                            <div class="sec-head-style">
+                                <h3 class="section-title wow bounceInDown">Fonctionnalités</h3></br>
+                                <p>Tout ce qui existe déjà sur Connect</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                <ul class="service-container">
+                    <li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="service-icon">
+                            <img src="{{ asset('uploads/custom/images/icons/icon-file@2x.png') }}" alt="Dispositifs pédagogiques">
+                        </div>
+                        <p class="item-title">
+                            Création de dispositifs pédagogiques
+                        </p>
+                        <p class="item-description" style="text-align: justify">
+                            Mettez en place vos propres <strong>dispositifs pédagogiques innovants</strong> adaptés à vos contextes (appui au présentiel, cours à distance, MOOC,…).
+                            Les activités et parcours pédagogiques guident les utilisateurs dans leur apprentissage. Des contenus variés (textes, images, vidéos,
+                            exercices, wikis, blogs, sondages, etc.) favorisent l’apprentissage. Des outils de suivi permettent d'analyser les activités de vos
+                            utilisateurs.
+                        </p>
+                    </li>
 
-<!-- VIDEO TOUT SAVOIR EN TROIS MINUTES -->
+                    <li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="service-icon">
+                            <img src="{{ asset('uploads/custom/images/icons/icon-graph@2x.png') }}" alt="Espace de travail">
+                        </div>
+                        <p class="item-title">
+                            Un espace d'activités personnalisable
+                        </p>
+                        <p class="item-description" style="text-align: justify">
+                            Configurez votre propre bureau avec des informations venant des différents espaces d'activités auxquels vous êtes
+                            inscrit.</br>
+                            <strong>Organisez efficacement votre travail</strong>.</br>
+                            Votre espace de travail personnel vous permet de créer, copier ou partager des ressources dans d’autres espaces
+                            d’activités. Vous pouvez également les agréger dans votre propre espace d'activités.
+                        </p>
+                    </li>
+                    <li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="service-icon">
+                            <img src="{{ asset('uploads/custom/images/icons/publicity.png') }}" style="width:200px" alt="Stimulation des apprenants">
+                        </div>
+                        <p class="item-title">
+                            Des badges pour stimuler vos apprenants
+                        </p>
+                        <p class="item-description" style="text-align: justify">
+                            Vos apprenants se voient attribuer des <strong>badges</strong> en fonction de leur travail dans les différents
+                            espaces d'activités. Le <strong>référentiel de compétences</strong> et le <strong>profil d’apprentissage</strong>
+                            permettent à l’apprenant de se situer dans sa formation.</br>
+                            Un tout <b>nouveau tableau de bord</b> permettra bientôt aux gestionnaires des espaces d'activités de faire des
+                            recherches pointues par filtre pour évaluer l'ensemble de leur dispositif pédagogique et situer les apprenants
+                            et les ressources.
+                        </p>
+                    </li>
 
-    <div class="row" style="margin-top: 20px">
-        <div class="col-md-12 col-lg-12">
-            <section id="video-section">
-                <div class="video-section parallax-style">
-                    <div class="pattern">
-                        <h5 class="video-title">Le Consortium Claroline</h5>
-							<p style="text-align:center">
-								<iframe style="width:40%; min-height:400px" src="https://www.youtube.com/embed/DmCIar_Mw10?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
-							</p>
+                    <li class="item col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="service-icon">
+                            <img src="{{ asset('uploads/custom/images/icons/icon-comments@2x.png') }}" alt="Communication">
+                        </div>
+                        <p class="item-title">
+                            Des outils de communication efficaces
+                        </p>
+                        <p class="item-description" style="text-align: justify">
+                            La messagerie interne assure une communication entre tous les utilisateurs. Les forums et les annonces au sein des
+                            espaces d’activités facilitent la communication. Le fil de notification permet à l’utilisateur de prendre connaissance
+                            des modifications intervenues sur la plateforme.</br>
+                            Le chat (texte et vidéo) est en cours de développement et devrait être disponible en janvier 2016 dans la version 6
+                            de développement.
+                        </p>
+                    </li>
+                    <li class="item col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="service-icon">
+                            <img src="{{ asset('uploads/custom/images/icons/icon-ui@2x.png') }}" alt="Paramétrages">
+                        </div>
+                        <p class="item-title">
+                            Paramétrage et administration de la plateforme
+                        </p>
+                        <p class="item-description" style="text-align: justify">
+                            La plateforme dispose de tous les outils nécessaires pour gérer les utilisateurs, les espaces d'activités  et les
+                            inscriptions, tant pour les petites que les grandes institutions.</br>
+                            De nombreuses options de configuration permettent de répondre à vos besoins tant du point de vue graphique que du
+                            point de vue fonctionnel.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- VIDEO TOUT SAVOIR EN TROIS MINUTES -->
+
+        <div class="row" style="margin-top: 20px">
+            <div class="col-md-12 col-lg-12">
+                <section id="video-section">
+                    <div class="video-section parallax-style">
+                        <div class="pattern">
+                            <h5 class="video-title">Le Consortium Claroline</h5>
+                            <p style="text-align:center">
+                                <iframe style="width:40%; min-height:400px" src="https://www.youtube.com/embed/DmCIar_Mw10?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+                            </p>
                         </div>
                         <h6 class="video-title">Tout savoir en 3 minutes</h6>
                     </div>
+            </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- TUTORIELS -->
+
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <section id="tutorials" style="margin: 10px 0px 10px 0px">
+                <div class="white-bg about-us-section">
+                    <div class="sec-head-container">
+                        <div class="sec-head-style">
+                            <h3 class="section-title bold-700 wow bounceInDown">Nos tutoriels</h3>
+                            <div class="section-description" style="text:bold-700, pull-right">Les outils de Claroline Connect</div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-	</div>
 
-<!-- TUTORIELS -->
+        <div id="conteneur" class="container-fluid site-text">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-1 col-lg-10">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <p style="text-align:center">Notre philosophie</br>
+                            <iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/9cSR3CfjIb0?feature=player_detailpage" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <p style="text-align:center">Comment bien démarrer</br>
+                            <iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/K3--GD-ugOc?feature=player_detailpage" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <p style="text-align:center">Les MOOCs</br>
+                            <iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/QFhaSfvSewk?feature=player_detailpage" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <p style="text-align:center">Le forum</br>
+                            <iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/sexkKEquFwc?feature=player_detailpage" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <p style="text-align:center">La création d'un site web</br>
+                            <iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/cNEh2vjVTY4?feature=player_detailpage" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <p style="text-align:center">Le blog</br>
+                            <iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/T6TJCVcp-eY?feature=player_detailpage" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                        <p style="text-align:center">Les wikis</br>
+                            <iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/9IB51Rpzezw?feature=player_detailpage" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="row">
-		<div class="col-md-12 col-lg-12">
-			<section id="tutorials" style="margin: 10px 0px 10px 0px">
-				<div class="white-bg about-us-section">
-					<div class="sec-head-container">
-						<div class="sec-head-style">
-							<h3 class="section-title bold-700 wow bounceInDown">Nos tutoriels</h3>
-							<div class="section-description" style="text:bold-700, pull-right">Les outils de Claroline Connect</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-
-		<div id="conteneur" class="container-fluid">
-			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-1 col-lg-10">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-						<p style="text-align:center">Notre philosophie</br>
-						<iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/9cSR3CfjIb0?feature=player_detailpage" frameborder="0" allowfullscreen>
-						</iframe>
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-						<p style="text-align:center">Comment bien démarrer</br>
-						<iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/K3--GD-ugOc?feature=player_detailpage" frameborder="0" allowfullscreen>
-						</iframe>
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-						<p style="text-align:center">Les MOOCs</br>
-						<iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/QFhaSfvSewk?feature=player_detailpage" frameborder="0" allowfullscreen>
-						</iframe>
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-						<p style="text-align:center">Le forum</br>
-						<iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/sexkKEquFwc?feature=player_detailpage" frameborder="0" allowfullscreen>
-						</iframe>
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-						<p style="text-align:center">La création d'un site web</br>
-						<iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/cNEh2vjVTY4?feature=player_detailpage" frameborder="0" allowfullscreen>
-						</iframe>
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-						<p style="text-align:center">Le blog</br>
-						<iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/T6TJCVcp-eY?feature=player_detailpage" frameborder="0" allowfullscreen>
-						</iframe>
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-						<p style="text-align:center">Les wikis</br>
-						<iframe style="width:100%; min-height:320px" src="https://www.youtube.com/embed/9IB51Rpzezw?feature=player_detailpage" frameborder="0" allowfullscreen>
-						</iframe>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!-- CITATION -->
+    <!-- CITATION -->
 
     <div class="row">
         <div class="col-md-12 col-lg-12">
@@ -307,97 +308,98 @@
         </div>
     </div>
 
-<!-- NOTRE EQUIPE -->
+    <!-- NOTRE EQUIPE -->
 
-	<div class="row">
-		<div class="col-md-12 col-lg-12">
-			<section id="team" style="margin-top: 10px">
-				<div class="white-bg about-us-section">
-					<div class="sec-head-container">
-						<div class="sec-head-style">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <section id="team" style="margin-top: 10px">
+                <div class="white-bg about-us-section">
+                    <div class="sec-head-container">
+                        <div class="sec-head-style">
                             <h3 class="section-title bold-700">Notre équipe</h3>
                         </div>
                     </div>
-				</div>
-			</section>
-		</div>
-		<div class="col-md-offset-1 col-md-11 col-lg-offset-1 col-lg-11">
-			<p>Une douzaine de développeurs sont à l'écoute des demandes du terrain pour développer un logiciel libre
-			sous licence GPL.</p>
-			<p>L'équipe fonctionne sous la direction de:</p>
-			<div class="container-fluid">
-				<div class="col-md-3">
-					<div class="item">
-						<div class="member-container wow bounceInUp" data-wow-delay=".1s">
-							<div class="inner-container">
-								<img src="{{ asset('uploads/custom/images/team/cb.png') }}" alt="Christophe BATIER">
-								<div class="member-details">
-									<h4 class="name">Christophe Batier</h4>
-									<p class="designation">Président</br>Consortium Claroline</br>
-										<a href="mailto:christophe.batier@univ-lyon1.fr">christophe.batier@univ-lyon1.fr</a>
-									</p>
-									<p>Politique générale</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="item">
-						<div class="member-container wow bounceInUp" data-wow-delay=".3s">
-							<div class="inner-container">
-								<img src="{{  asset('uploads/custom/images/team/om.pngit checkout g') }}" alt="Olivier MEINGUET">
-								<div class="member-details">
-									<h4 class="name">Olivier Meinguet</h4>
-									<p class="designation">Secrétaire général</br>Consortium Claroline</br>
-										<a href="mailto:olivier.meinguet@claroline.net">olivier.meinguet@claroline.net</a>
-									</p>
-									<p>Coordination générale du Consortium Claroline</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="item">
-						<div class="member-container wow bounceInUp" data-wow-delay=".5s">
-							<div class="inner-container">
-								<img src="{{  asset('uploads/custom/images/team/lg.png') }}" alt="Laurent GRUBER">
-								<div class="member-details">
-									<h4 class="name">Laurent Gruber</h4>
-									<p class="designation">Directeur général</br>Forma-Libre</br>
-										<a href="mailto:laurent.gruber@claroline.com">laurent.gruber@claroline.com</a>
-									</p>
-									<p>Coordinateur général des développements</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="item">
-						<div class="member-container wow bounceInUp" data-wow-delay=".7s">
-							<div class="inner-container">
-								<img src="{{  asset('uploads/custom/images/team/pb-4.png') }}" alt="Pascal BALANCIER">
-								<div class="member-details">
-									<h4 class="name">Pascal Balancier</h4>
-									<p class="designation">Administrateur</br>Consortium Claroline</br>
-										<a href="mailto:pascal.balancier@adn.aei.be">pascal.balancier@adn.aei.be</a>
-									</p>
-									<p>Responsable de la communication.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-offset-1 col-md-11 col-lg-offset-1 col-lg-11 site-text">
+            <p>Une douzaine de développeurs sont à l'écoute des demandes du terrain pour développer un logiciel libre
+                sous licence GPL3.</p>
+            <p>A la manoeuvre pour le Consortium Claroline, on retrouve:</br></p>
+            <div class="container-fluid">
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <div class="member-container wow bounceInUp" data-wow-delay=".1s">
+                            <div class="inner-container">
+                                <img src="{{ asset('uploads/custom/images/team/cb.png') }}" alt="Christophe BATIER">
+                                <div class="member-details">
+                                    <h4 class="name">Christophe Batier</h4>
+                                    <p class="designation">Président</br>Consortium Claroline</br>
+                                        <a href="mailto:christophe.batier@univ-lyon1.fr">christophe.batier@univ-lyon1.fr</a>
+                                    </p>
+                                    <p>Politique générale</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <div class="member-container wow bounceInUp" data-wow-delay=".3s">
+                            <div class="inner-container">
+                                <img src="{{  asset('uploads/custom/images/team/om.png') }}" alt="Olivier MEINGUET">
+                                <div class="member-details">
+                                    <h4 class="name">Olivier Meinguet</h4>
+                                    <p class="designation">Secrétaire général</br>Consortium Claroline</br>
+                                        <a href="mailto:olivier.meinguet@claroline.net">olivier.meinguet@claroline.net</a>
+                                    </p>
+                                    <p>Coordination générale du Consortium Claroline</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <div class="member-container wow bounceInUp" data-wow-delay=".5s">
+                            <div class="inner-container">
+                                <img src="{{  asset('uploads/custom/images/team/lg.png') }}" alt="Laurent GRUBER">
+                                <div class="member-details">
+                                    <h4 class="name">Laurent Gruber</h4>
+                                    <p class="designation">Directeur général</br>Forma-Libre</br>
+                                        <a href="mailto:laurent.gruber@claroline.com">laurent.gruber@claroline.com</a>
+                                    </p>
+                                    <p>Coordinateur général des développements</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="item">
+                        <div class="member-container wow bounceInUp" data-wow-delay=".7s">
+                            <div class="inner-container">
+                                <img src="{{  asset('uploads/custom/images/team/pb.png') }}" alt="Pascal BALANCIER">
+                                <div class="member-details">
+                                    <h4 class="name">Pascal Balancier</h4>
+                                    <p class="designation">Administrateur</br>Consortium Claroline</br>
+                                        <a href="mailto:pascal.balancier@adn.aei.be">pascal.balancier@adn.aei.be</a>
+                                    </p>
+                                    <p>Responsable de la communication.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-<!-- CONSORTIUM CLAROLINE -->
+    <!-- CONSORTIUM CLAROLINE -->
 
     <div class="row">
-         <div class="col-md-12 col-lg-12">
+        <div class="col-md-12 col-lg-12">
             <section id="about">
                 <div class="white-bg about-us-section" style="margin: 10px 0px 10px 0px">
                     <div class="sec-head-container">
@@ -406,45 +408,44 @@
                             <div class="section-description" style="text:bold-700, pull-right">AISBL de droit belge</div>
                         </div>
                     </div>
-				</div>
+                </div>
             </section>
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-offset-1 col-md-3">
-					<div class="about-us-thumb">
-						<p style="text-align:center"><a class="twitter-timeline" href="https://twitter.com/LMSClaroline" data-widget-id="312490786702884864">Tweets de @LMSClaroline</a></p>
-						<script>// <![CDATA[
-							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-							// ]]></script>
-						<p>Pour recevoir la newslettre de Claroline Connect, envoyez un courriel &agrave;&nbsp;<a href="mailto:info@claroline.net">info@claroline.net</a></p>
-						<script>// <![CDATA[
-							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-							// ]]></script>
-					</div>
-				</div>
-				<div class="col-md-offset-1 col-md-6">
-					<p></p><img src="{{ asset('uploads/custom/images/Logo_Claroline.jpg') }}" width="50%" alt="Logo Claroline Connect"></p>
-					<h3 class="content-title">
-						Qui sommes-nous?
-					</h3>
-					<p style="text-align: justify">
-						<strong>Le Consortium Claroline est une AISBL de droit belge dont le siège social se situe à Louvain-la-Neuve.</strong>
-					</p>
-					<p style="text-align: justify">
-						Il regroupe une dizaine d'universités et hautes écoles belges et françaises qui sont membres effectifs de l'Assemblée Générale.
-					</p>
-					<p style="text-align: justify">
-					Claroline Connect est un <strong>logiciel libre</strong> de dernière génération permettant de déployer facilement une
-					plateforme dédiée à l’<strong>apprentissage</strong> et au <strong>travail collaboratif</strong> en ligne.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-<!-- A PROPOS DE FORMA-LIBRE -->
-<!--
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-3">
+                    <div class="about-us-thumb">
+                        <p style="text-align:center"><a class="twitter-timeline" href="https://twitter.com/LMSClaroline" data-widget-id="312490786702884864">Tweets de @LMSClaroline</a></p>
+                        <script>// <![CDATA[
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                            // ]]></script>
+                        <p>Pour recevoir la newslettre de Claroline Connect, envoyez un courriel &agrave;&nbsp;<a href="mailto:info@claroline.net">info@claroline.net</a></p>
+                        <script>// <![CDATA[
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                            // ]]></script>
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-md-6 site-text">
+                    <p></p><img src="{{ asset('uploads/custom/images/Logo_Claroline.jpg') }}" width="50%" alt="Logo Claroline Connect"></p>
+                    <h3 class="content-title">
+                        Qui sommes-nous?
+                    </h3>
+                    <p style="text-align: justify">
+                        <strong>Le Consortium Claroline est une AISBL de droit belge dont le siège social se situe à Louvain-la-Neuve.</strong>
+                    </p>
+                    <p style="text-align: justify">
+                        Il regroupe une dizaine d'universités et hautes écoles belges et françaises qui sont membres effectifs de l'Assemblée Générale.
+                    </p>
+                    <p style="text-align: justify">
+                        Claroline Connect est un <strong>logiciel libre</strong> de dernière génération permettant de déployer facilement une
+                        plateforme dédiée à l’<strong>apprentissage</strong> et au <strong>travail collaboratif</strong> en ligne.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- A PROPOS DE FORMA-LIBRE -->
+    <!--
     <div class="row">
          <div class="col-md-12 col-lg-12">
             <section id="about">
@@ -481,76 +482,73 @@
 		</div>
     </div>
 -->
-<!-- NEWSLETTER -->
-
+    <!-- NEWSLETTER -->
     <div class="row">
-         <div class="col-md-12 col-lg-12">
-              <section id="subscribe">
-                  <div class="subscribe-section parallax-style">
-                      <div class="pattern">
-                          <div class="container-fluid">
-                              <div class="subscribe-details">
-                                  <h3 class="text-center plx-section-title">Inscrivez-vous à notre newsletter</h3>
-                                  <p class="text-center subscribe-description">Pour vous tenir au courant de l'actualité Connect.</p>
-			      			  </div>
-							  <div class="subscribe-form">
-							    	<form class="news-letter" action="#" method="post">
-									<input class="form-control" type="email" name="news_later_email" placeholder="Entrez un courriel valide" required="">
-									<button type="submit" class="subscribe-btn btn">Je m'inscris</button>
-								    </form>
-							  </div>
-						  </div>
-					  </div>
-				  </div>
-			  </section>
-		 </div>
+        <div class="col-md-12 col-lg-12">
+            <section id="subscribe">
+                <div class="subscribe-section parallax-style">
+                    <div class="pattern">
+                        <div class="container-fluid">
+                            <div class="subscribe-details">
+                                <h3 class="text-center plx-section-title">Inscrivez-vous à notre newsletter</h3>
+                                <p class="text-center subscribe-description">Pour vous tenir au courant de l'actualité Connect.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form class="news-letter" action="#" method="post">
+                                    <input class="form-control" type="email" name="news_later_email" placeholder="Entrez un courriel valide" required="">
+                                    <button type="submit" class="subscribe-btn btn btn-sm btn-default">Je m'inscris</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-
-<!-- CONTACT -->
-
-	<div class="row">
-		<div class="col-md-12 col-lg-12">
+    <!-- CONTACT -->
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
             <section id="contact">
                 <div id="contact-form-section" class="white-bg; contact-form-section" style="margin: 10px 0 10px 0">
-					<div class="sec-head-container">
-						<div class="sec-head-style">
-							<h3 class="section-title bold-700 wow bounceInDown">Nous contacter</h3>
-							<div class="section-description">Laissez-nous un message ci-dessous.</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-		<div class="col-md-offset-1 col-md-10">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="alert alert-success hidden" id="contactSuccess">
+                    <div class="sec-head-container">
+                        <div class="sec-head-style">
+                            <h3 class="section-title bold-700 wow bounceInDown">Nous contacter</h3>
+                            <div class="section-description">Laissez-nous un message ci-dessous.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-offset-1 col-md-10">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="alert alert-success hidden" id="contactSuccess">
                         <strong>Merci!</strong> Message envoyé.
                     </div>
-					<div class="contact-form-container">
-						<form id="mailForm"  action="{{ path('claroline_net_email_contact') }}" method="post" name="contactform">
-							<div class="col-md-6">
-								<input id="name" class="form-control" name="name" type="text" placeholder=" Votre nom" required>
-								<input id="email" class="form-control" name="email" type="email" placeholder=" Votre courriel" required>
-								<input id="subject" class="form-control" name="subject" type="text" placeholder=" Sujet" required>
-							</div>
-							<div class="col-md-6">
-								<textarea id="message" class="form-control" name="message" placeholder=" Votre Message" rows="4" required></textarea>
-								<div id="submit">
-									<button style="color: #808284" type="submit" id="send_message" class="btn btn-sm btn-default full-width btn-effect">Envoyez votre message</button>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div id="mail_success" class="success"><img src="{{ asset('uploads/custom/images/icons/success.png') }}" alt="Success!">Message envoyé.</div>
-								<div id='mail_fail' class='error'>
-									<img src="{{ asset('uploads/custom/images/icons/error.png') }}" alt="Error!">Erreur d'envoi de votre message.
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+                    <div class="contact-form-container">
+                        <form id="mailForm"  action="{{ path('claroline_net_email_contact') }}" method="post" name="contactform">
+                            <div class="col-md-6">
+                                <input id="name" class="form-control" name="name" type="text" placeholder=" Votre nom" required>
+                                <input id="email" class="form-control" name="email" type="email" placeholder=" Votre courriel" required>
+                                <input id="subject" class="form-control" name="subject" type="text" placeholder=" Sujet" required>
+                            </div>
+                            <div class="col-md-6">
+                                <textarea id="message" class="form-control" name="message" placeholder=" Votre Message" rows="4" required></textarea>
+                                <div id="submit">
+                                    <button type="submit" id="send_message" class="btn btn-sm btn-default full-width">Envoyez votre message</button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div id="mail_success" class="success"><img src="{{ asset('uploads/custom/images/icons/success.png') }}" alt="Success!">Message envoyé.</div>
+                                <div id='mail_fail' class='error'>
+                                    <img src="{{ asset('uploads/custom/images/icons/error.png') }}" alt="Error!">Erreur d'envoi de votre message.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
             <div id="contact-details">
                 <div class="white-bg contact-details">
@@ -588,88 +586,82 @@
             </div>
         </div>
     </div>
-	<div class="container-fluid">
-		<div class="row features">
-			<div class="col-xs-12" style="padding-left: 20px">
-				<h4 style="color: black"><b>Ils nout font confiance.</b></h4>
-				<h5>Membres effectifs du Consortium Claroline</h5>
-				<img src="{{ asset('uploads/custom/images/univ_lyon.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/ec_lyon.png') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/univ_jm_set.jpeg') }}" title="Université Jean MOnnet - Saint-Etienne" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/formagraph.jpeg') }}" title="" height="80px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/AEI.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/univ_stendhal.png') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/ucb_lyon1.gif') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/ucdn_chili.png') }}" title="" height="96px" style="padding: 10px">
-				<a href="http://www.claroline.com" target="_blank"><img src="{{ asset('uploads/custom/images/FormaLibre.png') }}" title="Forma-Libre" height="96px" style="padding: 10px"></a>
-				<h5>Membres adhérents du Consortium Claroline</h5>
-				<a href="http://www.campusvirtuel.be" target="_blank"><img src="{{ asset('uploads/custom/images/cvg.png') }}" title="Campus Virtuel en Gestion" height="96px" style="padding: 10px"></a>
-				<a href="http://prac-hi.univ-lyon1.fr" target="_blank"><img src="{{ asset('uploads/custom/images/hi.png') }}" title="Handicap International" height="96px" style="padding: 10px"></a>
-				<img src="{{ asset('uploads/custom/images/msf.jpeg') }}" title="Médecins sans frontières" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/octa.png') }}" title="OCTA" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/mfr.jpeg') }}" title="MFR" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/provl.jpeg') }}" title="Province de Liège" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/place_num.png') }}" title="" height="64px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/ucl.gif') }}" title="UCL" height="80px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/hevinci.png') }}" title="HE Léonard de Vinci" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/helha.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/henalux.png') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/aefe.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/geezot.png') }}" title="Geezot" height="80px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/formav.png') }}" title="" height="80px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/univ_montp2.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/campus_fle.png') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/ism.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/uvcw.gif') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/emlyon.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/cf_image.png') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/ump.jpeg') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/forma3B.png') }}" title="" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/chu_amiens.png') }}" title="CHU Amiens" height="96px" style="padding: 10px">
-				<h5>Ils utilisent Claroline</h5>
-				<img src="{{ asset('uploads/custom/images/solerni.png') }}" title="Solerni" height="96px" style="padding: 10px">
-				<img src="{{ asset('uploads/custom/images/orange.png') }}" title="Fondation Orange" height="96px" style="padding: 10px">
-			</div>
-		</div>
-		<div id="scroll-to-top">
+    <div class="container-fluid">
+        <div class="row features">
+            <div class="col-xs-12" style="padding-left: 20px">
+                <h4>Ils nous font confiance.</h4>
+                <h5>Membres effectifs du Consortium Claroline</h5>
+                <img src="{{ asset('uploads/custom/images/univ_lyon.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/ec_lyon.png') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/univ_jm_set.jpeg') }}" title="Université Jean MOnnet - Saint-Etienne" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/formagraph.jpeg') }}" title="" height="80px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/AEI.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/univ_stendhal.png') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/ucb_lyon1.gif') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/ucdn_chili.png') }}" title="" height="96px" style="padding: 10px">
+                <a href="http://www.claroline.com" target="_blank"><img src="{{ asset('uploads/custom/images/FormaLibre.png') }}" title="Forma-Libre" height="96px" style="padding: 10px"></a>
+                <h5>Membres adhérents du Consortium Claroline</h5>
+                <a href="http://www.campusvirtuel.be" target="_blank"><img src="{{ asset('uploads/custom/images/cvg.png') }}" title="Campus Virtuel en Gestion" height="96px" style="padding: 10px"></a>
+                <a href="http://prac-hi.univ-lyon1.fr" target="_blank"><img src="{{ asset('uploads/custom/images/hi.png') }}" title="Handicap International" height="96px" style="padding: 10px"></a>
+                <img src="{{ asset('uploads/custom/images/msf.jpeg') }}" title="Médecins sans frontières" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/octa.png') }}" title="OCTA" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/mfr.jpeg') }}" title="MFR" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/provl.jpeg') }}" title="Province de Liège" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/place_num.png') }}" title="" height="64px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/ucl.gif') }}" title="UCL" height="80px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/hevinci.png') }}" title="HE Léonard de Vinci" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/helha.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/henalux.png') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/aefe.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/geezot.png') }}" title="Geezot" height="80px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/formav.png') }}" title="" height="80px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/univ_montp2.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/campus_fle.png') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/ism.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/uvcw.gif') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/emlyon.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/cf_image.png') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/ump.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/forma3B.png') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/chu_amiens.png') }}" title="CHU Amiens" height="96px" style="padding: 10px">
+                <h5>Ils utilisent Claroline</h5>
+                <img src="{{ asset('uploads/custom/images/solerni.png') }}" title="Solerni" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/orange.png') }}" title="Fondation Orange" height="96px" style="padding: 10px">
+            </div>
+        </div>
+    </div>
+    <div id="scroll-to-top">
 			<span>
 				<i class="fa fa-arrow-up"></i>
 			</span>
-		</div>
-	</div>
-
-
-<!-- PIED DE PAGE -->
-
-{% block footer %}
-	{% render controller('ClarolineCoreBundle:Layout:footer') %}
-{% endblock%}
-
+    </div>
+    </div>
+    <!-- PIED DE PAGE -->
+    {% block footer %}
+        {% render controller('ClarolineCoreBundle:Layout:footer') %}
+    {% endblock%}
 {% endblock %}
-
 {% block stylesheets %}
-	{{ parent() }}
-	 {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
 {% endblock %}
-
 {% block javascripts %}
-	{{ parent() }}
-	 {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
-
-	<script type="text/javascript">
-		$('#mailForm').submit(function(event) {
-			event.preventDefault();
-			var form = $(event.target);
-			var route = form.attr('action');
-			var data = $(this).serialize();
-			$.ajax({
-					type: "POST",
-					url: route,
-					data: data,
-					success: function (data) {
-					$('#contactSuccess').removeClass('hidden');
-				}
-			});
-		});
-	</script>
+    {{ parent() }}
+    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
+    <script type="text/javascript">
+        $('#mailForm').submit(function(event) {
+            event.preventDefault();
+            var form = $(event.target);
+            var route = form.attr('action');
+            var data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: route,
+                data: data,
+                success: function (data) {
+                    $('#contactSuccess').removeClass('hidden');
+                }
+            });
+        });
+    </script>
 {% endblock %}

@@ -4,7 +4,7 @@
 {% block meta %}
     {{ parent() }}
     {% if config.getParameter('google_meta_tag') != '' %}
-       {{ config.getParameter('google_meta_tag') | raw }}
+        {{ config.getParameter('google_meta_tag') | raw }}
     {% endif %}
 {% endblock %}
 
@@ -13,7 +13,7 @@
     <link rel='stylesheet' type='text/css' href='{{ asset('bundles/frontend/font-awesome/css/font-awesome.min.css') }}'/>
     <link rel='stylesheet' type='text/css' href='{{ asset('bundles/frontend/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css')}}'>
 
-     <link rel="stylesheet" href="{{ asset('bundles/clarolinenettheme/css/topbar.css') }}" screen="media" />
+    <link rel="stylesheet" href="{{ asset('bundles/clarolinenettheme/css/topbar.css') }}" screen="media" />
 {% endblock %}
 
 {% block javascripts_header %}
@@ -31,14 +31,14 @@
     <div id="homePath" class="hide">{{ path("claro_index") }}</div>
     <div id="homeAsset" class="hide">{{ app.request.getSchemeAndHttpHost() ~ asset("") }}</div>
     <div id="homeLocale" class="hide">{% spaceless %}
-        {% if asset_exists("bundles/stfalcontinymce/vendor/tinymce/langs/" ~ app.request.locale ~ ".js") %}
-            {{ app.request.locale }}
-        {% elseif asset_exists("bundles/stfalcontinymce/vendor/tinymce/langs/" ~ app.request.locale ~ "_" ~ app.request.locale | upper ~ ".js") %}
-            {{ app.request.locale ~ '_' ~ app.request.locale | upper }}
-        {% else %}
-            en
-        {% endif %}
-    {% endspaceless %}
+            {% if asset_exists("bundles/stfalcontinymce/vendor/tinymce/langs/" ~ app.request.locale ~ ".js") %}
+                {{ app.request.locale }}
+            {% elseif asset_exists("bundles/stfalcontinymce/vendor/tinymce/langs/" ~ app.request.locale ~ "_" ~ app.request.locale | upper ~ ".js") %}
+                {{ app.request.locale ~ '_' ~ app.request.locale | upper }}
+            {% else %}
+                en
+            {% endif %}
+        {% endspaceless %}
     </div>
     <div id="wrap">
         <div class="please-wait">
@@ -64,6 +64,27 @@
                 <h4 class="label label-warning">
                     {{ 'email_not_activated_part_1'|trans({'%email%': app.user.mail}, 'platform') }}
                         <a href="{{ path('claro_security_validate_email_send', {'hash': app.user.emailValidationHash}) }}" class="confirm-email"> {{ 'email_not_activated_part_2'|trans({}, 'platform') }}</a>
+                    {{ 'email_not_activated_part_3'|trans({}, 'platform') }}
+                    <i
+                            class="fa fa-question-circle pointer-hand maintenance-popover"
+                            data-container=".alert-email-confirm"
+                            data-toggle="popover"
+                            data-placement="bottom"
+                            data-content="{{ 'email_confirmation_message'|trans({}, 'platform') }}"
+                    >
+                    </i>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <i class="fa fa-close pointer-hand" id="hide-email-confirmation">
+
+                    </i>
+                </h4>
+            </div>
+        {% endif %}
+        {% if app.user != null and app.user.isMailValidated == false and app.user.hideMailWarning == false and is_mailer_available() %}
+            <div class="alert-email-confirm">
+                <h4 class="label label-warning">
+                    {{ 'email_not_activated_part_1'|trans({'%email%': app.user.mail}, 'platform') }}
+                    <a href="{{ path('claro_security_validate_email_send', {'hash': app.user.emailValidationHash}) }}" class="confirm-email"> {{ 'email_not_activated_part_2'|trans({}, 'platform') }}</a>
                     {{ 'email_not_activated_part_3'|trans({}, 'platform') }}
                     <i
                             class="fa fa-question-circle pointer-hand maintenance-popover"
@@ -129,7 +150,6 @@
                 </div>
             </div>
         </div>
-        <div id="push"></div>
         {% endblock %}
     </div>
     {#
