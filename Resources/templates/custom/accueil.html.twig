@@ -444,44 +444,6 @@
             </div>
         </div>
     </div>
-    <!-- A PROPOS DE FORMA-LIBRE -->
-    <!--
-    <div class="row">
-         <div class="col-md-12 col-lg-12">
-            <section id="about">
-                <div class="white-bg about-us-section" style="margin: 10px 0 10px 0">
-                    <div class="sec-head-container">
-                        <div class="sec-head-style">
-                            <h3 class="section-title bold-700 wow bounceInDown">Forma Libre</h3>
-                            <div class="section-description" style="text:bold-700, pull-right">Société de services Claroline Connect</div>
-                        </div>
-                    </div>
-				</div>
-			</section>
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-offset-1 col-md-3">
-					<div class="about-us-thumb">
-						<img src="{{ asset('uploads/custom/images/FormaLibre.png') }}" width="65%" alt="Logo Forma-Libre">
-					</div>
-				</div>
-				<div class="col-md-offset-1 col-md-6">
-					<h3 class="content-title">Qui sommes-nous?</h3>
-						<p style="text-align: justify">Cela faisait longtemps qu'il en était question, c'est maintenant fait!</p>
-						<p style="text-align: justify"><strong>Forma-Libre, société de services adossée à Claroline Connect a été créée le 5 mars 2015.</strong></p>
-						<p style="text-align: justify"><strong>Claroline Connect</strong> reste évidemment <strong>libre et téléchargeable gratuitement</strong>, mais face aux demandes croissantes de services personnalisés,
-						la nécessité de proposer des services professionnels s'est imposée. La création de cette société va également soulager le Consortium Claroline
-						de demandes qui la détournaient de ses missions fondamentales: promouvoir Claroline Connect et coordonner les efforts, notamment en matière
-						de développement, des membres de la communauté.
-						</p>
-						Plus d'informations sur <a href="http://www.claroline.com" target="blank">claroline.com</a>
-						</p>
-				</div>
-			</div>
-		</div>
-    </div>
--->
     <!-- NEWSLETTER -->
     <div class="row">
         <div class="col-md-12 col-lg-12">
@@ -494,13 +456,18 @@
                                 <p class="text-center subscribe-description">Pour vous tenir au courant de l'actualité Connect.</p>
                             </div>
                             <div class="subscribe-form">
-                                <form class="news-letter" action="#" method="post">
-                                    <input class="form-control" type="email" name="news_later_email" placeholder="Entrez un courriel valide" required="">
-                                    <button type="submit" class="subscribe-btn btn btn-sm btn-default">Je m'inscris</button>
+                                <form id="newsletterForm" class="news-letter" action="{{ path('claroline_net_email_newsletter') }}" method="post">
+                                    <input id="newsletter" class="form-control" type="email" name="newsletter" placeholder="Entrez un courriel valide" required="">
+                                    <!-- honeypot for bots -->
+                                    <input id="trap_field_newsletter" type="text" name="trap_field_newsletter" style="display:none;"></input>
+                                    <button id="newsletter-subscribe-button" type="submit" class="subscribe-btn btn btn-sm btn-default">Je m'inscris</button>
                                 </form>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="alert alert-success hidden col-md-offset-1 col-md-10" id="newsletterSuccess" align="center">
+                    <strong>Merci!</strong> Message envoyé.
                 </div>
             </section>
         </div>
@@ -522,7 +489,7 @@
         <div class="col-md-offset-1 col-md-10">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="alert alert-success hidden" id="contactSuccess">
+                    <div class="alert alert-success hidden" id="contactSuccess" align="center">
                         <strong>Merci!</strong> Message envoyé.
                     </div>
                     <div class="contact-form-container">
@@ -531,6 +498,8 @@
                                 <input id="name" class="form-control" name="name" type="text" placeholder=" Votre nom" required>
                                 <input id="email" class="form-control" name="email" type="email" placeholder=" Votre courriel" required>
                                 <input id="subject" class="form-control" name="subject" type="text" placeholder=" Sujet" required>
+                                    <!-- honeypot for bots -->
+                                <input id="trap_field_contact" type="text" name="trap_field_contact" style="display:none;"></input>
                             </div>
                             <div class="col-md-6">
                                 <textarea id="message" class="form-control" name="message" placeholder=" Votre Message" rows="4" required></textarea>
@@ -651,6 +620,8 @@
     <script type="text/javascript">
         $('#mailForm').submit(function(event) {
             event.preventDefault();
+            //current check is ''
+            //$('#trap_field_newsletter').val('trap_field_contact');
             var form = $(event.target);
             var route = form.attr('action');
             var data = $(this).serialize();
@@ -660,6 +631,25 @@
                 data: data,
                 success: function (data) {
                     $('#contactSuccess').removeClass('hidden');
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('#newsletterForm').submit(function(event) {
+            event.preventDefault();
+            //current check is ''
+            //$('#trap_field_contact').val('not-a-bot');
+            var form = $(event.target);
+            var route = form.attr('action');
+            var data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: route,
+                data: data,
+                success: function (data) {
+                    $('#newsletterSuccess').removeClass('hidden');
                 }
             });
         });

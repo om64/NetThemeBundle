@@ -44,9 +44,49 @@ class ContactController extends Controller
     public function contactEmailAction()
     {
         $post = $this->request->request->all();
+
+        //are you a bot ?
+        $itsAtrap = $post['trap_field_contact']; //#admiral ackbar
+
+        if ($itsAtrap !== '') {
+            throw new \Exception('nope'); //ahah
+        }
+        
         $subject = 'Contact depuis claroline.net de ' . $post['name'] . ' ' . $post['email'] . ':' . $post['subject'] ;
         $body = $post['message'];
         $to = 'olivier.meinguet@gmail.com';
+        $extra['to'] = array($to);
+
+        $from = null;
+
+        $this->mailManager->send(
+            $subject, $body, array(), $from, $extra, true
+        );
+
+        return new JsonResponse("success");
+    }
+
+    /**
+     * @EXT\Route(
+     *     "/contact/newsletter",
+     *     name="claroline_net_email_newsletter",
+     *     options={"expose"=true}
+     * )
+     */
+    public function newsLetterAction()
+    {
+        $post = $this->request->request->all();
+
+        //are you a bot ?
+        $itsAtrap = $post['trap_field_newsletter']; //#admiral ackbar
+
+        if ($itsAtrap !== '') {
+            throw new \Exception('nope'); //ahah
+        }
+
+        $subject = "Demande d'inscription à la newsletter de Claroline" ;
+        $body = "email: " . $post['newsletter'];
+        $to = 'pascal.balancier@adn.aei.be';
         $extra['to'] = array($to);
 
         $from = null;
