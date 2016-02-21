@@ -48,7 +48,7 @@ class ContactController extends Controller
         //are you a bot ?
         $itsAtrap = $post['trap_field_contact']; //#admiral ackbar
 
-        if ($itsAtrap !== '') {
+        if ($itsAtrap != '') {
             throw new \Exception('nope'); //ahah
         }
         
@@ -80,7 +80,7 @@ class ContactController extends Controller
         //are you a bot ?
         $itsAtrap = $post['trap_field_newsletter']; //#admiral ackbar
 
-        if ($itsAtrap !== '') {
+        if ($itsAtrap != '') {
             throw new \Exception('nope'); //ahah
         }
 
