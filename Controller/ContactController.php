@@ -44,14 +44,12 @@ class ContactController extends Controller
     public function contactEmailAction()
     {
         $post = $this->request->request->all();
+        $get = $this->request->query->all();
 
-        //are you a bot ?
-        $itsAtrap = $post['trap_field_contact']; //#admiral ackbar
-
-        if ($itsAtrap != '') {
-            throw new \Exception('nope'); //ahah
+        if (!isset($get['safe'])) {
+            throw new \Exception('Javascript not fired');
         }
-        
+
         $subject = 'Contact depuis claroline.net de ' . $post['name'] . ' ' . $post['email'] . ':' . $post['subject'] ;
         $body = $post['message'];
         $to = 'olivier.meinguet@gmail.com';
@@ -76,12 +74,10 @@ class ContactController extends Controller
     public function newsLetterAction()
     {
         $post = $this->request->request->all();
-
-        //are you a bot ?
-        $itsAtrap = $post['trap_field_newsletter']; //#admiral ackbar
-
-        if ($itsAtrap != '') {
-            throw new \Exception('nope'); //ahah
+        $get = $this->request->query->all();
+        
+        if (!isset($get['safe'])) {
+            throw new \Exception('Javascript not fired');
         }
 
         $subject = "Demande d'inscription à la newsletter de Claroline" ;

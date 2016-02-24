@@ -459,7 +459,6 @@
                                 <form id="newsletterForm" class="news-letter" action="{{ path('claroline_net_email_newsletter') }}" method="post">
                                     <input id="newsletter" class="form-control" type="email" name="newsletter" placeholder="Entrez un courriel valide" required="">
                                     <!-- honeypot for bots -->
-                                    <input id="trap_field_newsletter" type="text" name="trap_field_newsletter" style="display:none;"></input>
                                     <button id="newsletter-subscribe-button" type="submit" class="subscribe-btn btn btn-sm btn-default">Je m'inscris</button>
                                 </form>
                             </div>
@@ -499,7 +498,6 @@
                                 <input id="email" class="form-control" name="email" type="email" placeholder=" Votre courriel" required>
                                 <input id="subject" class="form-control" name="subject" type="text" placeholder=" Sujet" required>
                                     <!-- honeypot for bots -->
-                                <input id="trap_field_contact" type="text" name="trap_field_contact" style="display:none;"></input>
                             </div>
                             <div class="col-md-6">
                                 <textarea id="message" class="form-control" name="message" placeholder=" Votre Message" rows="4" required></textarea>
@@ -621,13 +619,12 @@
         $('#mailForm').submit(function(event) {
             event.preventDefault();
             //current check is ''
-            //$('#trap_field_newsletter').val('trap_field_contact');
             var form = $(event.target);
             var route = form.attr('action');
             var data = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: route,
+                url: route + '?safe=true',
                 data: data,
                 success: function (data) {
                     $('#contactSuccess').removeClass('hidden');
@@ -640,13 +637,12 @@
         $('#newsletterForm').submit(function(event) {
             event.preventDefault();
             //current check is ''
-            //$('#trap_field_contact').val('not-a-bot');
             var form = $(event.target);
             var route = form.attr('action');
             var data = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: route,
+                url: route + '?safe=true',
                 data: data,
                 success: function (data) {
                     $('#newsletterSuccess').removeClass('hidden');
