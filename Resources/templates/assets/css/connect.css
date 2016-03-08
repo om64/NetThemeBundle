@@ -1684,13 +1684,14 @@ input[type="radio"].radio-btn.light-green:checked + label:after{
 .page-location a:hover:before {
 	bottom: 100%;
 }
+/*
 .page-location a:after {
 	width: 4px;
 	height: 4px;
 	right: -13px;
 	top:11px;
 }
-
+*/
 /* PIED DE PAGE */
 
 .footer-section .pattern{
