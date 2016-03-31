@@ -392,7 +392,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <!-- CONSORTIUM CLAROLINE -->
 
@@ -569,31 +568,28 @@
                 <a href="http://www.claroline.com" target="_blank"><img src="{{ asset('uploads/custom/images/FormaLibre.png') }}" alt="Logo Forma-Libre cliquable pour visiter leur site dans une nouvelle fenêtre" title="Cliquez pour visiter le site de Forma-Libre dans une nouvelle fenêtre" height="96px" style="padding: 10px"></a>
                 <h5>Membres adhérents du Consortium Claroline</h5>
                 <a href="http://www.campusvirtuel.be" target="_blank"><img src="{{ asset('uploads/custom/images/cvg.png') }}" alt="Campus Virtuel en Gestion" title="Campus Virtuel en Gestion" height="96px" style="padding: 10px"></a>
-                <a href="http://prac-hi.univ-lyon1.fr" target="_blank"><img src="{{ asset('uploads/custom/images/hi.png') }}" alt="Handicap International" title="Handicap International" height="96px" style="padding: 10px"></a>
-                <img src="{{ asset('uploads/custom/images/msf.jpeg') }}" alt="Médecins sans frontières" title="Médecins sans frontières" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/octa.png') }}" alt="OCTA" title="OCTA" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/mfr.jpeg') }}" title="MFR" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/provl.jpeg') }}" title="Province de Liège" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/place_num.png') }}" title="" height="64px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/ucl.gif') }}" alt="Université Catholique de Louvain" title="Université Catholique de Louvain" height="80px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/hevinci.png') }}" alt="Haute Ecole Léonard de Vinci" title="HE Léonard de Vinci" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/helha.jpeg') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/henalux.png') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/aefe.jpeg') }}" title="" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/logo_aefe.png') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/geezot.png') }}" alt="Geezot" title="Geezot" height="80px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/formav.png') }}" title="" height="80px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/univ_montp2.jpeg') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/campus_fle.png') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/ism.jpeg') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/uvcw.gif') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/emlyon.jpeg') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/cf_image.png') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/ump.jpeg') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/forma3B.png') }}" title="" height="96px" style="padding: 10px">
                 <img src="{{ asset('uploads/custom/images/chu_amiens.png') }}" alt="CHU d'Amiens" title="CHU Amiens" height="96px" style="padding: 10px">
                 <h5>Ils utilisent Claroline</h5>
-                <img src="{{ asset('uploads/custom/images/solerni.png') }}" alt="Solerni" title="Solerni" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/orange.png') }}" alt="Fondation Orange" title="Fondation Orange" height="96px" style="padding: 10px">
+                <a href="http://prac-hi.univ-lyon1.fr" target="_blank"><img src="{{ asset('uploads/custom/images/hi.png') }}" alt="Handicap International" title="Handicap International" height="96px" style="padding: 10px"></a>
+                <img src="{{ asset('uploads/custom/images/msf.jpeg') }}" alt="Médecins sans frontières" title="Médecins sans frontières" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/octa.png') }}" alt="OCTA" title="OCTA" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/mfr.jpeg') }}" title="MFR" height="96px" style="padding: 10px">
+                <img src="{{ asset('uploads/custom/images/place_num.png') }}" title="" height="64px" style="padding: 10px">
             </div>
         </div>
     </div>
@@ -602,16 +598,19 @@
 				<i class="fa fa-arrow-up"></i>
 			</span>
     </div>
-</div>
+
     <!-- PIED DE PAGE -->
     {% block footer %}
         {% render controller('ClarolineCoreBundle:Layout:footer') %}
     {% endblock%}
+
 {% endblock %}
+
 {% block stylesheets %}
     {{ parent() }}
     {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
 {% endblock %}
+
 {% block javascripts %}
     {{ parent() }}
     {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
@@ -652,4 +651,5 @@
             });
         });
     </script>
+
 {% endblock %}
