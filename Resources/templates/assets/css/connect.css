@@ -95,16 +95,16 @@ iframe, audio {
 	/* Support for IE. */
 	font-feature-settings: 'liga';
 }
-.white-bg {
-	background-color: #ffffff;
-}
-.gray-bg {
-	background-color: #808284;
-}
+/*.white-bg {*/
+	/*background-color: #ffffff;*/
+/*}*/
+/*.gray-bg {*/
+	/*background-color: #808284;*/
+/*}*/
 
-.blue-bg {
-	background-color: #008ed0;
-}
+/*.blue-bg {*/
+	/*background-color: #008ed0;*/
+/*}*/
 
 .carousel-indicators li {
 	border-radius: 0;
@@ -250,7 +250,7 @@ blockquote {
 	background-color: #E2E2E2;
 }
 #top-section {
-	background: url(/images/background/banner.png) 50% 0 no-repeat fixed;
+	background: url(images/background/banner.png) 50% 0 no-repeat fixed;
 	margin: 0;
 	padding: 0;
 }
@@ -1684,14 +1684,7 @@ input[type="radio"].radio-btn.light-green:checked + label:after{
 .page-location a:hover:before {
 	bottom: 100%;
 }
-/*
-.page-location a:after {
-	width: 4px;
-	height: 4px;
-	right: -13px;
-	top:11px;
-}
-*/
+
 /* PIED DE PAGE */
 
 .footer-section .pattern{
