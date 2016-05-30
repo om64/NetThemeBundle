@@ -11,7 +11,6 @@
         </div>
     </div>
 </div>
-
 <div id="conteneur" class="container-fluid site-text">
     <div class="row">
         <div class="col-md-10 colsdm-offset-1 col-lg-10 col-lg-offset-1">
@@ -29,33 +28,71 @@
             </section>
             <div class="col-md-6 col-lg-6">
                 <h3>Téléchargement et installation</h3>
-                <h4>Claroline Connect Version stable</h4>
-                <p>La version stable de Claroline Connect est là. Cette version a été plus largement testée. Cependant, comme il s'agit
-                    d'une première version stable, il peut rester certains bugs, notamment lors de l'installation dans des environnements
-                    différents de nos environnements de tests (Linux Debian).</p>
-                <p>Un manuel utilisateur ainsi qu'un <a href="http://localhost/claroline/web/app_dev.php/resource/open/claroline_forum/2016" target="blank">forum</a> sont disponibles !</p>
-                <p></p><i class="material-icons" style="color: red">ic_error_outline_black_48dp</i></br>
+                <h4>Claroline Connect 16.05</h4>
+                <p>La version 16.05 de Claroline Connect est sortie ce 31 mai 2016. Nous vous conseillons de ne l'utiliser en production quu'à partir des versions 16.05.x qui auront pu bénéficier de
+                    corrections de bugs.</p>
+                <p>Nous vous recommandons de ne procéder à la mise à jour de la version 5 vers la version 16.05 que d'ici le 15 juin.</p>
+                <p>Un <a href="http://localhost/claroline/web/app_dev.php/resource/open/claroline_forum/2016" target="blank">forum</a> est disponible. Le manuel utilisateur va être adapté au plus vite</p>
+                <h5>Installation à partir d'un fichier archive</h5>
+                <p>Pour chaque version de la plateforme, les ressources (sources pré-extraites, database dump, etc.) sont disponibles à l'adresse <a href="http://packages.claroline.net/releases" target="blank">packages.claroline.net/releases</a>.</p>
+                <p>Le moyen le plus rapide pour démarrer est de taper les commandes suivantes dans un terminal:</p>
                 <ul>
-                    <li>À la différence de Claroline 1.x, Claroline Connect requiert une version de PHP supérieure ou égale à 5.5.x.</li>
-                    <li>Le système de gestion des plug-ins est lui encore en version béta et peut poser certains problèmes.</li>
-                    <li>Configuration du php.ini :</li>
-                    <li> variable memory_limit doit être à au moins 512M (pour l'installation et les mise à jour), voire idéalement à 1024M.</li>
-                    <li> max_execution_time doit être à au moins 1200 pour l'installation de la version full. Ensuite, vous pouvez à nouveau le diminuer.</li>
-                </ul></p>
-                <p style="font-style:bold">La procédure d’installation est simple :</p>
-                <ul>
-                    <li>Téléchargez la <a href="http://packages.claroline.net/releases/last-full.zip" target="blank">version de base </a>ou la <a href="http://packages.claroline.net/releases/last-min.zip" target="blank">version minimale</a> sans plug-in de Claroline Connect.</li>
-                    <li>Décompressez l’archive (*) et faites en sorte qu’elle soit accessible depuis le serveur web.</li>
-                    <li>Ouvrez la page [hôte]/[nom du répertoire décompressé]/web/install.php (ex: http://localhost/claroline/web/install.php) et suivez les
-                        instructions de l’installeur (**).</li>
+                    <li><code>curl packages.claroline.net/releases/latest/claroline-6.x.x-dev.tar.gz | tar xzv</code></li>
+                    <li><code>cd claroline-6.x.x-dev</code></li>
+                    <li><code>php scripts/configure.php</code></li>
+                    <li><code>composer fast-install</code></li>
                 </ul>
-                <p>*  WINrar est préférable à WINzip si vous travaillez sous Windows.</p>
-                <p>** L’installation proprement dite peut prendre de 2 à 5 minutes sous Linux, jusqu'à 18 minutes sous Windows.</p>
+                <h5>Installation depuis la source</h5>
+                <p>La procédure d'installation comprend différentes étapes à exécuter dans l'ordre (extraire les fichiers php source, installer les dépendances, créer la base de données, etc.).
+                A l'exception de l'étape de configuration, le processus est entièrement géré par des scripts composer qui sont listés dans le fichier <a href="https://github.com/claroline/Claroline/blob/master/composer.json" target="_blank">composer.json</a>.</p>
+                <p>Pour une nouvelle installation, les commandes sont</p>
+                <ul>
+                    <li><code>git clone http://github.com/claroline/Claroline</code></li>
+                    <li><code>cd Claroline</code></li>
+                    <li><code>php scripts/configure.php</code></li>
+                    <li><code>composer sync-dev</code></li>
+                </ul>
+                <h5>Mise à jour</h5>
+                <p>Pour mettre à jour une installation de développement, il faut simplement charger les derniers changements du répertoire et utiliser le script <code>sync-dev</code>:</p>
+                <ul>
+                    <li><code>git pull</code></li>
+                    <li><code>composer sync-dev</code></li>
+                </ul>
+                {#<ul>#}
+                    {#<li>À la différence de Claroline 1.x, Claroline Connect requiert une version de PHP supérieure ou égale à 5.5.x.</li>#}
+                    {#<li>Le système de gestion des plug-ins est lui encore en version béta et peut poser certains problèmes.</li>#}
+                    {#<li>Configuration du php.ini :</li>#}
+                    {#<li> variable memory_limit doit être à au moins 512M (pour l'installation et les mise à jour), voire idéalement à 1024M.</li>#}
+                    {#<li> max_execution_time doit être à au moins 1200 pour l'installation de la version full. Ensuite, vous pouvez à nouveau le diminuer.</li>#}
+                {#</ul>#}
             </div>
             <div class="col-md-6 col-lg-6">
                 <h3>Planning de développement</h3>
-                <h4>Une nouvelle branche 6 rassemble les développements futurs</h4>
-                <p>La prochaine version majeure du noyau est prévue pour mai 2016. Au menu:</p>
+                <h4>Les nouveautés présentes dans la version 16.05</h4>
+                <ul>
+                    <li>Refonte de la gestion des utilisateurs</li>
+                    <li>Refonte du profil à facette</li>
+                    <li>Première version des catalogues de formation (gestion des cursus)</li>
+                    <li>Gestion des réservations</li>
+                    <li>e-Portfolio</li>
+                    <li>Refonte des exercices</li>
+                    <li>Etape bloquante dans les parcours d'apprentissage</li>
+                    <li>Amélioration du collecticiel</li>
+                    <li>Système de tag</li>
+                </ul>
+                <h4>Nouveautés expérimentales</h4>
+                <ul>
+                    <li>Ressource flashcard</li>
+                    <li>Chat texte, audio, vidéo</li>
+                    <li>gestion des présences</li>
+                    <li>gestion des organisations</li>
+                    <li>Refonte de l'interface du gestionnaire de ressources</li>
+                    <li>Amélioration générale de l'ergonomie</li>
+                    <li>Réorganisation des outils d'administration</li>
+                </ul>
+
+                <h4>Une nouvelle branche 16.09 rassemble les développements futurs</h4>
+                <p>La prochaine version majeure du noyau est prévue pour septembre 2016. Au menu:</p>
                 <ul>
                     <li>Refonte de l'interface du gestionnaire de ressources</li>
                     <li>Amélioration générale de l'ergonomie</li>
@@ -74,16 +111,26 @@
                     <li>...</li>
                 </ul>
                 <h4>Pour installer la version de développement</4>
-                <h5>(sous Linux uniquement)</h5>
+                <h5>Vous aurez besoin d'au moins:</h5>
                 <ul>
-                    <li>curl -sS https://raw.githubusercontent.com/claroline/repository-scripts/master/install.sh | sh</li>
-                    <li>Mettre les informations de la db dans app/config/parameters.yml</li>
-                    <li>php app/console claroline:install</li>
-                    <li>php app/console assets:install</li>
-                    <li>php app/console assetic:dump</li>
+                    <li>PHP >= 5.5 avec les extensions suivantes:</li>
+                        <ul>
+                            <li>curl</li>
+                            <li>fileinfo</li>
+                            <li><a href="http://www.php.net/manual/en/book.image.php" target="_blank">gd</a></li>
+                            <li>intl</li>
+                            <li>mcrypt</li>
+                            <li><a href="http://ffmpeg-php.sourceforge.net/" target="_blank">ffmpeg</a> (optionnel)</li>
+                            <li>zip archive</li>
+                            <li>json</li>
+                        </ul>
+                    <li>MySQL/MariaDB >=5.0 et < 5.7</li>
+                    <li>Une version récente de <a href="https://getcomposer.org/" target="_blank">composer</a></li>
+                    <li><a href="https://nodejs.org/" target="_blank">node.js</a> >= 5.5</li>
+                    <li><a href="https://docs.npmjs.com/" target="_blank">npm</a> >= 3.7</li>
+                    <li></li>
                 </ul>
-                <p>Pour créer un admin :</p>
-                <p>php app/console claroline:user:create -a</p>
+                <p>Il est vivement recommandé d'utiliser un environnement de type UNIX.</p>
             </div>
         </div>
     </div>
@@ -91,7 +138,7 @@
 
 <!-- FIN DE LA VERSION 1 DE CLAROLINE -->
 
-<div id="conteneur" class="container-fluid">
+<div id="conteneur" class="container-fluid site-text">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-offset-2 col-lg-8">
             <h3 style="text-align: center">La version 1.x de Claroline n'est plus maintenue</h3>
