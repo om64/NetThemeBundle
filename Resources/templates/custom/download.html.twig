@@ -32,7 +32,24 @@
                 <p>La version 16.05 de Claroline Connect est sortie ce 31 mai 2016. Nous vous conseillons de ne l'utiliser en production quu'à partir des versions 16.05.x qui auront pu bénéficier de
                     corrections de bugs.</p>
                 <p>Nous vous recommandons de ne procéder à la mise à jour de la version 5 vers la version 16.05 que d'ici le 15 juin.</p>
-                <p>Un <a href="http://localhost/claroline/web/app_dev.php/resource/open/claroline_forum/2016" target="blank">forum</a> est disponible. Le manuel utilisateur va être adapté au plus vite</p>
+                <p>Un <a href="http://www.claroline.net/forum/11/category" target="blank">forum</a> est disponible.</p>
+                <p>La documentation va être adaptée au plus vite.</p>
+                <h5>Exigences avant l'installation</h5>
+                <p>Assurez-vous que vous avez d'abord installé:</p>
+                <ul>
+                    <li>PHP >= 5.5 avec les extensions suivantes:</li>
+                    <ul>
+                        <li>curl</li>
+                        <li>fileinfo</li>
+                        <li><a href="http://www.php.net/manual/en/book.image.php" target="_blank">gd</a></li>
+                        <li>intl</li>
+                        <li>mcrypt</li>
+                        <li><a href="http://ffmpeg-php.sourceforge.net/" target="_blank">ffmpeg</a> (optionnel)</li>
+                        <li>zip archive</li>
+                        <li>json</li>
+                    </ul>
+                    <li>MySQL/MariaDB >=5.0 et < 5.7</li>
+                </ul>
                 <h5>Installation à partir d'un fichier archive</h5>
                 <p>Pour chaque version de la plateforme, les ressources (sources pré-extraites, database dump, etc.) sont disponibles à l'adresse <a href="http://packages.claroline.net/releases" target="blank">packages.claroline.net/releases</a>.</p>
                 <p>Le moyen le plus rapide pour démarrer est de taper les commandes suivantes dans un terminal:</p>
@@ -79,16 +96,14 @@
                     <li>Etape bloquante dans les parcours d'apprentissage</li>
                     <li>Amélioration du collecticiel</li>
                     <li>Système de tags</li>
-                    <li>Gestion des réservations</li>
-                    <li>Gestion des présences</li>
                 </ul>
                 <h4>Nouveautés expérimentales</h4>
                 <ul>
                     <li>Ressource flashcard</li>
                     <li>Chat texte, audio, vidéo</li>
-                    <li>Gestion des présences</li>
+                    <li>Enregistreurs audio et vidéo: ils permettent à l'utilisateur de créer des ressources de type fichier à parir d'une capture audio et/ou vidéo</li>
                     <li>Gestion des organisations</li>
-                    <li>Quelques améliorations ergonomiques</li>
+                    <li>Gestion des présences</li>
                 </ul>
                 <h4>Une nouvelle branche 16.09 rassemble les développements futurs</h4>
                 <p>La prochaine version majeure du noyau est prévue pour septembre 2016. Au menu:</p>
@@ -124,7 +139,7 @@
                     <li>Une version récente de <a href="https://getcomposer.org/" target="_blank">composer</a></li>
                     <li><a href="https://nodejs.org/" target="_blank">node.js</a> >= 5.5</li>
                     <li><a href="https://docs.npmjs.com/" target="_blank">npm</a> >= 3.7</li>
-                    <li></li>
+                    <li>git</li>
                 </ul>
                 <p>Il est vivement recommandé d'utiliser un environnement de type UNIX.</p>
             </div>
