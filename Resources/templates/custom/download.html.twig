@@ -54,11 +54,12 @@
                 <p>Pour chaque version de la plateforme, les ressources (sources pré-extraites, database dump, etc.) sont disponibles à l'adresse <a href="http://packages.claroline.net/releases" target="blank">packages.claroline.net/releases</a>.</p>
                 <p>Le moyen le plus rapide pour démarrer est de taper les commandes suivantes dans un terminal:</p>
                 <ul>
-                    <li><code>curl packages.claroline.net/releases/latest/claroline-6.x.x-dev.tar.gz | tar xzv</code></li>
-                    <li><code>cd claroline-6.x.x-dev</code></li>
+                    <li><code>curl packages.claroline.net/releases/latest/claroline-16.05.tar.gz | tar xzv</code></li>
+                    <li><code>cd claroline-16.05</code></li>
                     <li><code>php scripts/configure.php</code></li>
                     <li><code>composer fast-install</code></li>
                 </ul>
+                <p>Attention : les mises à jour se sont obligatoirement par lignes de commande dans un terminal.</p>
                 <h5>Installation depuis la source</h5>
                 <p>La procédure d'installation comprend différentes étapes à exécuter dans l'ordre (extraire les fichiers php source, installer les dépendances, créer la base de données, etc.).
                 A l'exception de l'étape de configuration, le processus est entièrement géré par des scripts composer qui sont listés dans le fichier <a href="https://github.com/claroline/Claroline/blob/master/composer.json" target="_blank">composer.json</a>.</p>
