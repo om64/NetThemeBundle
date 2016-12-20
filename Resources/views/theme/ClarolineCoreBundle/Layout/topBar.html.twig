@@ -48,7 +48,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="{{ path('claro_get_content_by_type', {'type': 'claro'}) }}"> Manuels</a></li>
+                                <li><a href="http://doc.claroline.com" target="_blank" title="La documentation sur GitBook"> Manuel </a></li>
                                 <li><a href="{{ path('claro_get_content_by_type', {'type': 'users'}) }}"> Le coin des utilisateurs</a></li>
                                 <li><a href="{{ path('claro_get_content_by_type', {'type': 'devs'}) }}"> Le coin des développeurs</a></li>
                             </ul>
@@ -57,7 +57,7 @@
                         <li><a href="{{ path('claro_get_content_by_type', {'type': 'accueil'}) }}#contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'download'}) }}"><i class="fa fa-download"> Télécharger Claroline</i></a></li>
+                        <li><a href="{{ path('claro_get_content_by_type', {'type': 'download'}) }}"><i class="fa fa-download"> Télécharger Claroline </i></a></li>
                         {% if isLogged %}
                             {% if adminTools|length > 0 %}
                                 <li class="dropdown">
