@@ -98,7 +98,7 @@
                                 <h3 class="text-center plx-section-title" style="padding-top:30px">Claroline Connect est disponible en téléchargement</h3>
                                 <p class="text-center download-description" style="padding-top:15px; color:#ffffff">La procédure est assez simple.</p>
                                 <div class="button-container">
-                                    <a href="{{ path('claro_get_content_by_type', {'type': 'download'}) }}"><button type="button" class="btn btn-sm btn-default"> Télécharger </button></a>
+                                    <a href="{{ path('claro_get_content_by_type', {'type': 'download'}) }}"><button type="button" class="btn btn-sm btn-default"> Télécharger </button></a>sm btn-default"> Télécharger </button></a>
                                 </div>
                             </div>
                         </div>
@@ -456,7 +456,6 @@
                                 <form id="newsletterForm" class="news-letter" action="{{ path('claroline_net_email_newsletter') }}" method="post">
                                     <input id="newsletter" class="form-control" type="email" name="newsletter" placeholder="Entrez un courriel valide" required="">
                                     <!-- honeypot for bots -->
-                                    <input id="trap_field_newsletter" type="text" name="trap_field_newsletter" style="display:none;"></input>
                                     <button id="newsletter-subscribe-button" type="submit" class="subscribe-btn btn btn-sm btn-default">Je m'inscris</button>
                                 </form>
                             </div>
@@ -496,7 +495,6 @@
                                 <input id="email" class="form-control" name="email" type="email" placeholder=" Votre courriel" required>
                                 <input id="subject" class="form-control" name="subject" type="text" placeholder=" Sujet" required>
                                     <!-- honeypot for bots -->
-                                <input id="trap_field_contact" type="text" name="trap_field_contact" style="display:none;"></input>
                             </div>
                             <div class="col-md-6">
                                 <textarea id="message" class="form-control" name="message" placeholder=" Votre Message" rows="4" required></textarea>
@@ -520,136 +518,4 @@
                 <div class="white-bg contact-details">
                     <div class="container-fluid site-text">
                         <div class="row">
-                            <div class="contact-info"> 
-                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 contact-info-box wow bounceInDown center animated" data-wow-delay=".2s">
-                                    <p><span class="icon map-marker">
-                                        <img src="{{ asset('uploads/custom/images/icons/business-card.png') }}" alt="">
-                                    </span></p>
-                                    <p class="contact-details-title">Adresse</p>
-                                    <span class="texts">6, Chemin du Cyclotron <br>
-                                        1348 Louvain-la-Neuve (Belgique)
-                                    </span>
-                                </div>
-                                <div class="col-md-3 col-sm-6 contact-info-box wow bounceInDown center animated" data-wow-delay=".4s">
-                                    <p><span class="icon envelope">
-                                        <img src="{{ asset('uploads/custom/images/icons/Sending-Email.png') }}" alt="">
-                                    </span></p>
-                                    <p class="contact-details-title">Courriel</p>
-                                    <span class="texts"><a href="mailto:info@claroline.net">info@claroline.net</a><br>
-                                    </span>
-                                </div>
-                                <div class="col-md-3 col-sm-6 contact-info-box wow bounceInDown center animated" data-wow-delay=".6s">
-                                    <p><span class="icon phone">
-                                        <img src="{{ asset('uploads/custom/images/icons/phone.png') }}" alt="">
-                                    </span></p>
-                                    <p class="contact-details-title">Téléphone</p>
-                                    <span class="texts">+32 (0)10 87 04 94 <br></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid site-text">
-        <div class="row features">
-            <div class="col-xs-12" style="padding-left: 20px">
-                <h4>Ils nous font confiance.</h4>
-                <h5>Membres effectifs du Consortium Claroline</h5>
-                <img src="{{ asset('uploads/custom/images/UDL.png') }}" alt="Université de Lyon" title="Université de Lyon" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/ec_lyon.png') }}" alt="Ecole Centrale de Lyon" title="Ecole Centrale de Lyon" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/ujm.png') }}" alt="Université Jean Monnet de Saint-Etienne" title="Université Jean Monnet de Saint-Etienne" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/formagraph.jpeg') }}" alt="FormaGraph" title="" height="80px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/AEI.jpeg') }}" alt="Agence du Numérique" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/logo-uga-vo-cmjn.jpg') }}" alt="Université Grenoble Alpes" title="Université Grenoble Alpes" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/ucb_lyon1.gif') }}" alt="Université de Lyon 1" title="" height="96px" style="padding: 10px">
-                {#<img src="{{ asset('uploads/custom/images/ucdn_chili.png') }}" alt="Universidad Catolica Del Norte" title="" height="96px" style="padding: 10px">#}
-                <a href="http://www.claroline.com" target="_blank"><img src="{{ asset('uploads/custom/images/FormaLibre.png') }}" alt="Logo Forma-Libre cliquable pour visiter leur site dans une nouvelle fenêtre" title="Cliquez pour visiter le site de Forma-Libre dans une nouvelle fenêtre" height="96px" style="padding: 10px"></a>
-                {#<img src="{{ asset('uploads/custom/images/Logo_SIMU.jpg') }}" alt="SimUSanté" title="SimUSanté" height="96px" style="padding: 10px">#}
-                <a href="http://www.mfr.asso.fr/pages/accueil.aspx" target="_blank"><img src="{{ asset('uploads/custom/images/mfr.jpeg') }}" title="MFR" height="96px" style="padding: 10px"></a>
-                <h5>Membres adhérents du Consortium Claroline</h5>
-                <a href="http://www.campusvirtuel.be" target="_blank"><img src="{{ asset('uploads/custom/images/cvg.png') }}" alt="Campus Virtuel en Gestion" title="Campus Virtuel en Gestion" height="96px" style="padding: 10px"></a>
-                <img src="{{ asset('uploads/custom/images/pmc_logo.png') }}" title="PM Conseil" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/provl.jpeg') }}" title="Province de Liège" height="96px" style="padding: 10px">
-                {#<img src="{{ asset('uploads/custom/images/ucl.gif') }}" alt="Université Catholique de Louvain" title="Université Catholique de Louvain" height="80px" style="padding: 10px">#}
-                <img src="{{ asset('uploads/custom/images/hevinci.png') }}" alt="Haute Ecole Léonard de Vinci" title="HE Léonard de Vinci" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/helha.jpeg') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/henalux.png') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/logo_aefe.png') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/geezot.png') }}" alt="Geezot" title="Geezot" height="80px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/campus_fle.png') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/ism.jpeg') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/uvcw.gif') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/cf_image.png') }}" title="" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/ump.jpeg') }}" title="" height="96px" style="padding: 10px">
-                {#<img src="{{ asset('uploads/custom/images/forma3B.png') }}" title="" height="96px" style="padding: 10px">#}
-                <h5>Utilisateurs de Claroline Connect</h5>
-                <a href="http://prac-hi.univ-lyon1.fr" target="_blank"><img src="{{ asset('uploads/custom/images/hi.png') }}" alt="Handicap International" title="Handicap International" height="96px" style="padding: 10px"></a>
-                <img src="{{ asset('uploads/custom/images/msf.jpeg') }}" alt="Médecins sans frontières" title="Médecins sans frontières" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/octa.png') }}" alt="OCTA" title="OCTA" height="96px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/place_num.png') }}" title="" height="64px" style="padding: 10px">
-                <img src="{{ asset('uploads/custom/images/logo-protec.png') }}" title="École Spéciale des Travaux Publics, du Bâtiment et de l’Industrie" height="96px" style="padding: 10px" class="pointer-hand">
-            </div>
-        </div>
-    </div>
-    <div id="scroll-to-top">
-			<span>
-				<i class="fa fa-arrow-up"></i>
-			</span>
-    </div>
-
-    <!-- PIED DE PAGE -->
-    {% block footer %}
-        {% render controller('ClarolineCoreBundle:Layout:footer') %}
-    {% endblock%}
-
-{% endblock %}
-
-{% block stylesheets %}
-    {{ parent() }}
-    {% include 'ClarolineNetThemeBundle::site_layout.css.html.twig' %}
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    {% include 'ClarolineNetThemeBundle::site_layout.js.html.twig' %}
-    <script type="text/javascript">
-        $('#mailForm').submit(function(event) {
-            event.preventDefault();
-            //current check is ''
-            //$('#trap_field_newsletter').val('trap_field_contact');
-            var form = $(event.target);
-            var route = form.attr('action');
-            var data = $(this).serialize();
-            $.ajax({
-                type: "POST",
-                url: route,
-                data: data,
-                success: function (data) {
-                    $('#contactSuccess').removeClass('hidden');
-                }
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $('#newsletterForm').submit(function(event) {
-            event.preventDefault();
-            //current check is ''
-            //$('#trap_field_contact').val('not-a-bot');
-            var form = $(event.target);
-            var route = form.attr('action');
-            var data = $(this).serialize();
-            $.ajax({
-                type: "POST",
-                url: route,
-                data: data,
-                success: function (data) {
-                    $('#newsletterSuccess').removeClass('hidden');
-                }
-            });
-        });
-    </script>
-
-{% endblock %}
+                            <div class="contact-info">
